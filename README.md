@@ -10,14 +10,17 @@
 
 <img src = "./ImgReadme/Inici_01.png"/>
 
-<p>Il est important d'avoir un terminal en cours d'exécution (npm run start) pendant que nous travaillons pour pouvoir tester le code en temps réel.<br>
-N'oublier pas de créer un fichier ".gitignore" contenant la ligne (node_modules) pour éviter surcharger le dépôt.</p>
+<p><b>Il est important d'avoir un terminal en cours d'exécution (npm run start) pendant que nous travaillons pour pouvoir tester le code en temps réel.</b></p>
+<br>
+<p>. N'oublier pas de créer un fichier ".gitignore" contenant la ligne (node_modules) pour éviter surcharger le dépôt.</p>
 
-<p>Pour terminer la configuration de notre environnement de développement, à partir de la racine du projet, créer un autre dossier appelé "backend".<br>
-Ouvrir un autre terminal et aller dans ce dossier (cd backend), pour initialiser le projet en exécutant (npm init).L'unique chose à changer c'est "server.js" comme point d'entrée. <br>
-Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p>
+<p>. Pour terminer la configuration de notre environnement de développement, à partir de la racine du projet, créer un autre dossier appelé "backend".<br>
+. Ouvrir un autre terminal et aller dans ce dossier (cd backend), pour initialiser le projet en exécutant (npm init).L'unique chose à changer c'est "server.js" comme point d'entrée. <br>
+. Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p>
 
-<p>Créez le premier serveur Node : créez un fichier "server.js" dans le dossier "backend".</p>
+<h2>Construire le serveur.</h2>
+
+<p>. Créez le premier serveur Node avec le fichier "server.js" dans le dossier backend.</p>
 
 <p><b>Démarrer le server.</b></p>
     <p>· Importer le package http depuis Node.</p>
@@ -33,3 +36,13 @@ Un fichier "package.json" est généré dans lequel les détails de tous les pac
 
 <p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuallement.</p>
 
+<h2>Créer l'aplication Express.</h2>
+
+<p>L'utilisation du framework Express simplifie les tâches pour coder des serveurs web en Node, en nous permettant de déployer nos API beaucoup plus rapidement.</p>
+
+<p><b>Installer Express.</b></p>
+    <p>· Exécuter la commande "npm install express --save" à partir du dossier backend.</p>
+    <p>· Créer un fichier "app.js" pour placer l'aplication Express.</p>
+    <p>· Exécuter l'application Express sur le serveur Node.</p>
+
+<p><b>Préparer des middlewares.</b></p>
