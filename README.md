@@ -23,26 +23,26 @@
 <p>. Créez le premier serveur Node avec le fichier "server.js" dans le dossier backend.</p>
 
 <p><b>Démarrer le server.</b></p>
-    <p>· Importer le package http depuis Node.</p>
-    <p>· Créer le corps du serveur.</p>
-    <p>· Déclarer le port de connexion(3000) et l'alternative.</p>
+        <p>· Importer le package http depuis Node.</p>
+        <p>· Créer le corps du serveur.</p>
+        <p>· Déclarer le port de connexion(3000) et l'alternative.</p>
 
 <p><b>Recommandation:</b></p>
-    <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
+        <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
 
 <p><b>Installer nodemon</b></p>
-    <p>· Depuis le backend exécuter la commande: (npm install -g nodemon) .</p>
-    <p>· Désormais, au lieu d'utiliser (node server) pour démarrer le serveur, utiliser (nodemon server) .</p>
+        <p>· Depuis le backend exécuter la commande: (npm install -g nodemon) .</p>
+        <p>· Désormais, au lieu d'utiliser (node server) pour démarrer le serveur, utiliser (nodemon server) .</p>
 
-<p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuallement.</p>
+    <p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuallement.</p>
 
 <h2>Créer l'aplication Express.</h2>
 
 <p>L'utilisation du framework Express simplifie les tâches pour coder des serveurs web en Node, en nous permettant de déployer nos API beaucoup plus rapidement.</p>
 
 <p><b>Installer Express.</b></p>
-    <p>· Exécuter la commande "npm install express --save" à partir du dossier backend.</p>
-    <p>· Créer un fichier "app.js" pour placer l'aplication Express.</p>
-    <p>· Exécuter l'application Express sur le serveur Node.</p>
+        <p>· Exécuter la commande "npm install express --save" à partir du dossier backend.</p>
+        <p>· Créer un fichier "app.js" pour placer l'aplication Express.</p>
+        <p>· Exécuter l'application Express sur le serveur Node.</p>
 
 <p><b>Préparer des middlewares.</b></p>
