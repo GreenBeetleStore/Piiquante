@@ -34,7 +34,7 @@
         <p>· Depuis le backend exécuter la commande: (npm install -g nodemon) .</p>
         <p>· Désormais, au lieu d'utiliser (node server) pour démarrer le serveur, utiliser (nodemon server) .</p>
 
-    <p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuallement.</p>
+<p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuallement.</p>
 
 <h2>Créer l'aplication Express.</h2>
 
