@@ -16,12 +16,12 @@
 <p>. N'oublier pas de créer un fichier ".gitignore" contenant la ligne "node_modules" pour éviter surcharger le dépôt.</p>
 
 <p>. Pour terminer la configuration de notre environnement de développement, à partir de la racine du projet, créer un autre dossier appelé "backend".<br>
-. Ouvrir un autre terminal et aller dans ce dossier "cd backend", pour initialiser le projet en exécutant "npm init".L'unique chose à changer c'est "server.js" comme point d'entrée. <br>
+. Ouvrir un autre terminal et aller dans ce dossier "cd backend", pour initialiser le projet en exécutant "npm init". L'unique chose à changer c'est "server.js" comme point d'entrée. <br>
 . Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p>
 
 <h2>Construire le serveur.</h2>
 
-<p>. Créez le premier serveur Node avec le fichier "server.js" dans le dossier backend.</p>
+<p>. Créer le premier serveur Node avec le fichier "server.js" dans le dossier backend.</p>
 
 <p><b>Démarrer le server.</b></p>
         <p>· Importer le package http depuis Node.</p>
@@ -67,14 +67,14 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
         <p>· Créer un <i>cluster</i> configuré avec l'<b>option AWS</b> et <b>uniquement les options gratuites</b>.</p>
         <p>· Ajouter un utilisateur disposant de la capacité de lecture et d'écriture pour n'importe quelle base de données, dans l'onglet <b>Database Access</b>.<br>
         N'oublier pas de bien noter le nom d'utilisateur et le mot de passe pour connecter l'API au <i>cluster</i>.</p>
-        <p>· Dans l'onglet <b>Network Access</b> ajouter une adresse IP"ADD IP ADDRESS", choisir l'option "ALLOW ACCESS FROM ANYWHERE" qui permet à tout utilisateur d'accéder à l'API. Une entrée de liste blanche sera créée avec l'ip "0.0.0.0".</p>
+        <p>· Dans l'onglet <b>Network Access</b> ajouter une adresse IP "ADD IP ADDRESS", choisir l'option "ALLOW ACCESS FROM ANYWHERE" qui permet à tout utilisateur d'accéder à l'API. Une entrée de liste blanche sera créée avec l'IP "0.0.0.0".</p>
 
 <p><b>Connecter l'API au <i>cluster</i> MongoDB.</b></p>
         <p>· Dans l'onglet <b>Atlas</b> cliquer sur <b>Connect</b> et choisir <b>Connect your application</b>.
         <p>· Sélectionner la version la plus récente de Node.js, et <b>Connection String Only</b>.</p>
-        <p>· Copier la chaine de caractères du code retournée.<br>
+        <p>· Copier la chaine de caractères du code retournée. Exemple: <br>
         mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority</p>
-        <p>· Revenir au projet et, à partir du backend, exécutez "npm install mongoose" pour installer le package Mongoose.</p>
+        <p>· Revenir au projet et, à partir du backend, exécuter "npm install mongoose" pour installer le package Mongoose.</p>
         <p>· Importer et connecter mongoose dans app.js.</p>
 
 <h2>Préparer la base de données pour les informations d'authentification.</h2>
@@ -83,5 +83,5 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
 
 <p><b>Créer un modèle de données.</b></p>
         <p>· Afin qu'il n'y ait pas d'e-mails en double entre différents utilisateurs, nous utiliserons dans le schéma le mot-clé <b>"unique"</b> pour l'attribut d'e-mail.</p>
-        <p>· On peut avoir des erreurs ilisibles de la part de mongoose, pour le résoudre installer un package de validation pour prévalider les informations avant de les enregistre. Exécutez la commande suivante à partir du backend "npm install --save mongoose-unique-validator".</p>
+        <p>· On peut avoir des erreurs ilisibles de la part de mongoose, pour le résoudre; installer un package de validation pour prévalider les informations avant de les enregistrer. Exécuter la commande suivante à partir du backend "npm install --save mongoose-unique-validator".</p>
         <p>· Ajouter et appliquer ce validateur en tant que plug-in au schéma.</p>
