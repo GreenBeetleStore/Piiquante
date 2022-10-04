@@ -96,4 +96,9 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
         <p>. Importer le routeur dans app.js et enregistrer les routes vers la racine API de toutes les routes.</p>
         <p>· Importer le controlleur dans routes/user.js pour associer les fonctions des differentes routes, utilisant deux routes POST avec les métodes "/signup" et "/login".</p>
 
+<p><b>Créer des utilisateurs.</b></p>
+        <p>· Comencer par installer le package de chiffrement <b>bcrypt</b> pour la fonction <b>signup</b><br> "npm install --save bcrypt".</p>
+        <p>. Importer le model User dans le controlleur.</p>
+        <p>· Importer également bcrypt.</p>
+        <p>· Dans la fonction signup, hasher le mot de pass et avec le hash créé par bcrypt, s'enregistre le user dans la base de donnés.</p>
 
