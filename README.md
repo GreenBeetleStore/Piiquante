@@ -1,6 +1,6 @@
 # Piiquante <br>
 
-<p>                     </p><img src = "./ImgReadme/Piiquante.png"/>
+<img src = "./ImgReadme/Piiquante.png"/>
 
 <h1>P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.</h1>
 
