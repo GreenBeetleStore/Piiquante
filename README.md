@@ -1,5 +1,12 @@
 # Piiquante <br>
-<img src = "./ImgReadme/Piiquante.png"/>
+<style>
+  .img-container {
+    text-align: center;
+  }
+</style>
+<div class="img-container">
+    <img src = "./ImgReadme/Piiquante.png"/>
+</div>
 <h1>P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.</h1>
 
 <h2>Configuration de l'environnement de travail et initialisation du projet.</h2>
