@@ -49,3 +49,29 @@
     <p>· Chaque élément de middleware reçoit les objets <b>request</b> et <b>response</b>, peut les lire, les analyser et les manipuler, le cas échéant. <br> 
     · Le middleware Express reçoit également la méthode <b>next</b> , qui permet à chaque middleware de passer l'exécution au middleware suivant. <br>
     · Cette application Express contiendra huit éléments de middleware.</p>
+
+<p><b>Améliorer server.js.</b></p>
+    <p>· La fonction normalizePort renvoie un port valide, qu'il soit fourni sous la forme d'un numéro ou d'une chaîne ;<br>
+    · La fonction errorHandler recherche les différentes erreurs et les gère de manière appropriée. Elle est ensuite enregistrée dans le serveur ;<br>
+    · Un écouteur d'évènements est également enregistré, consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.</p>
+
+<h2>Configurez votre base de données. MongoDB</h2>
+
+<p>MongoDB est une base de données NoSQL. Cela signifie que l'on ne peut pas utiliser SQL pour communiquer avec. <br>
+Les données sont stockées comme des collections de documents individuels décrits en JSON (JavaScript Object Notation). <br>
+Il n'y a pas de schéma strict de données (on peut écrire, en gros, ce que l'on veut où l'on veut), et il n'y a pas de relation concrète entre les différentes données.</p>
+
+<p><b>Configurer MongoDB Atlas.</b></p>
+        <p>· Créer un compte gratuit sur le site web de MongoDB.</p>
+        <p>· Créer un <i>cluster</i> configuré avec l'<b>option AWS</b> et <b>uniquement les options gratuites</b>.</p>
+        <p>· Ajouter un utilisateur disposant de la capacité de lecture et d'écriture pour n'importe quelle base de données, dans l'onglet <b>Database Access</b>.<br>
+        N'oublier pas de bien noter le nom d'utilisateur et le mot de passe pour connecter l'API au <i>cluster</i>.</p>
+        <p>· Dans l'onglet <b>Network Access</b> ajouter une adresse IP(ADD IP ADDRESS), choisir l'option (ALLOW ACCESS FROM ANYWHERE) qui permet à tout utilisateur d'accéder à l'API. Une entrée de liste blanche sera créée avec l'ip (0.0.0.0).</p>
+
+<p><b>Connecter l'API au <i>cluster</i> MongoDB.</b></p>
+        <p>· Dans l'onglet <b>Atlas</b> cliquer sur <b>Connect</b> et choisir <b>Connect your application</b>.
+        <p>· Sélectionner la version la plus récente de Node.js, et <b>Connection String Only</b>.</p>
+        <p>· Copier la chaine de caractères du code retournée.<br>
+        mongodb+srv://NomUtilisateur:<password>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority</p>
+        <p>· Revenir au projet et, à partir du backend, exécutez "npm install mongoose" pour installer le package Mongoose.</p>
+        <p>· Importer et connecter mongoose dans app.js.</p>
