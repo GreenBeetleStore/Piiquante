@@ -1,9 +1,9 @@
 // in backend/app.js
-// Importar Express.
+// Importar Express, mongoose, routeur.
 const express = require("express");
-
-// Importar mongoose.
 const mongoose = require('mongoose');
+
+const userRoutes = require('./routes/user');
 
 // Connectar mongoose.
 mongoose.connect('mongodb+srv://escarabatverd:Atlas10@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority',
@@ -33,6 +33,8 @@ app.use((req, res, next) => {
 app.use((req, res, next) => {
   console.log("Réponse envoyée avec succès !");
 });
+
+app.use('/api/auth', userRoutes);
 
 // Exportar l'aplicació.
 module.exports = app;

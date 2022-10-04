@@ -85,3 +85,15 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
         <p>· Afin qu'il n'y ait pas d'e-mails en double entre différents utilisateurs, nous utiliserons dans le schéma le mot-clé <b>"unique"</b> pour l'attribut d'e-mail.</p>
         <p>· On peut avoir des erreurs ilisibles de la part de mongoose, pour le résoudre; installer un package de validation pour prévalider les informations avant de les enregistrer. Exécuter la commande suivante à partir du backend "npm install --save mongoose-unique-validator".</p>
         <p>· Ajouter et appliquer ce validateur en tant que plug-in au schéma.</p>
+
+<h2>Créer des utilisateurs.</h2>
+
+<p><b>Configurer les routes d'authentification.</b></p>
+        <p>· On besoin un contrôlleur et un routeur, puis enregistrer ce routeur dans l'application Express.</p>
+        <p>· Créer le dossier controllers et dedans le fichier user.js.</p>
+        <p>· Créer le dossier routes et dedans, a nouveau un autre fichier user.js.</p>
+        <p>· Créer les routes d'authentification selon sont prévues par l'application front-end.</p>
+        <p>. Importer le routeur dans app.js et enregistrer les routes vers la racine API de toutes les routes.</p>
+        <p>· Importer le controlleur dans routes/user.js pour associer les fonctions des differentes routes, utilisant deux routes POST avec les métodes "/signup" et "/login".</p>
+
+
