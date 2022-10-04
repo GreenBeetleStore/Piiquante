@@ -72,6 +72,6 @@ Il n'y a pas de schéma strict de données (on peut écrire, en gros, ce que l'o
         <p>· Dans l'onglet <b>Atlas</b> cliquer sur <b>Connect</b> et choisir <b>Connect your application</b>.
         <p>· Sélectionner la version la plus récente de Node.js, et <b>Connection String Only</b>.</p>
         <p>· Copier la chaine de caractères du code retournée.<br>
-        mongodb+srv://NomUtilisateur:<password>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority</p>
+        mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority</p>
         <p>· Revenir au projet et, à partir du backend, exécutez "npm install mongoose" pour installer le package Mongoose.</p>
         <p>· Importer et connecter mongoose dans app.js.</p>
