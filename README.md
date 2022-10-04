@@ -46,4 +46,6 @@
         <p>· Exécuter l'application Express sur le serveur Node.</p>
 
 <p><b>Préparer des middlewares.</b></p>
-
+    <p>· Chaque élément de middleware reçoit les objets <b>request</b> et <b>response</b>, peut les lire, les analyser et les manipuler, le cas échéant. <br> 
+    · Le middleware Express reçoit également la méthode <b>next</b> , qui permet à chaque middleware de passer l'exécution au middleware suivant. <br>
+    · Cette application Express contiendra huit éléments de middleware.</p>
