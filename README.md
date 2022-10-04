@@ -7,16 +7,16 @@
 <p><b>Cloner dans le dossier "frontend" le code fourni pour initialiser ce projet depuis ce repository : </b></p>
     https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6   <br><br>
 <p><b>Initialiser un dépôt Git del projecte.</b></p>
-<p>Depuis la terminal, entrer dans le répertoire frontend (cd frontend) et exécuter (npm install) pour installer les dépendances requises par l'application. Lancer le serveur de développement avec (npm run start), et on peut maintenant ouvrir la page http://localhost:4200 dans le navigateur.</p>
+<p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement avec "npm run start", et on peut maintenant ouvrir la page http://localhost:4200 dans le navigateur.</p>
 
 <img src = "./ImgReadme/Inici_01.png"/>
 
-<p><b>Il est important d'avoir un terminal en cours d'exécution (npm run start) pendant que nous travaillons pour pouvoir tester le code en temps réel.</b></p>
+<p><b>Il est important d'avoir un terminal en cours d'exécution "npm run start" pendant que nous travaillons pour pouvoir tester le code en temps réel.</b></p>
 <br>
-<p>. N'oublier pas de créer un fichier ".gitignore" contenant la ligne (node_modules) pour éviter surcharger le dépôt.</p>
+<p>. N'oublier pas de créer un fichier ".gitignore" contenant la ligne "node_modules" pour éviter surcharger le dépôt.</p>
 
 <p>. Pour terminer la configuration de notre environnement de développement, à partir de la racine du projet, créer un autre dossier appelé "backend".<br>
-. Ouvrir un autre terminal et aller dans ce dossier (cd backend), pour initialiser le projet en exécutant (npm init).L'unique chose à changer c'est "server.js" comme point d'entrée. <br>
+. Ouvrir un autre terminal et aller dans ce dossier "cd backend", pour initialiser le projet en exécutant "npm init".L'unique chose à changer c'est "server.js" comme point d'entrée. <br>
 . Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p>
 
 <h2>Construire le serveur.</h2>
@@ -26,14 +26,14 @@
 <p><b>Démarrer le server.</b></p>
         <p>· Importer le package http depuis Node.</p>
         <p>· Créer le corps du serveur.</p>
-        <p>· Déclarer le port de connexion(3000) et l'alternative.</p>
+        <p>· Déclarer le port de connexion"3000" et l'alternative.</p>
 
 <p><b>Recommandation:</b></p>
         <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
 
 <p><b>Installer nodemon</b></p>
-        <p>· Depuis le backend exécuter la commande: (npm install -g nodemon) .</p>
-        <p>· Désormais, au lieu d'utiliser (node server) pour démarrer le serveur, utiliser (nodemon server) .</p>
+        <p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
+        <p>· Désormais, au lieu d'utiliser "node server" pour démarrer le serveur, utiliser "nodemon server" .</p>
 
 <p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuallement.</p>
 
@@ -59,15 +59,15 @@
 <h2>Configurez votre base de données. MongoDB</h2>
 
 <p>MongoDB est une base de données NoSQL. Cela signifie que l'on ne peut pas utiliser SQL pour communiquer avec. <br>
-Les données sont stockées comme des collections de documents individuels décrits en JSON (JavaScript Object Notation). <br>
-Il n'y a pas de schéma strict de données (on peut écrire, en gros, ce que l'on veut où l'on veut), et il n'y a pas de relation concrète entre les différentes données.</p>
+Les données sont stockées comme des collections de documents individuels décrits en JSON "JavaScript Object Notation". <br>
+Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'on veut où l'on veut", et il n'y a pas de relation concrète entre les différentes données.</p>
 
 <p><b>Configurer MongoDB Atlas.</b></p>
         <p>· Créer un compte gratuit sur le site web de MongoDB.</p>
         <p>· Créer un <i>cluster</i> configuré avec l'<b>option AWS</b> et <b>uniquement les options gratuites</b>.</p>
         <p>· Ajouter un utilisateur disposant de la capacité de lecture et d'écriture pour n'importe quelle base de données, dans l'onglet <b>Database Access</b>.<br>
         N'oublier pas de bien noter le nom d'utilisateur et le mot de passe pour connecter l'API au <i>cluster</i>.</p>
-        <p>· Dans l'onglet <b>Network Access</b> ajouter une adresse IP(ADD IP ADDRESS), choisir l'option (ALLOW ACCESS FROM ANYWHERE) qui permet à tout utilisateur d'accéder à l'API. Une entrée de liste blanche sera créée avec l'ip (0.0.0.0).</p>
+        <p>· Dans l'onglet <b>Network Access</b> ajouter une adresse IP"ADD IP ADDRESS", choisir l'option "ALLOW ACCESS FROM ANYWHERE" qui permet à tout utilisateur d'accéder à l'API. Une entrée de liste blanche sera créée avec l'ip "0.0.0.0".</p>
 
 <p><b>Connecter l'API au <i>cluster</i> MongoDB.</b></p>
         <p>· Dans l'onglet <b>Atlas</b> cliquer sur <b>Connect</b> et choisir <b>Connect your application</b>.
