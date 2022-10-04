@@ -75,3 +75,12 @@ Il n'y a pas de schéma strict de données (on peut écrire, en gros, ce que l'o
         mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority</p>
         <p>· Revenir au projet et, à partir du backend, exécutez "npm install mongoose" pour installer le package Mongoose.</p>
         <p>· Importer et connecter mongoose dans app.js.</p>
+
+<h2>Préparer la base de données pour les informations d'authentification.</h2>
+
+<p>· Étant donné que l'authentification doit être implémentée dans l'API, par e-mail et mot de passe, le mot de passe de chaque utilisateur doit être stocké sous la forme d'un <b>hash</b> ou d'une chaîne chiffrée.</p>
+
+<p><b>Créer un modèle de données.</b></p>
+        <p>· Afin qu'il n'y ait pas d'e-mails en double entre différents utilisateurs, nous utiliserons dans le schéma le mot-clé <b>"unique"</b> pour l'attribut d'e-mail.</p>
+        <p>· On peut avoir des erreurs ilisibles de la part de mongoose, pour le résoudre installer un package de validation pour prévalider les informations avant de les enregistre. Exécutez la commande suivante à partir du backend "npm install --save mongoose-unique-validator".</p>
+        <p>· Ajouter et appliquer ce validateur en tant que plug-in au schéma.</p>
