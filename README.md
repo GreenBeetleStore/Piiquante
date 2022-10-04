@@ -126,4 +126,16 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
         <p>· Définir la durée de validité du <i>token</i> à 24h.</p>
         <p>. Envoyer le <i>token</i> au front-end avec la réponse.</p>
 
+<h2>Configurer le middleware d'authentification.</h2>
 
+<p>· Créer un dossier middleware et un fichier auth.js à l'intérieur.</p>
+<p>· Dans ce middleware :<br>
+        · Étant donné que de nombreux problèmes peuvent se produire, nous insérons tout à l'intérieur d'un bloc <b>try...catch</b>.<br>
+        · Nous extrayons le <i>token</i> du header <b>Authorization</b> de la requête entrante. N'oubliez pas qu'il contiendra également le mot-clé <b>Bearer</b>. Nous utilisons donc la fonction <b>split</b> pour tout récupérer après l'espace dans le header. Les erreurs générées ici s'afficheront dans le bloc <b>catch</b>.<br>
+        · Nous utilisons ensuite la fonction <b>verify</b> pour décoder notre <i>token</i>. Si celui-ci n'est pas valide, une erreur sera générée.<br>
+        · Nous extrayons l'ID utilisateur de notre <i>token</i> et le rajoutons à l’objet <b>Request</b> afin que nos différentes routes puissent l’exploiter.<br>
+        · Dans le cas contraire, tout fonctionne et notre utilisateur est authentifié. Nous passons à l'exécution à l'aide de la fonction <b>next()</b>.</p>
+
+<p>· Maintenant, nous devons appliquer ce <i>middleware</i> à nos routes <b>stuff</b>, qui sont celles à protéger. Dans notre routeur <b>stuff</b>, nous importons notre <i>middleware</i> et le passons comme argument aux routes à protéger.</p>
+
+<h2> .</h2>

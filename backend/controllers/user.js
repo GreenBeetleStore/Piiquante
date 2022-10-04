@@ -1,6 +1,6 @@
 // in backend/controllers/user.js
 const bcrypt = require("bcrypt");
-const jwt = require('jsonwebtoken');
+const jwt = require("jsonwebtoken");
 
 const User = require("../models/User");
 
@@ -39,10 +39,10 @@ exports.login = (req, res, next) => {
           res.status(200).json({
             userId: user._id,
             token: jwt.sign(
-                { userId: user._id },
-                'CLAU_SECRETA_ALEAT0RIA_PER_ESMIC0LAR_C0NTRASENYA',
-                { expiresIn: '24h' }
-            )
+              { userId: user._id },
+              "CLAU_SECRETA_ALEAT0RIA_PER_ESMIC0LAR_C0NTRASENYA",
+              { expiresIn: "24h" }
+            ),
           });
         })
         .catch((error) => res.status(500).json({ error }));
