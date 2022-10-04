@@ -100,5 +100,30 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
         <p>· Comencer par installer le package de chiffrement <b>bcrypt</b> pour la fonction <b>signup</b><br> "npm install --save bcrypt".</p>
         <p>. Importer le model User dans le controlleur.</p>
         <p>· Importer également bcrypt.</p>
-        <p>· Dans la fonction signup, hasher le mot de pass et avec le hash créé par bcrypt, s'enregistre le user dans la base de donnés.</p>
+        <p>· Dans la fonction signup, hacher le mot de pass et avec le <b>hash</b> créé par bcrypt, s'enregistre l'utilisateur "user" dans la base de donnés.</p>
+
+<h2>Vérifiez l'identification d'un utilisateur.</h2>
+
+<p><b>Implémenter la fonction login.</b></p>
+        <p>· Dans cette fonction, les informations d'identification de l'utilisateur sont vérifiées, le user_id est transmis à partir de la base de données ainsi qu'un token web JSON signé(contenant également l'_id de l'utilisateur).</p>
+        <p>· Notre modèle Mongoose permet de vérifier si l'email saisi par l'utilisateur existe dans la base de données :</p>
+        <p>     - Sinon, une erreur <b>"401 Unauthorized"</b> est envoyée.</p>
+        <p>     - Si l'e-mail correspond à un utilisateur existant, continue.</p>
+        <p>· Pour comparer le mot de passe saisi par l'utilisateur avec le <b>hash</b> enregistré dans la base de données, c'est utilisée la fonction "compare" de "bcrypt".</p>
+        <p>     - S'ils ne correspondent pas, nous renvoyons une erreur <b>"401 Unauthorized"</b> avec le même message que lorsque l’utilisateur n’a pas été trouvé, afin de ne pas laisser quelqu’un vérifier si une autre personne est inscrite sur notre site.</p>
+        <p>     - S'ils correspondent, les informations d'identification de notre utilisateur sont valides. Dans ce cas, nous renvoyons une réponse <b>"200</b> contenant l'ID utilisateur et un token. Ce token est une chaîne générique pour l'instant, mais nous allons le modifier et le crypter dans le prochain chapitre.</p>
+
+<h2>Créer des tokens d'authentification.</h2>
+
+<p>Les <i>tokens</i> d'authentification permettent aux utilisateurs de se connecter une seule fois à leur compte. Lorsqu'ils se connectent, ils reçoivent leur <i>token</i> et le transmettent immédiatement dans chaque requête, ce qui permet au back-end de vérifier que la requête est authentifiée.</p>
+
+<p><b>Créer des tokens d'authentification.</b></p>
+        <p>· Pour créer et vérifier les <i>tokens</i> d'authentification, nous avons besoin d'un nouveau package, installez-le avec la commande suivante : "npm install --save jsonwebtoken".</p>
+        <p>· Importer le package dans notre contrôleur utilisateur.</p>
+        <p>· L'utiliser dans la fonction <b>login.</b></p>
+        <p>· Utiliser la fonction <b>sign</b> de <b>jsonwebtoken</b> pour chiffrer un nouveau <i>token</i>.</p>
+        <p>· Utiliser une chaîne secrète pour crypter le <i>token</i>; <b>CLAU_SECRETA_ALEAT0RIA_PER_ESMIC0LAR_C0NTRASENYA</b> .</p>
+        <p>· Définir la durée de validité du <i>token</i> à 24h.</p>
+        <p>. Envoyer le <i>token</i> au front-end avec la réponse.</p>
+
 
