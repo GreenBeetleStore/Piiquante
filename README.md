@@ -181,3 +181,22 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
         <p>· Modifier la premier route POST, en declarant une nouvelle constant pour créer une nouvelle instance Salsa.</p>
         <p>· Une instance du modèle Salsa a été créée en lui passant un objet JavaScript contenant toutes les informations requises du corps de la requête analysée (après avoir supprimé le false_id envoyé par le frontend).</p>
         <p>· Appeller la métode <b>save</b> pour enregistrer ce Salsa dans la base de données et retourne une promise.</p>
+
+<p><b>NOTE: </b>La base de données MongoDB est fractionnée en <b>collections</b> : le nom de la collection est défini par défaut sur le pluriel du nom du modèle. Ici, ce sera <b>Salses</b>.</p>
+
+<p>La méthode <b>save()</b> renvoie une Promise. Ainsi, dans notre bloc <b>then()</b> , nous renverrons une réponse de réussite avec un code 201 de réussite. Dans notre bloc <b>catch()</b> , sera renvoyé une réponse avec l'erreur générée par Mongoose ainsi qu'un code d'erreur 400.</p>
+
+<p><b>Récupération de la liste de Salses.</b></p>
+<p>· Implémenter la route GET afin qu'elle renvoie tous les Salses dans la base de données.</p>
+        <p>· Utiliser la méthode <b>find()</b> dans le modèle Mongoose afin de renvoyer un tableau contenant tous les <b>Salses</b> dans la base de données. À présent, s'il s'ajoute un <b>Salsa</b>, il doit s'afficher immédiatement sur votre page.</p>
+
+<p><b>Récupération d'un Salsa spécifique.</b></p>
+<p>· Ajouter une nouvelle route à notre aplication, juste après la route POST.</p>
+        <p>· Utiliser la méthode <b>get()</b> pour répondre uniquement aux demandes GET à cet endpoint;</p>
+        <p>· Utilisation des deux-points <b>:</b> en face du segment dynamique de la route pour la rendre accessible en tant que paramètre;</p>
+        <p>· Ensuite utiliser la méthode <b>findOne()</b> dans notre modèle <b>Salsa</b> pour trouver le <b>Salsa</b> unique ayant le même <b>_id</b> que le paramètre de la requête ;</p>
+        <p>· Ce <b>Salsa</b> est ensuite retourné dans une Promise et envoyé au front-end ;</p>
+        <p>· Si aucun <b>Salsa</b> n'est trouvé ou si un erreur se produit, cést envoyé une erreur 404 au front-end, avec l'erreur générée;</p>
+
+
+<h2>Modifiez et supprimez des données.</h2>

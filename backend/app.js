@@ -36,56 +36,30 @@ app.use((req, res, next) => {
   next();
 });
 
-//POST. Si col·loqueu la ruta POST a dalt de GET, interceptarà les sol·licituds POST, impedint que arribin al middleware GET.
+// POST. Per afegir una sauce. 
+// Al col·locar la ruta POST a dalt de GET, s'intercepten les sol·licituds POST, impedint que arribin al middleware GET.
   app.post('/api/sauces', (req, res, next) => {
     delete req.body._id;
-    const salsa = new Salsa({
+    const sauce = new Salsa({
       ...req.body
     });
-    salsa.save()
+    sauce.save()
       .then(() => res.status(201).json({ message: 'Objet enregistré !'}))
       .catch(error => res.status(400).json({ error }));
   });
 
-// GET. Array de sauces.
+  // GET. Per trobar una sauce específica.
+  app.get('/api/sauces/:id', (req, res, next) => {
+    Salsa.findOne({ _id: req.params.id })
+      .then(sauce => res.status(200).json(sauce))
+      .catch(error => res.status(404).json({ error }));
+  });
+
+// GET. Obtenir l'Array de totes les sauces.
 app.get("/api/sauces", (req, res, next) => {
-  const sauces = [
-    {
-      _id: "oeihfzeoi",
-      userId: "qsomihvqios",
-      name: "Mon premier objet",
-      description: "Les infos de mon premier objet",
-      mainPepper: "String - Description de la sauce",
-      imageUrl:
-        "https://cdn.pixabay.com/photo/2019/06/11/18/56/camera-4267692_1280.jpg",
-      heat: "Number , nombre entre 1 et 10 décrivant la sauce",
-      likes: "Number , nombre d'utilisateurs qui aimen (=liken) la sauce",
-      dislikes:
-        "Number - nombre d'utilisateurs qui n'aimen pas (=disliken) la sauce",
-      usersLiked:
-        "[ 'String <userId>' ] — tableau des identifiants des utilisateurs qui ont aimé (= liked) la sauce",
-      usersDisliked:
-        "[ 'String <userId>' ] — tableau des identifiants des utilisateurs qui n'ont pas aimé (= disliked) la sauce",
-    },
-    {
-      _id: "oeihfzeoi",
-      userId: "qsomihvqios",
-      name: "Mon premier objet",
-      description: "Les infos de mon premier objet",
-      mainPepper: "String - Description de la sauce",
-      imageUrl:
-        "https://cdn.pixabay.com/photo/2019/06/11/18/56/camera-4267692_1280.jpg",
-      heat: "Number , nombre entre 1 et 10 décrivant la sauce",
-      likes: "Number , nombre d'utilisateurs qui aimen (=liken) la sauce",
-      dislikes:
-        "Number - nombre d'utilisateurs qui n'aimen pas (=disliken) la sauce",
-      usersLiked:
-        "[ 'String <userId>' ] — tableau des identifiants des utilisateurs qui ont aimé (= liked) la sauce",
-      usersDisliked:
-        "[ 'String <userId>' ] — tableau des identifiants des utilisateurs qui n'ont pas aimé (= disliked) la sauce",
-    },
-  ];
-  res.status(200).json(sauces);
+  Salsa.find()
+    .then(sauces => res.status(200).json(sauces))
+    .catch(error => res.status(400).json({ error }));
 });
 
 app.use("/api/auth", userRoutes);
