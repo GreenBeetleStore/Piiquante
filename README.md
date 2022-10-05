@@ -140,7 +140,7 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
 
 <p>· Maintenant, nous devons appliquer ce <i>middleware</i> à nos routes <b>stuff</b>, qui sont celles à protéger. Dans notre routeur <b>stuff</b>, nous importons notre <i>middleware</i> et le passons comme argument aux routes à protéger.</p>
 
-<h2> Créer une route GET.</h2>
+<h2>Créer une route GET.</h2>
 
 <p><b>Remettre le catalogue de sauces.</b></p>
         <p>· Passer a l'argument supplémentaire du métode <b>get</b> un <i>string</i> qui correspond à la route où i faut enregistrer cet élément de <i>middleware</i>. La route sera <b>http://localhost:3000/api/sauces (aussi appelée <i>endpoint</i>)</b>.
@@ -154,13 +154,13 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
                 <p>- d'envoyer des requêtes avec les méthodes mentionnées ( <b>GET</b> ,<b>POST</b> , etc.).
 <p>· Le <i>middleware</i> ne prend pas d'adresse en premier paramètre, afin de s'appliquer à toutes les routes.
 
-<h2> Créer une route POST.</h2>
+<h2>Créer une route POST.</h2>
 
 <p><b>Recevoir des articles de l'app front-end.</b></p>
         <p>· Utiliser un middleware très simple disponible par le framework Express, qui prend toutes les requêtes qui ont comme Content-Type <b>application/json</b> et met à disposition leur <b>body</b> sur l'objet req.</p>
         <p>· Placer la route POST au-dessus du middleware pour les requêtes GET, car la logique GET interceptera actuellement toutes les requêtes envoyées à votre endpoint <b>/api/sauces</b> , étant donné qu'on ne lui a pas indiqué de verbe spécifique.
 
-<h2> Créer un schéma de données.</h2>
+<h2>Créer un schéma de données.</h2>
 
 <p>· L'un des avantages que nous avons à utiliser Mongoose pour gérer notre base de données MongoDB est que nous pouvons implémenter des schémas de données stricts, qui permettent de rendre notre application plus robuste. Commençons par créer un schéma Salsa (« varieté de sauce ») pour tout objet mis dans notre application.</p>
 
@@ -171,5 +171,13 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
         <p>· La méthode  Schema  de Mongoose vous permet de créer un schéma de données pour votre base de données MongoDB.</p>
         <p>· La méthode  model  transforme ce modèle en un modèle utilisable.</p>
 
+<h2>Enregistrer et récupérer des données.</h2>
 
+<p>Commencer par implémenter correctement la route POST.</p>
 
+<p><b>Enregistrement des Salses dans la base de données.</b></p>
+        <p>· Importer le model Salsa dans le fichier <b>app.js</b> pour utiliser avec Mongoose.</p>
+        <p>· Enlever le faux _id du corps de la requête, puis sera généré à nouveau par Mongoose.<p>
+        <p>· Modifier la premier route POST, en declarant une nouvelle constant pour créer une nouvelle instance Salsa.</p>
+        <p>· Une instance du modèle Salsa a été créée en lui passant un objet JavaScript contenant toutes les informations requises du corps de la requête analysée (après avoir supprimé le false_id envoyé par le frontend).</p>
+        <p>· Appeller la métode <b>save</b> pour enregistrer ce Salsa dans la base de données et retourne une promise.</p>

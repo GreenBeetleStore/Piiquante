@@ -3,6 +3,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
+const Salsa = require('./models/Salsa');
+
 const userRoutes = require("./routes/user");
 
 // Connectar mongoose.
@@ -35,12 +37,15 @@ app.use((req, res, next) => {
 });
 
 //POST. Si col·loqueu la ruta POST a dalt de GET, interceptarà les sol·licituds POST, impedint que arribin al middleware GET.
-app.post("/api/sauces", (req, res, next) => {
-  console.log(req.body);
-  res.status(201).json({
-    message: "Sauce ajoutée !",
+  app.post('/api/sauces', (req, res, next) => {
+    delete req.body._id;
+    const salsa = new Salsa({
+      ...req.body
+    });
+    salsa.save()
+      .then(() => res.status(201).json({ message: 'Objet enregistré !'}))
+      .catch(error => res.status(400).json({ error }));
   });
-});
 
 // GET. Array de sauces.
 app.get("/api/sauces", (req, res, next) => {
