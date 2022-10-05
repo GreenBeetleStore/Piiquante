@@ -119,7 +119,7 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
 
 <p>Les <i>tokens</i> d'authentification permettent aux utilisateurs de se connecter une seule fois à leur compte. Lorsqu'ils se connectent, ils reçoivent leur <i>token</i> et le transmettent immédiatement dans chaque requête, ce qui permet au back-end de vérifier que la requête est authentifiée.</p>
 
-<p><b>Créer des tokens d'authentification.</b></p>
+
         <p>· Pour créer et vérifier les <i>tokens</i> d'authentification, nous avons besoin d'un nouveau package, installez-le avec la commande suivante : "npm install --save jsonwebtoken".</p>
         <p>· Importer le package dans notre contrôleur utilisateur.</p>
         <p>· L'utiliser dans la fonction <b>login.</b></p>
@@ -140,4 +140,23 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
 
 <p>· Maintenant, nous devons appliquer ce <i>middleware</i> à nos routes <b>stuff</b>, qui sont celles à protéger. Dans notre routeur <b>stuff</b>, nous importons notre <i>middleware</i> et le passons comme argument aux routes à protéger.</p>
 
-<h2> .</h2>
+<h2> Créer une route GET.</h2>
+
+<p><b>Remettre le catalogue de sauces.</b></p>
+        <p>· Passer a l'argument supplémentaire du métode <b>get</b> un <i>string</i> qui correspond à la route où i faut enregistrer cet élément de <i>middleware</i>. La route sera <b>http://localhost:3000/api/sauces (aussi appelée <i>endpoint</i>)</b>.
+        <p>· Créer dans ce <i>middleware</i> un groupe d'articles avec le schéma de donnés comme demandé par le front-end. Puis envoyer ces articles sous le format JSON, avec un code (200) pou une demande réussie.</p>
+
+<p><b>Traiter les Erreurs de CORS.</b></p>
+<p>· CORS signifie « <b>Cross Origin Resource Sharing</b> ». Il s'agit d'un système de sécurité qui, par défaut, bloque les appels HTTP entre des serveurs <b><i>différents</b></i>, ce qui empêche donc les requêtes malveillantes d'accéder à des ressources sensibles. Dans notre cas, nous avons deux origines : <b>localhost:3000</b> et <b>localhost:4200</b> , et nous souhaiterions qu'elles puissent communiquer entre elles. Pour cela, nous devons ajouter des headers à nos objets <b>response</b>.</p>
+        <p>· Dans <b>app.js</b>, ajouter un middelware avec trois headers qui permettron.<p>
+                <p>- d'accéder à notre API depuis n'importe quelle origine ( <b>'*'</b> ) ;</p>
+                <p>- d'ajouter les headers mentionnés aux requêtes envoyées vers notre API (<b>Origin , X-Requested-With</b> , etc.) ;</p>
+                <p>- d'envoyer des requêtes avec les méthodes mentionnées ( <b>GET</b> ,<b>POST</b> , etc.).
+<p>· Le <i>middleware</i> ne prend pas d'adresse en premier paramètre, afin de s'appliquer à toutes les routes.
+
+<h2> Créer une route POST.</h2>
+
+<p><b>Recevoir des articles de l'app front-end.</b></p>
+        <p>· Utiliser un middleware très simple disponible par le framework Express, qui prend toutes les requêtes qui ont comme Content-Type <b>application/json</b> et met à disposition leur <b>body</b> sur l'objet req.</p>
+        <p>· Placer la route POST au-dessus du middleware pour les requêtes GET, car la logique GET interceptera actuellement toutes les requêtes envoyées à votre endpoint <b>/api/sauces</b> , étant donné qu'on ne lui a pas indiqué de verbe spécifique.
+
