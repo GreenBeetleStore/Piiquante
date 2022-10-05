@@ -210,3 +210,10 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
 <p><b>Suppression d'un Salsa.</b></p>
 <p>· La méthode <b>deleteOne()</b> de notre modèle fonctionne comme <b>findOne()</b> et <b>updateOne()</b> dans le sens où nous lui passons un objet correspondant au document à supprimer. Nous envoyons ensuite une réponse de réussite ou d'échec au front-end.</p>
 
+<h3>CRUD complet: Create, Read, Update, Delete.</h3>
+
+<h2>Optimiser la structure du back-end.</h2>
+
+<p><b>· Configurez le routage.</b></p>
+<p><b>· Configurez les contrôleurs.</b></p>
+<p>· Voir ce chapitre: https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb/6466459-optimisez-la-structure-du-back-end </p>
