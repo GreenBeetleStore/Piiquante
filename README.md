@@ -200,3 +200,13 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
 
 
 <h2>Modifiez et supprimez des données.</h2>
+
+<p><b>Mettre à jour un Thing existant.</b></p>
+<p>· Ajouter, juste en dessous de la route POST, une autre route qui répondra aux enquêtes PUT.</p>
+        <p>· On exploit la méthode <b>updateOne()</b> dans le modèle <b>Salsa</b>. Cela permet de mettre à jour le <b>Salsa</b> qui correspond à l'objet qu'on passe comme premier argument. On utilise aussi le paramètre <b>id</b> passé dans la demande, et il est remplacé par le <b>Salsa</b> passé comme second argument..</p>
+
+<p><b>NOTE: </b>L'utilisation du mot-clé <b>new</b> avec un modèle Mongoose crée par défaut un champ <b>_id</b>. Utiliser ce mot-clé générerait une erreur, car nous tenterions de modifier un champ immuable dans un document de la base de données. Par conséquent, nous devons utiliser le paramètre <b>id</b> de la requête pour configurer notre Thing avec le même <b>_id</b> qu'avant.</p>
+
+<p><b>Suppression d'un Salsa.</b></p>
+<p>· La méthode <b>deleteOne()</b> de notre modèle fonctionne comme <b>findOne()</b> et <b>updateOne()</b> dans le sens où nous lui passons un objet correspondant au document à supprimer. Nous envoyons ensuite une réponse de réussite ou d'échec au front-end.</p>
+
