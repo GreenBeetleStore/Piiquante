@@ -1,6 +1,6 @@
 // in backend/controllers/sauces.js
-const express = require("express");
 const Salsa = require("../models/Salsa");
+const fs = require("fs");
 
 exports.createSalsa = (req, res, next) => {
   const coeur = JSON.parse(req.body.sauce);
@@ -93,16 +93,25 @@ exports.modifySalsa = (req, res, next) => {
 };
 
 exports.deleteSalsa = (req, res, next) => {
-  Salsa.deleteOne({ _id: req.params.id })
-    .then(() => {
-      res.status(200).json({
-        message: "Sauce supprimée !",
-      });
+  Salsa.findOne({ _id: req.params.id })
+    .then((sauce) => {
+      if (sauce.userId != req.auth.userId) {
+        res.status(401).json({ message: "Non autorisé" });
+      } else {
+        const filename = sauce.imageUrl.split("/images/")[1];
+        fs.unlink(`images/${filename}`, () => {
+          Salsa.deleteOne({ _id: req.params.id });
+        })
+          .then(() => {
+            res.status(200).json({ message: "Sauce supprimée !" });
+          })
+          .catch((error) => {
+            res.status(400).json({ error: error });
+          });
+      }
     })
     .catch((error) => {
-      res.status(400).json({
-        error: error,
-      });
+      res.status(500).json({ error });
     });
 };
 
