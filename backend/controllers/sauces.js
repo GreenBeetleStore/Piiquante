@@ -1,33 +1,25 @@
 // in backend/controllers/sauces.js
-// const { json } = require("express");
+const express = require("express");
 const Salsa = require("../models/Salsa");
 
 exports.createSalsa = (req, res, next) => {
-  // const coeur = JSON.parse(req.body.sauce);
+  const coeur = JSON.parse(req.body.sauce);
+  delete coeur._id;
+  delete coeur._userId;
   const sauce = new Salsa({
-    userId: req.body.sauce.userId,
-    name: req.body.name,
-    manufacturer: req.body.manufacturer,
-    description: req.body.description,
-    mainPepper: req.body.mainPepper,
-    imageUrl: req.body.imageUrl,
-    heat: req.body.heat,
-    likes: req.body.likes,
-    dislikes: req.body.dislikes,
-    userLiked: req.body.userLiked,
-    userDisliked: req.body.userDisliked,
+    ...coeur,
+    userId: req.auth.userId,
+    imageUrl: `${req.protocol}://${req.get("host")}/images/${
+      req.file.filename
+    }`,
   });
   sauce
     .save()
     .then(() => {
-      res.status(201).json({
-        message: "Post saved successfully!",
-      });
+      res.status(201).json({ message: "Sauce enregistrée !" });
     })
     .catch((error) => {
-      res.status(400).json({
-        error: error,
-      });
+      res.status(400).json({ error });
     });
 };
 
@@ -46,6 +38,33 @@ exports.getOneSalsa = (req, res, next) => {
 };
 
 exports.modifySalsa = (req, res, next) => {
+  const coeur = req.file
+    ? {
+        ...JSON.parse(req.body.sauce),
+        imageUrl: `${req.protocol}://${req.get("host")}/images/${
+          req.file.filename
+        }`,
+      }
+    : { ...req.body };
+
+  delete coeur._userId;
+  Salsa.findOne({ _id: req.params.id })
+    .then((sauce) => {
+      if (sauce.userId != req.auth.userId) {
+        res.status(401).json({ message: "Non-autorisé" });
+      } else {
+        Salsa.updateOne(
+          { _id: req.params.id },
+          { ...coeur, _id: req.params.id }
+        )
+          .then(() => res.status(200).json({ message: "Sauce modifiée !" }))
+          .catch((error) => res.status(401).json({ error }));
+      }
+    })
+    .catch((error) => {
+      res.status(400).json({ error });
+    });
+
   const sauce = new Salsa({
     _id: req.params.id,
     userId: req.body.sauce.userId,

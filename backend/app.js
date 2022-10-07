@@ -36,6 +36,7 @@ app.use(express.json());
 
 app.use("/api/sauces", saucesRoutes);
 app.use("/api/auth", userRoutes);
+app.use('images', express.static(path.join(__dirname, 'images')));
 
 // Exportar l'aplicació.
 module.exports = app;
