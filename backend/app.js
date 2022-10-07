@@ -2,6 +2,7 @@
 // Importar Express, mongoose, routeur.
 const express = require("express");
 const mongoose = require("mongoose");
+const path = require('path');
 
 const saucesRoutes = require("./routes/sauces");
 const userRoutes = require("./routes/user");
