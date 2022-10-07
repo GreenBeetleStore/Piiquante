@@ -1,9 +1,9 @@
 // in backend/controllers/sauces.js
-const { json } = require("express");
+// const { json } = require("express");
 const Salsa = require("../models/Salsa");
 
 exports.createSalsa = (req, res, next) => {
-  const coeur = JSON.parse(req.body.sauce);
+  // const coeur = JSON.parse(req.body.sauce);
   const sauce = new Salsa({
     userId: req.body.sauce.userId,
     name: req.body.name,
@@ -48,7 +48,7 @@ exports.getOneSalsa = (req, res, next) => {
 exports.modifySalsa = (req, res, next) => {
   const sauce = new Salsa({
     _id: req.params.id,
-    userId: req.body.userId,
+    userId: req.body.sauce.userId,
     name: req.body.name,
     manufacturer: req.body.manufacturer,
     description: req.body.description,
@@ -63,7 +63,7 @@ exports.modifySalsa = (req, res, next) => {
   Salsa.updateOne({ _id: req.params.id }, sauce)
     .then(() => {
       res.status(201).json({
-        message: "Salsa updated successfully!",
+        message: "Salsa mis à jour avec succès !",
       });
     })
     .catch((error) => {
@@ -77,7 +77,7 @@ exports.deleteSalsa = (req, res, next) => {
   Salsa.deleteOne({ _id: req.params.id })
     .then(() => {
       res.status(200).json({
-        message: "Deleted!",
+        message: "Sauce supprimée !",
       });
     })
     .catch((error) => {

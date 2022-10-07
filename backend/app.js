@@ -6,9 +6,6 @@ const mongoose = require("mongoose");
 const saucesRoutes = require("./routes/sauces");
 const userRoutes = require("./routes/user");
 
-// Crear la nostra aplicació.
-const app = express();
-
 // Connectar mongoose.
 mongoose
   .connect(
@@ -17,6 +14,9 @@ mongoose
   )
   .then(() => console.log("Connexion à MongoDB réussie !"))
   .catch(() => console.log("Connexion à MongoDB échouée !"));
+
+// Crear la nostra aplicació.
+const app = express();
 
 // Middleware general, per a tota classe de rutes.
 app.use((req, res, next) => {

@@ -5,11 +5,13 @@ const router = express.Router();
 
 const saucesCtrl = require("../controllers/sauces");
 
-router.get("/", auth, saucesCtrl.getAllSalsa);
 router.post("/", auth, saucesCtrl.createSalsa);
-router.get("/:id", auth, saucesCtrl.getOneSalsa);
 router.put("/:id", auth, saucesCtrl.modifySalsa);
 router.delete("/:id", auth, saucesCtrl.deleteSalsa);
-router.post("/:id/like", auth, saucesCtrl.createSalsa);
+router.get("/:id", auth, saucesCtrl.getOneSalsa);
+router.get("/", auth, saucesCtrl.getAllSalsa);
+
+router.post("/:id/like", auth, saucesCtrl.createSalsa); // Create like. A crear el seu controller ?
+
 
 module.exports = router;
