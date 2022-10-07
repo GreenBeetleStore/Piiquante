@@ -1,9 +1,11 @@
 // in backend/controllers/sauces.js
+const { json } = require("express");
 const Salsa = require("../models/Salsa");
 
 exports.createSalsa = (req, res, next) => {
+  const coeur = JSON.parse(req.body.sauce);
   const sauce = new Salsa({
-    userId: req.body.userId,
+    userId: req.body.sauce.userId,
     name: req.body.name,
     manufacturer: req.body.manufacturer,
     description: req.body.description,
@@ -15,7 +17,7 @@ exports.createSalsa = (req, res, next) => {
     userLiked: req.body.userLiked,
     userDisliked: req.body.userDisliked,
   });
-  thing
+  sauce
     .save()
     .then(() => {
       res.status(201).json({
