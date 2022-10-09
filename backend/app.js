@@ -1,8 +1,8 @@
 // in backend/app.js
-// Importar Express, mongoose, routeur.
+// Importar Express, mongoose, path, routeurs.
 const express = require("express");
 const mongoose = require("mongoose");
-const path = require('path');
+const path = require("path");
 
 const saucesRoutes = require("./routes/sauces");
 const userRoutes = require("./routes/user");
@@ -19,7 +19,7 @@ mongoose
 // Crear la nostra aplicació.
 const app = express();
 
-// Middleware general, per a tota classe de rutes.
+// Middleware general, per a tota classe de rutes + configurar CORS.
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
@@ -35,9 +35,10 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
+// Rutes.
 app.use("/api/sauces", saucesRoutes);
 app.use("/api/auth", userRoutes);
-app.use('images', express.static(path.join(__dirname, 'images')));
+app.use("/images", express.static(path.join(__dirname, "images")));
 
 // Exportar l'aplicació.
 module.exports = app;

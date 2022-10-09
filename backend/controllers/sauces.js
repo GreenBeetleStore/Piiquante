@@ -23,6 +23,68 @@ exports.createSalsa = (req, res, next) => {
     });
 };
 
+exports.giveLikes = (req, res, next) => {
+  // Like.
+  if (req.body.like === 1) {
+    Salsa.updateOne(
+      { _id: req.params.id },
+      {
+        $inc: { likes: req.body.like++ },
+        $push: { usersLiked: req.body.userId },
+      }
+    )
+      .then((sauce) =>
+        res.status(200).json({ message: "Merci beaucoup pour votre Like !" })
+      )
+      .catch((error) => res.status(400).json({ error }));
+    // Dislike.
+  } else if (req.body.like === -1) {
+    Salsa.updateOne(
+      { _id: req.params.id },
+      {
+        $inc: { dislikes: req.body.like++ * -1 },
+        $push: { userDisliked: req.body.userId },
+      }
+    )
+      .then((sauce) =>
+        res
+          .status(200)
+          .json({ message: "Nous sommes vraiment désolés de perdre un Like !" })
+      )
+      .catch((error) => res.status(400).json({ error }));
+    // Quitar Likes/Dislikes.
+  } else {
+    Salsa.findOne({ _id: req.params.id })
+      .then((sauce) => {
+        if (sauce.usersLiked.includes(req.body.userId)) {
+          Salsa.updateOne(
+            { _id: req.params.id },
+            { $pull: { usersLiked: req.body.userId }, $inc: { likes: -1 } }
+          )
+            .then((sauce) => {
+              res.status(200).json({ message: "Vous avez réduit un Like !" });
+            })
+            .catch((error) => res.status(400).json({ error }));
+        } else if (sauce.usersDisliked.includes(req.body.userId)) {
+          Salsa.updateOne(
+            { _id: req.params.id },
+            {
+              $inc: { dislikes: -1 },
+              $pull: { usersDisliked: req.body.userId },
+            }
+          )
+            .then((sauce) => {
+              res
+                .status(200)
+                .json({ message: "Vous avez réduit un Dislike ! " });
+            })
+            .catch((error) => res.status(400).json({ error }));
+        }
+      })
+      .catch((error) => res.status(400).json({ error }));
+  }
+};
+
 exports.getOneSalsa = (req, res, next) => {
   Salsa.findOne({
     _id: req.params.id,
