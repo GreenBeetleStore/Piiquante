@@ -1,4 +1,15 @@
 .vscode
+
 ImgReadme
+
 package-lock.json
+
 package.json
+
+backend/images
+
+backend/node_modules
+
+backend/package-lock.json
+
+backend/package.json
