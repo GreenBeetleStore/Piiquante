@@ -16,7 +16,7 @@ mongoose
   .then(() => console.log("Connexion à MongoDB réussie !"))
   .catch(() => console.log("Connexion à MongoDB échouée !"));
 
-// Crear la nostra aplicació.
+// Crear la nostra aplicació.   
 const app = express();
 
 // Middleware general, per a tota classe de rutes + configurar CORS.
