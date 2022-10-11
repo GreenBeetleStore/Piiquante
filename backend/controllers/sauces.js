@@ -113,20 +113,20 @@ exports.modifySalsa = (req, res, next) => {
   Salsa.findOne({ _id: req.params.id })
     .then((sauce) => {
       if (sauce.userId != req.auth.userId) {
-        res.status(401).json({ message: "Non-autorisé" });
+        res.status(403).json({ message: "Non-autorisé" });
       } else {
         Salsa.updateOne(
           { _id: req.params.id },
           { ...coeur, _id: req.params.id }
         )
-          .then(() => res.status(200).json({ message: "Sauce modifiée !" }))
+          .then(() => res.status(200).json({ message: "Sauce modifiée avec succès !" }))
           .catch((error) => res.status(401).json({ error }));
       }
     })
     .catch((error) => {
       res.status(400).json({ error });
     });
-
+ 
   const sauce = new Salsa({
     _id: req.params.id,
     userId: req.body.sauce.userId,
@@ -158,7 +158,7 @@ exports.deleteSalsa = (req, res, next) => {
   Salsa.findOne({ _id: req.params.id })
     .then((sauce) => {
       if (sauce.userId != req.auth.userId) {
-        res.status(401).json({ message: "Non autorisé" });
+        res.status(403).json({ message: "Non autorisé" });
       } else {
         const filename = sauce.imageUrl.split("/images/")[1];
         fs.unlink(`images/${filename}`, () => {
