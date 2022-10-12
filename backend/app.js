@@ -1,5 +1,5 @@
 // in backend/app.js
-// Importar Express, mongoose, path, routeurs.
+// Importar Express, mongoose, path, ruters.
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
