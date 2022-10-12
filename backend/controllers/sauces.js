@@ -119,62 +119,74 @@ exports.modifySalsa = (req, res, next) => {
           { _id: req.params.id },
           { ...coeur, _id: req.params.id }
         )
-          .then(() => res.status(200).json({ message: "Sauce modifiée avec succès !" }))
+          .then(() => res.status(200).json({message: "Sauce modifiée avec succès !"}))
           .catch((error) => res.status(401).json({ error }));
       }
     })
     .catch((error) => {
       res.status(400).json({ error });
     });
- 
-  const sauce = new Salsa({
-    _id: req.params.id,
-    userId: req.body.sauce.userId,
-    name: req.body.name,
-    manufacturer: req.body.manufacturer,
-    description: req.body.description,
-    mainPepper: req.body.mainPepper,
-    imageUrl: req.body.imageUrl,
-    heat: req.body.heat,
-    likes: req.body.likes,
-    dislikes: req.body.dislikes,
-    userLiked: req.body.userLiked,
-    userDisliked: req.body.userDisliked,
-  });
-  Salsa.updateOne({ _id: req.params.id }, sauce)
-    .then(() => {
-      res.status(201).json({
-        message: "Salsa mis à jour avec succès !",
-      });
-    })
-    .catch((error) => {
-      res.status(400).json({
-        error: error,
-      });
-    });
+
+  // const sauce = new Salsa({
+  //   _id: req.params.id,
+  //   userId: req.body.sauce.userId,
+  //   name: req.body.name,
+  //   manufacturer: req.body.manufacturer,
+  //   description: req.body.description,
+  //   mainPepper: req.body.mainPepper,
+  //   imageUrl: req.body.imageUrl,
+  //   heat: req.body.heat,
+  //   likes: req.body.likes,
+  //   dislikes: req.body.dislikes,
+  //   userLiked: req.body.userLiked,
+  //   userDisliked: req.body.userDisliked,
+  // });
+  // Salsa.updateOne({ _id: req.params.id }, sauce)
+  //   .then(() => {
+  //     res.status(201).json({
+  //       message: "Salsa mis à jour avec succès !",
+  //     });
+  //   })
+  //   .catch((error) => {
+  //     res.status(400).json({
+  //       error: error,
+  //     });
+  //   });
 };
 
+// exports.deleteSalsa = (req, res, next) => {
+//   Salsa.findOne({ _id: req.params.id })
+//     .then((sauce) => {
+//       if (sauce.userId != req.auth.userId) {
+//         res.status(403).json({ message: "Vous n'êtes pas autorisé à supprimer cette sauce." });
+//       } else {
+//         const filename = sauce.imageUrl.split("/images/")[1];
+//         fs.unlink(`images/${filename}`, () => {
+//           Salsa.deleteOne({ _id: req.params.id });
+//         })
+//           .then(() => {
+//             res.status(200).json({ message: "Sauce supprimée !" });
+//           })
+//           .catch((error) => {
+//             res.status(400).json({ error });
+//           });
+//       }
+//     })
+//     .catch((error) => {
+//       res.status(500).json({ error });
+//     });
+// };
 exports.deleteSalsa = (req, res, next) => {
-  Salsa.findOne({ _id: req.params.id })
-    .then((sauce) => {
-      if (sauce.userId != req.auth.userId) {
-        res.status(403).json({ message: "Non autorisé" });
-      } else {
-        const filename = sauce.imageUrl.split("/images/")[1];
-        fs.unlink(`images/${filename}`, () => {
-          Salsa.deleteOne({ _id: req.params.id });
-        })
-          .then(() => {
-            res.status(200).json({ message: "Sauce supprimée !" });
-          })
-          .catch((error) => {
-            res.status(400).json({ error: error });
-          });
-      }
+  Salsa.findOne({ _id: req.params.id})
+  .then( sauce => {
+    const filename = sauce.imageUrl.split('/images/')[1];
+    fs.unlink(`images/${filename}`, () => {
+      Salsa.deleteOne({ _id: req.params.id })
+      .then(() => res.status(200).json({ message: 'Sauce supprimée avec succès !'}))
+      .catch(error => res.status(400).json({ error }));
     })
-    .catch((error) => {
-      res.status(500).json({ error });
-    });
+  })
+  .catch(error => res.status(500).json({ error }));
 };
 
 exports.getAllSalsa = (req, res, next) => {
