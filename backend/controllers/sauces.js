@@ -24,48 +24,27 @@ exports.createSalsa = (req, res, next) => {
 };
 
 exports.giveLikes = (req, res, next) => {
-  // Like.
-  if (req.body.like === 1) {
-    Salsa.updateOne(
-      { _id: req.params.id },
-      {
-        $inc: { likes: req.body.like++ },
-        $push: { usersLiked: req.body.userId },
-      }
-    )
-      .then((sauce) =>
-        res.status(200).json({ message: "Merci beaucoup pour votre Like !" })
-      )
-      .catch((error) => res.status(400).json({ error }));
-    // Dislike.
-  } else if (req.body.like === -1) {
-    Salsa.updateOne(
-      { _id: req.params.id },
-      {
-        $inc: { dislikes: req.body.like++ * -1 },
-        $push: { userDisliked: req.body.userId },
-      }
-    )
-      .then((sauce) =>
-        res
-          .status(200)
-          .json({ message: "Nous sommes vraiment désolés de perdre un Like !" })
-      )
-      .catch((error) => res.status(400).json({ error }));
-    // Quitar Likes/Dislikes.
-  } else {
+  if (req.body.like === 0) {
     Salsa.findOne({ _id: req.params.id })
       .then((sauce) => {
-        if (sauce.usersLiked.includes(req.body.userId)) {
+        if (sauce.usersLiked.find((user) => user === req.body.userId)) {
           Salsa.updateOne(
             { _id: req.params.id },
-            { $pull: { usersLiked: req.body.userId }, $inc: { likes: -1 } }
+            {
+              $inc: { likes: -1 },
+              $pull: { usersLiked: req.body.userId },
+            }
           )
-            .then((sauce) => {
-              res.status(200).json({ message: "Vous avez réduit un Like !" });
+            .then(() => {
+              res
+                .status(201)
+                .json({ message: "Merci beaucoup pour votre Like !" });
             })
-            .catch((error) => res.status(400).json({ error }));
-        } else if (sauce.usersDisliked.includes(req.body.userId)) {
+            .catch((error) => {
+              res.status(400).json({ error });
+            });
+        }
+        if (sauce.usersDisliked.find((user) => user === req.body.userId)) {
           Salsa.updateOne(
             { _id: req.params.id },
             {
@@ -73,15 +52,51 @@ exports.giveLikes = (req, res, next) => {
               $pull: { usersDisliked: req.body.userId },
             }
           )
-            .then((sauce) => {
+            .then(() => {
               res
-                .status(200)
-                .json({ message: "Vous avez réduit un Dislike ! " });
+                .status(201)
+                .json({
+                  message: "Nous sommes vraiment désolés de perdre un Like !",
+                });
             })
-            .catch((error) => res.status(400).json({ error }));
+            .catch((error) => {
+              res.status(400).json({ error });
+            });
         }
       })
-      .catch((error) => res.status(400).json({ error }));
+      .catch((error) => {
+        res.status(400).json({ error });
+      });
+  }
+  if (req.body.like === 1) {
+    Salsa.updateOne(
+      { _id: req.params.id },
+      {
+        $inc: { likes: 1 },
+        $push: { usersLiked: req.body.userId },
+      }
+    )
+      .then(() => {
+        res.status(201).json({ message: "Vous avez réduit un Like !" });
+      })
+      .catch((error) => {
+        res.status(400).json({ error });
+      });
+  }
+  if (req.body.like === -1) {
+    Salsa.updateOne(
+      { _id: req.params.id },
+      {
+        $inc: { dislikes: 1 },
+        $push: { usersDisliked: req.body.userId },
+      }
+    )
+      .then(() => {
+        res.status(201).json({ message: "Vous avez réduit un Dislike ! " });
+      })
+      .catch((error) => {
+        res.status(400).json({ error });
+      });
   }
 };
 
@@ -119,74 +134,30 @@ exports.modifySalsa = (req, res, next) => {
           { _id: req.params.id },
           { ...coeur, _id: req.params.id }
         )
-          .then(() => res.status(200).json({message: "Sauce modifiée avec succès !"}))
+          .then(() =>
+            res.status(200).json({ message: "Sauce modifiée avec succès !" })
+          )
           .catch((error) => res.status(401).json({ error }));
       }
     })
     .catch((error) => {
       res.status(400).json({ error });
     });
-
-  // const sauce = new Salsa({
-  //   _id: req.params.id,
-  //   userId: req.body.sauce.userId,
-  //   name: req.body.name,
-  //   manufacturer: req.body.manufacturer,
-  //   description: req.body.description,
-  //   mainPepper: req.body.mainPepper,
-  //   imageUrl: req.body.imageUrl,
-  //   heat: req.body.heat,
-  //   likes: req.body.likes,
-  //   dislikes: req.body.dislikes,
-  //   userLiked: req.body.userLiked,
-  //   userDisliked: req.body.userDisliked,
-  // });
-  // Salsa.updateOne({ _id: req.params.id }, sauce)
-  //   .then(() => {
-  //     res.status(201).json({
-  //       message: "Salsa mis à jour avec succès !",
-  //     });
-  //   })
-  //   .catch((error) => {
-  //     res.status(400).json({
-  //       error: error,
-  //     });
-  //   });
 };
 
-// exports.deleteSalsa = (req, res, next) => {
-//   Salsa.findOne({ _id: req.params.id })
-//     .then((sauce) => {
-//       if (sauce.userId != req.auth.userId) {
-//         res.status(403).json({ message: "Vous n'êtes pas autorisé à supprimer cette sauce." });
-//       } else {
-//         const filename = sauce.imageUrl.split("/images/")[1];
-//         fs.unlink(`images/${filename}`, () => {
-//           Salsa.deleteOne({ _id: req.params.id });
-//         })
-//           .then(() => {
-//             res.status(200).json({ message: "Sauce supprimée !" });
-//           })
-//           .catch((error) => {
-//             res.status(400).json({ error });
-//           });
-//       }
-//     })
-//     .catch((error) => {
-//       res.status(500).json({ error });
-//     });
-// };
 exports.deleteSalsa = (req, res, next) => {
-  Salsa.findOne({ _id: req.params.id})
-  .then( sauce => {
-    const filename = sauce.imageUrl.split('/images/')[1];
-    fs.unlink(`images/${filename}`, () => {
-      Salsa.deleteOne({ _id: req.params.id })
-      .then(() => res.status(200).json({ message: 'Sauce supprimée avec succès !'}))
-      .catch(error => res.status(400).json({ error }));
+  Salsa.findOne({ _id: req.params.id })
+    .then((sauce) => {
+      const filename = sauce.imageUrl.split("/images/")[1];
+      fs.unlink(`images/${filename}`, () => {
+        Salsa.deleteOne({ _id: req.params.id })
+          .then(() =>
+            res.status(200).json({ message: "Sauce supprimée avec succès !" })
+          )
+          .catch((error) => res.status(400).json({ error }));
+      });
     })
-  })
-  .catch(error => res.status(500).json({ error }));
+    .catch((error) => res.status(500).json({ error }));
 };
 
 exports.getAllSalsa = (req, res, next) => {
