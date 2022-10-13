@@ -2,6 +2,8 @@
 const http = require("http");
 const app = require("./app");
 
+const mongoose = require("mongoose");
+
 // Importar dotenv.
 const dotenv = require("dotenv").config();
 
@@ -19,9 +21,9 @@ const normalizePort = (val) => {
 const port = normalizePort(process.env.PORT);
 app.set(port);
 
-const APP_SECRET = process.env.APP_SECRET;
+const CLAU_SECRETA = process.env.CLAU_SECRETA;
 app.get("/", (req, res, next) => {
-  return res.send(APP_SECRET); // "CLAU_SECRETA_ALEAT0RIA_PER_ESMIC0LAR_C0NTRASENYA"
+  return res.send(process.env.CLAU_SECRETA);
 });
 
 const errorHandler = (error) => {
