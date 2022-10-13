@@ -124,7 +124,7 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
         <p>· Importer le package dans notre contrôleur utilisateur.</p>
         <p>· L'utiliser dans la fonction <b>login.</b></p>
         <p>· Utiliser la fonction <b>sign</b> de <b>jsonwebtoken</b> pour chiffrer un nouveau <i>token</i>.</p>
-        <p>· Utiliser une chaîne secrète pour crypter le <i>token</i>; <b>CLAU_SECRETA_ALEAT0RIA_PER_ESMIC0LAR_C0NTRASENYA</b> .</p>
+        <p>· Utiliser une chaîne secrète pour crypter le <i>token</i>; <b>Comprend la phrase secrète sous la forme d'une variable d'environnement.</b> .</p>
         <p>· Définir la durée de validité du <i>token</i> à 24h.</p>
         <p>. Envoyer le <i>token</i> au front-end avec la réponse.</p>
 

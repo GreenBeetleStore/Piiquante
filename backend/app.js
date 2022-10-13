@@ -1,8 +1,10 @@
 // in backend/app.js
-// Importar: Express, mongoose, path, ruters.
+// Importar: Express, mongoose, path, rutas, morgan, dotenv.
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
+const morgan = require("morgan");
+const dotenv = require("dotenv").config();
 
 // Importar les rutes.
 const saucesRoutes = require("./routes/sauces");
@@ -35,6 +37,9 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json());
+
+// Registre de les sol·licituds y les respostes amb morgan.
+app.use(morgan("dev"));
 
 // Rutes.
 app.use("/api/sauces", saucesRoutes);

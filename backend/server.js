@@ -3,7 +3,7 @@ const http = require("http");
 const app = require("./app");
 
 // Importar dotenv.
-const dotenv = require("dotenv");
+const dotenv = require("dotenv").config();
 
 const normalizePort = (val) => {
   const port = parseInt(val, 10);
@@ -19,6 +19,10 @@ const normalizePort = (val) => {
 const port = normalizePort(process.env.PORT);
 app.set(port);
 
+const APP_SECRET = process.env.APP_SECRET;
+app.get("/", (req, res, next) => {
+  return res.send(APP_SECRET); // "CLAU_SECRETA_ALEAT0RIA_PER_ESMIC0LAR_C0NTRASENYA"
+});
 
 const errorHandler = (error) => {
   if (error.syscall !== "listen") {
@@ -51,5 +55,3 @@ server.on("listening", () => {
 });
 
 server.listen(port);
-
-
