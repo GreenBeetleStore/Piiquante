@@ -2,9 +2,8 @@
 const http = require("http");
 const app = require("./app");
 
+// Importar mongoose, dotenv.
 const mongoose = require("mongoose");
-
-// Importar dotenv.
 const dotenv = require("dotenv").config();
 
 const normalizePort = (val) => {
@@ -57,3 +56,4 @@ server.on("listening", () => {
 });
 
 server.listen(port);
+ 

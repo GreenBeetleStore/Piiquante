@@ -39,8 +39,7 @@ exports.login = (req, res, next) => {
           res.status(200).json({
             userId: user._id,
             token: jwt.sign(
-              { userId: user._id },
-              "CLAU_SECRETA_ALEAT0RIA_PER_ESMIC0LAR_C0NTRASENYA",
+              { userId: user._id }, process.env.CLAU_SECRETA,
               { expiresIn: "24h" }
             ),
           });
