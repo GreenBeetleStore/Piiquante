@@ -5,6 +5,7 @@ const app = require("./app");
 // Importar mongoose, dotenv.
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
+const mongoMask = require('mongo-mask');
 
 const normalizePort = (val) => {
   const port = parseInt(val, 10);

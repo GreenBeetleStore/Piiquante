@@ -2,6 +2,7 @@
 // Importar: Express, mongoose, path, rutas, morgan, dotenv.
 const express = require("express");
 const mongoose = require("mongoose");
+const mongoMask = require('mongo-mask');
 const path = require("path");
 const morgan = require("morgan");
 const dotenv = require("dotenv").config();
