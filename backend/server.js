@@ -2,10 +2,10 @@
 const http = require("http");
 const app = require("./app");
 
-// Importar mongoose, dotenv.
+// Importar mongoose, dotenv, mongoMask.
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
-const mongoMask = require('mongo-mask');
+// const mongoMask = require('mongo-mask');
 
 const normalizePort = (val) => {
   const port = parseInt(val, 10);
