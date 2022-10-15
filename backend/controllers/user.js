@@ -10,18 +10,17 @@ const dotenv = require("dotenv").config();
 //Importar crypto per encriptar email.
 const cryptojs = require("crypto-js");
 
-
 exports.signup = (req, res, next) => {
   // Encriptar email.
-  // const emailCrypt = cryptojs
-  //   .HmacSHA256(req.body.email, `${process.env.CLAU_LIAME}`)
-  //   .toString();
-  // Hash de contrassenya
+  const emailCrypt = cryptojs
+    .HmacSHA256(req.body.email, `${process.env.CLAU_LIAME}`)
+    .toString();
+  // Hash de contrassenya.
   bcrypt
     .hash(req.body.password, 10)
     .then((hash) => {
       const user = new User({
-        email: req.body.email,      // emailCrypt,
+        email: emailCrypt, // req.body.email, === // emailCrypt,
         password: hash,
       });
       user
@@ -33,24 +32,33 @@ exports.signup = (req, res, next) => {
 };
 
 exports.login = (req, res, next) => {
-  User.findOne({ email: req.body.email })
+  // Encriptar email amb el matix métode que signup.
+  const emailCrypt = cryptojs
+    .HmacSHA256(req.body.email, `${process.env.CLAU_LIAME}`)
+    .toString();
+  // Trobar email.
+  User.findOne({ email: emailCrypt }) // req.body.email, === // emailCrypt,
     .then((user) => {
+      // Si l'email no existeix.
       if (!user) {
         return res
           .status(401)
-          .json({ message: "Paire login/mot de passe incorrecte" });
+          .json({ message: "Ce mail n'existe pas !" });
       }
+      // Comparar contrasenya amb bcrypt per a la validació.
       bcrypt
         .compare(req.body.password, user.password)
         .then((valid) => {
+          // Si la contrasenya no és correcta.
           if (!valid) {
             return res
               .status(401)
-              .json({ message: "Paire login/mot de passe incorrecte" });
+              .json({ message: "Ce n'est pas le bon mot de passe !" });
           }
+          // Si tot és correcte aplicar el token "Bearer Token".
           res.status(200).json({
             userId: user._id,
-            token: jwt.sign({ userId: user._id }, process.env.CLAU_SECRETA, {
+            token: jwt.sign({ userId: user._id }, process.env.PUBLIC_BAIT, {
               expiresIn: "24h",
             }),
           });

@@ -1,5 +1,6 @@
 // in backend/models/User.js
 const mongoose = require("mongoose");
+// Validar email únic per evitar repetició.
 const uniqueValidator = require('mongoose-unique-validator');
 
 const userSchema = mongoose.Schema({
