@@ -7,9 +7,9 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 // const mongoMask = require('mongo-mask');
 
+// PORT de connexió backend.
 const normalizePort = (val) => {
   const port = parseInt(val, 10);
-
   if (isNaN(port)) {
     return val;
   }
@@ -21,11 +21,13 @@ const normalizePort = (val) => {
 const port = normalizePort(process.env.PORT);
 app.set(port);
 
-const CLAU_SECRETA = process.env.CLAU_SECRETA;
+// Recuperar la contrasenya Hash.
+const PUBLIC_BAIT = process.env.PUBLIC_BAIT;
 app.get("/", (req, res, next) => {
-  return res.send(process.env.CLAU_SECRETA);
+  return res.send(process.env.PUBLIC_BAIT);
 });
-
+ 
+// Insruccions del Server.
 const errorHandler = (error) => {
   if (error.syscall !== "listen") {
     throw error;

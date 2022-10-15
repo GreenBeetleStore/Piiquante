@@ -13,7 +13,7 @@ const cryptojs = require("crypto-js");
 exports.signup = (req, res, next) => {
   // Encriptar email.
   const emailCrypt = cryptojs
-    .HmacSHA256(req.body.email, `${process.env.CLAU_LIAME}`)
+    .HmacSHA256(req.body.email, process.env.CLAU_LIAME)
     .toString();
   // Hash de contrassenya.
   bcrypt
@@ -25,7 +25,7 @@ exports.signup = (req, res, next) => {
       });
       user
         .save()
-        .then(() => res.status(201).json({ message: "Utilisateur créé !" }))
+        .then(() => res.status(201).json({ message: "Utilisateur enregistré !" }))
         .catch((error) => res.status(400).json({ error }));
     })
     .catch((error) => res.status(500).json({ error }));
@@ -34,7 +34,7 @@ exports.signup = (req, res, next) => {
 exports.login = (req, res, next) => {
   // Encriptar email amb el matix métode que signup.
   const emailCrypt = cryptojs
-    .HmacSHA256(req.body.email, `${process.env.CLAU_LIAME}`)
+    .HmacSHA256(req.body.email, process.env.CLAU_LIAME)
     .toString();
   // Trobar email.
   User.findOne({ email: emailCrypt }) // req.body.email, === // emailCrypt,

@@ -31,7 +31,7 @@ module.exports = (req, res, next) => {
   } else {
     return res.status(400).json({
       error:
-        "Mot de passe faible, non accepté ! : " +
+        "Mot de passe faible, non accepté ! : " +
         passwordSchema.validate("req.body.password"),
     });
   }

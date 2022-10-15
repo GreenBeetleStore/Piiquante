@@ -39,7 +39,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-// Registre de les sol·licituds y les respostes amb morgan.
+// Registre/Visor de les sol·licituds y les respostes amb morgan.
 app.use(morgan("dev"));
 
 // Rutes.
