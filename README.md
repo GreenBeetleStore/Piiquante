@@ -7,7 +7,8 @@
 <h2>Configuration de l'environnement de travail et initialisation du projet.</h2>
 
 <p><b>Cloner dans le dossier "frontend" le code fourni pour initialiser ce projet depuis ce repository : </b></p>
-    https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6   <br><br>
+<p> https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6 </p>
+   <br><br>
 <p><b>Initialiser un dépôt Git del projecte.</b></p>
 <p><b>Note de l'auteur: </b></p> 
 <p>· Dans cette documentation, vous pouvez voir que certaines informations sont ouvertes, par exemple les ports utilisés (frontend et backend) dans l'application. D'autres informations seront masquées pour des raisons de protection de l'application, telles que : noms d'utilisateur, e-mails, mots de passe, accès à des tiers, etc...</p>
@@ -24,12 +25,12 @@
 
 <p>. Pour terminer la configuration de notre environnement de développement, à partir de la racine du projet, créer un autre dossier appelé "backend".<br>
 . Ouvrir un autre terminal et aller dans ce dossier "cd backend", pour initialiser le projet en exécutant "npm init". L'unique chose à changer c'est "server.js" comme point d'entrée. <br>
-        <p><b>Note de l'auteur: </b></p> 
-        <p>· Pour démarrer le serveur, j'utilise la commande $ nodemon server dans mon terminal depuis le back-end.</p>
-        <p>· Pour l'instant nous allons suivre les étapes de développement pour y arriver.</p>
-        <p>· Lisez la suite et commençons à construire le serveur pour avoir le back-end.</p><br>
-
 <p>· Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p><br>
+
+<p><b>Note de l'auteur: </b></p> 
+<p>· Pour démarrer le serveur, j'utilise la commande $ nodemon server dans mon terminal depuis le back-end.</p>
+<p>· Pour l'instant nous allons suivre les étapes de développement pour y arriver.</p>
+<p>· Lisez la suite et commençons à construire le serveur pour avoir le back-end.</p><br>
 
 <h2>Construire le serveur.</h2>
 
