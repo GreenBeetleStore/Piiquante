@@ -35,7 +35,7 @@
 <p>. Créer le premier serveur Node avec le fichier "server.js" dans le dossier backend.</p>
 
 <p><b>Démarrer le server.</b></p>
-        <p>· Importer le package http depuis Node.</p>
+        <p>· Importer le package <b>"http"</b> depuis Node.</p>
         <p>· Créer le corps du serveur.</p>
         <p>· Déclarer le port de connexion "3000" et l'alternative.</p>
 
@@ -44,6 +44,7 @@
         <img src = "./imgReadme/postman.png"/>
 
 <p><b>Installer nodemon</b></p>
+<img src = "./imgReadme/nodemonio-ar21.svg"/>
         <p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
         <p>· Désormais, au lieu d'utiliser "node server" pour démarrer le serveur, utiliser "nodemon server" .</p>
 
