@@ -171,13 +171,13 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
                 <p>- d'ajouter les headers mentionnés aux requêtes envoyées vers notre API (<b>Origin , X-Requested-With</b> , etc.) ;</p>
                 <p>- d'envoyer des requêtes avec les méthodes mentionnées ( <b>GET</b> ,<b>POST</b> , etc.).
 <p>· Le <i>middleware</i> ne prend pas d'adresse en premier paramètre, afin de s'appliquer à toutes les routes.
-
+<br>
 <h2>Créer une route POST.</h2>
 
 <p><b>Recevoir des articles de l'app front-end.</b></p>
         <p>· Utiliser un middleware très simple disponible par le framework Express, qui prend toutes les requêtes qui ont comme Content-Type <b>application/json</b> et met à disposition leur <b>body</b> sur l'objet req.</p>
         <p>· Placer la route POST au-dessus du middleware pour les requêtes GET, car la logique GET interceptera actuellement toutes les requêtes envoyées à votre endpoint <b>/api/sauces</b> , étant donné qu'on ne lui a pas indiqué de verbe spécifique.
-
+<br>
 <h2>Créer un schéma de données.</h2>
 
 <p>· L'un des avantages que nous avons à utiliser Mongoose pour gérer notre base de données MongoDB est que nous pouvons implémenter des schémas de données stricts, qui permettent de rendre notre application plus robuste. Commençons par créer un schéma Salsa (« varieté de sauce ») pour tout objet mis dans notre application.</p>
@@ -188,7 +188,7 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· Pas besoin de mettre un champ pour l'Id puisqu'il est automatiquement généré par Mongoose.</p>
         <p>· La méthode  Schema  de Mongoose vous permet de créer un schéma de données pour votre base de données MongoDB.</p>
         <p>· La méthode  model  transforme ce modèle en un modèle utilisable.</p>
-
+<br>
 <h2>Enregistrer et récupérer des données.</h2>
 
 <p>Commencer par implémenter correctement la route POST.</p>
@@ -215,11 +215,10 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· Ensuite utiliser la méthode <b>findOne()</b> dans notre modèle <b>Salsa</b> pour trouver le <b>Salsa</b> unique ayant le même <b>_id</b> que le paramètre de la requête ;</p>
         <p>· Ce <b>Salsa</b> est ensuite retourné dans une Promise et envoyé au front-end ;</p>
         <p>· Si aucun <b>Salsa</b> n'est trouvé ou si un erreur se produit, cést envoyé une erreur 404 au front-end, avec l'erreur générée;</p>
-
-
+<br>
 <h2>Modifiez et supprimez des données.</h2>
 
-<p><b>Mettre à jour un Thing existant.</b></p>
+<p><b>Mettre à jour un Salsa existant.</b></p>
 <p>· Ajouter, juste en dessous de la route POST, une autre route qui répondra aux enquêtes PUT.</p>
         <p>· On exploit la méthode <b>updateOne()</b> dans le modèle <b>Salsa</b>. Cela permet de mettre à jour le <b>Salsa</b> qui correspond à l'objet qu'on passe comme premier argument. On utilise aussi le paramètre <b>id</b> passé dans la demande, et il est remplacé par le <b>Salsa</b> passé comme second argument..</p>
 
@@ -229,9 +228,9 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 <p>· La méthode <b>deleteOne()</b> de notre modèle fonctionne comme <b>findOne()</b> et <b>updateOne()</b> dans le sens où nous lui passons un objet correspondant au document à supprimer. Nous envoyons ensuite une réponse de réussite ou d'échec au front-end.</p>
 
 <h3>CRUD complet: Create, Read, Update, Delete.</h3>
-
+<br>
 <h2>Optimiser la structure du back-end.</h2>
 
-<p><b>· Configurez le routage.</b></p>
-<p><b>· Configurez les contrôleurs.</b></p>
+<p><b>· Configurer le routage.</b></p>
+<p><b>· Configurer les contrôleurs.</b></p>
 <p>· Voir ce chapitre: https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb/6466459-optimisez-la-structure-du-back-end </p>
