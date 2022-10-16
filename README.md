@@ -28,23 +28,25 @@
         <p>· Pour démarrer le serveur, j'utilise la commande $ nodemon server dans mon terminal depuis le back-end.</p>
         <p>· Pour l'instant nous allons suivre les étapes de développement pour y arriver.</p>
         <p>· Lisez la suite et commençons à construire le serveur pour avoir le back-end.</p><br>
-. Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p><br>
+· Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p><br>
 
 <h2>Construire le serveur.</h2>
 
 <p>. Créer le premier serveur Node avec le fichier "server.js" dans le dossier backend.</p>
 
 <p><b>Démarrer le server.</b></p>
-        <p>· Importer le package <b>"http"</b> depuis Node.</p>
-        <p>· Créer le corps du serveur.</p>
-        <p>· Déclarer le port de connexion "3000" et l'alternative.</p>
+<p>· Importer le package <b>"http"</b> depuis Node.</p>
+<p>· Créer le corps du serveur.</p>
+<p>· Déclarer le port de connexion "3000" et l'alternative.</p>
 
 <p><b>Recommandation:</b></p>
         <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
-        <img src = "./imgReadme/postman.png"/>
+
+<img src = "./imgReadme/postman.png"/><br>
 
 <p><b>Installer nodemon</b></p>
-<img src = "./imgReadme/nodemonio-ar21.png"/>
+<img src = "./imgReadme/nodemonio-ar21.png"/><br>
+
         <p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
         <p>· Désormais, au lieu d'utiliser "node server" pour démarrer le serveur, utiliser "nodemon server" .</p>
 
