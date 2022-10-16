@@ -13,13 +13,12 @@
 <p><b>Note: </b></p> 
 <p>· Dans cette documentation, vous pouvez voir que certaines informations sont ouvertes, par exemple les ports utilisés (frontend et backend) dans l'application. D'autres informations seront masquées pour des raisons de protection de l'application, telles que : noms d'utilisateur, e-mails, mots de passe, accès à des tiers, etc...</p>
 <p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes OWASP et RGPD.</p><br>
-<P>· Pour obtenir de bons résultats dans ce projet, je vous recommande de suivre ce cours: 
+<P>· Pour obtenir de bons résultats dans ce projet, je vous recommande de suivre ce cours: </p>
 <img src = "./imgReadme/OpenClassroom_LOGO.png"/><br>
-Passez au Full Stack avec Node.js, Express et MongoDB.</p>
-https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb 
+<a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Passez au Full Stack avec Node.js, Express et MongoDB. </a>
 
 <h3>Commençons... !</h3>
-<p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement à partir du front-end avec "npm run start", et on peut maintenant ouvrir la page http://localhost:4200 dans le navigateur.</p>
+<p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement à partir du front-end avec "npm run start", et on peut maintenant ouvrir la page <a href= "http://localhost:4200">http://localhost:4200</a> dans le navigateur.</p>
 
 <img src = "./imgReadme/Inici_00.png"/>
 
@@ -233,4 +232,4 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 
 <p><b>· Configurer le routage.</b></p>
 <p><b>· Configurer les contrôleurs.</b></p>
-<p>· Voir ce chapitre: <a> https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb/6466459-optimisez-la-structure-du-back-end/> </a></p>
+<p>· Voir ce chapitre:  https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb/6466459-optimisez-la-structure-du-back-end/> </p>
