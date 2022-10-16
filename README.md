@@ -50,6 +50,7 @@
 
 <h2>Créer l'aplication Express.</h2>
 
+<img src = "./imgReadme/express-js.png"/>
 <p>L'utilisation du framework Express simplifie les tâches pour coder des serveurs web en Node, en nous permettant de déployer nos API beaucoup plus rapidement.</p>
 
 <p><b>Installer Express.</b></p>
