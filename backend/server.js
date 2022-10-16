@@ -2,9 +2,17 @@
 const http = require("http");
 const app = require("./app");
 
-// Importar mongoose, dotenv, mongoMask.
+// Importar mongoose, dotenv, helmet.
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
+const helmet = require("helmet");
+
+// Utilitzar el middleware Helmet.
+app.use(
+  helmet({
+    referrerPolicy: { policy: "no-referrer" },
+  })
+);
 
 // PORT de connexió backend.
 const normalizePort = (val) => {
@@ -25,7 +33,7 @@ const PUBLIC_BAIT = process.env.PUBLIC_BAIT;
 app.get("/", (req, res, next) => {
   return res.send(process.env.PUBLIC_BAIT);
 });
- 
+
 // Insruccions del Server.
 const errorHandler = (error) => {
   if (error.syscall !== "listen") {
@@ -58,4 +66,3 @@ server.on("listening", () => {
 });
 
 server.listen(port);
- 
