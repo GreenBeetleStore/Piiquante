@@ -9,11 +9,16 @@
 <p><b>Cloner dans le dossier "frontend" le code fourni pour initialiser ce projet depuis ce repository : </b></p>
     https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6   <br><br>
 <p><b>Initialiser un dépôt Git del projecte.</b></p>
-<p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement avec "npm run start", et on peut maintenant ouvrir la page http://localhost:4200 dans le navigateur.</p>
+<p><b>Note de l'auteur: </b></p> 
+<p>· Dans cette documentation, vous pouvez voir que certaines informations sont ouvertes, par exemple les ports utilisés (frontend et backend) dans l'application. D'autres informations seront masquées pour des raisons de protection de l'application, telles que : noms d'utilisateur, e-mails, mots de passe, accès à des tiers, etc...</p>
+<p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes OWASP et RGPD.</p><br>
+<h3>Commençons... !</h3><br>
+<p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement à partir du front-end avec "npm run start", et on peut maintenant ouvrir la page http://localhost:4200 dans le navigateur.</p>
 
 <img src = "./imgReadme/Inici_00.png"/>
 
 <p><b>Il est important d'avoir un terminal en cours d'exécution "npm run start" pendant que nous travaillons pour pouvoir tester le code en temps réel.</b></p>
+
 <br>
 <p>. N'oublier pas de créer un fichier ".gitignore" contenant la ligne "node_modules" pour éviter surcharger le dépôt.</p>
 
@@ -28,7 +33,7 @@
 <p><b>Démarrer le server.</b></p>
         <p>· Importer le package http depuis Node.</p>
         <p>· Créer le corps du serveur.</p>
-        <p>· Déclarer le port de connexion"3000" et l'alternative.</p>
+        <p>· Déclarer le port de connexion "3000" et l'alternative.</p>
 
 <p><b>Recommandation:</b></p>
         <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
