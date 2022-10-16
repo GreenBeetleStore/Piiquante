@@ -1,8 +1,5 @@
 # Piiquante <br>
-<style>
-        background-image: "./imgReadme/charcoal-84670_1920.jpg";
 
-</style>
 <img src = "./imgReadme/Portada-Piiquante-charcoal-84670_1920.png"/>
 
 <h1>P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.</h1>
@@ -14,7 +11,7 @@
 <p><b>Initialiser un dépôt Git del projecte.</b></p>
 <p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement avec "npm run start", et on peut maintenant ouvrir la page http://localhost:4200 dans le navigateur.</p>
 
-<img src = "./ImgReadme/Inici_01.png"/>
+<img src = "./imgReadme/Inici_00.png"/>
 
 <p><b>Il est important d'avoir un terminal en cours d'exécution "npm run start" pendant que nous travaillons pour pouvoir tester le code en temps réel.</b></p>
 <br>
