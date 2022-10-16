@@ -10,25 +10,38 @@ const dotenv = require("dotenv").config();
 //Importar crypto per encriptar email.
 const cryptojs = require("crypto-js");
 
+// Validació d'email Regex.
+emailRegex = (email) => {
+  return /^[a-zA-Z0-9-çÇñÑ·.!#&'*+\/?^_`{|}~-]+[@]{1}[a-zA-Z0-9-çÇñÑ·!#&'*+\/?^_`{|}~-]+[.]{1}[a-zA-Z0-9-]{2,10}$/gm.test(
+    email
+  );
+};
+
 exports.signup = (req, res, next) => {
-  // Encriptar email.
-  const emailCrypt = cryptojs
-    .HmacSHA256(req.body.email, process.env.CLAU_LIAME)
-    .toString();
-  // Hash de contrassenya.
-  bcrypt
-    .hash(req.body.password, 10)
-    .then((hash) => {
-      const user = new User({
-        email: emailCrypt, // req.body.email, === // emailCrypt,
-        password: hash,
-      });
-      user
-        .save()
-        .then(() => res.status(201).json({ message: "Utilisateur enregistré !" }))
-        .catch((error) => res.status(400).json({ error }));
-    })
-    .catch((error) => res.status(500).json({ error }));
+  if (emailRegex(req.body.email)) {
+    // Encriptar email.
+    const emailCrypt = cryptojs
+      .HmacSHA256(req.body.email, process.env.CLAU_LIAME)
+      .toString();
+    // Hash de contrassenya.
+    bcrypt
+      .hash(req.body.password, 10)
+      .then((hash) => {
+        const user = new User({
+          email: emailCrypt, // req.body.email, === // emailCrypt,
+          password: hash,
+        });
+        user
+          .save()
+          .then(() =>
+            res.status(201).json({ message: "Utilisateur enregistré !" })
+          )
+          .catch((error) => res.status(400).json({ error }));
+      })
+      .catch((error) => res.status(500).json({ error }));
+  } else {
+    res.status(401).json({ message: "Format d'email invalide !" });
+  }
 };
 
 exports.login = (req, res, next) => {
@@ -41,9 +54,7 @@ exports.login = (req, res, next) => {
     .then((user) => {
       // Si l'email no existeix.
       if (!user) {
-        return res
-          .status(401)
-          .json({ message: "Ce mail n'existe pas !" });
+        return res.status(401).json({ message: "Ce mail n'existe pas !" });
       }
       // Comparar contrasenya amb bcrypt per a la validació.
       bcrypt

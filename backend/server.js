@@ -5,7 +5,6 @@ const app = require("./app");
 // Importar mongoose, dotenv, mongoMask.
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
-// const mongoMask = require('mongo-mask');
 
 // PORT de connexió backend.
 const normalizePort = (val) => {
