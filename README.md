@@ -8,9 +8,9 @@
 
 <p><b>Cloner dans le dossier "frontend" le code fourni pour initialiser ce projet depuis ce repository : </b></p>
 <p> https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6 </p>
-   <br><br>
+   <br>
 <p><b>Initialiser un dépôt Git del projecte.</b></p>
-<p><b>Note de l'auteur: </b></p> 
+<p><b>Note: </b></p> 
 <p>· Dans cette documentation, vous pouvez voir que certaines informations sont ouvertes, par exemple les ports utilisés (frontend et backend) dans l'application. D'autres informations seront masquées pour des raisons de protection de l'application, telles que : noms d'utilisateur, e-mails, mots de passe, accès à des tiers, etc...</p>
 <p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes OWASP et RGPD.</p><br>
 <P>· Pour obtenir de bons résultats dans ce projet, je vous recommande de suivre ce cours: 
@@ -18,7 +18,7 @@
 Passez au Full Stack avec Node.js, Express et MongoDB.</p><br>
 https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb 
 
-<h3>Commençons... !</h3><br>
+<h3>Commençons... !</h3>
 <p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement à partir du front-end avec "npm run start", et on peut maintenant ouvrir la page http://localhost:4200 dans le navigateur.</p>
 
 <img src = "./imgReadme/Inici_00.png"/>
@@ -32,7 +32,7 @@ https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-
 . Ouvrir un autre terminal et aller dans ce dossier "cd backend", pour initialiser le projet en exécutant "npm init". L'unique chose à changer c'est "server.js" comme point d'entrée. <br>
 <p>· Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p><br>
 
-<p><b>Note de l'auteur: </b></p> 
+<p><b>Note: </b></p> 
 <p>· Pour démarrer le serveur, j'utilise la commande "nodemon server" dans mon terminal depuis le back-end.</p>
 <p>· Pour l'instant nous allons suivre les étapes de développement pour y arriver.</p>
 <p>· Lisez la suite et commençons à construire le serveur pour avoir le back-end.</p><br>
