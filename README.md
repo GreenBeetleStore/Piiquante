@@ -24,7 +24,11 @@
 
 <p>. Pour terminer la configuration de notre environnement de développement, à partir de la racine du projet, créer un autre dossier appelé "backend".<br>
 . Ouvrir un autre terminal et aller dans ce dossier "cd backend", pour initialiser le projet en exécutant "npm init". L'unique chose à changer c'est "server.js" comme point d'entrée. <br>
-. Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p>
+        <p><b>Note de l'auteur: </b></p> 
+        <p>· Pour démarrer le serveur, j'utilise la commande $ nodemon server dans mon terminal depuis le back-end.</p>
+        <p>· Pour l'instant nous allons suivre les étapes de développement pour y arriver.</p>
+        <p>· Lisez la suite et commençons à construire le serveur pour avoir le back-end.</p><br>
+. Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p><br>
 
 <h2>Construire le serveur.</h2>
 
