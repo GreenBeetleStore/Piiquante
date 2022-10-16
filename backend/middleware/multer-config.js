@@ -1,12 +1,12 @@
 // in backend/middleware/multer-config.js
 const multer = require("multer");
-
+// Esquema de conversió de les imatges.
 const MIME_TYPES = {
   "image/jpg": "jpg",
   "image/jpeg": "jpg",
   "image/png": "png",
 };
-
+// Enregistrar les imatges aplicant el canvi de nom de fitxer i data timing.
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
     callback(null, "images");

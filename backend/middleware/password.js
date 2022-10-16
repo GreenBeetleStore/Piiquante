@@ -4,7 +4,6 @@ const passwordValidator = require("password-validator");
 
 // Crear un esquema de reforç de la contrasenya.
 const passwordSchema = new passwordValidator();
-
 // Format a seguir per crear una contrasenya.
 passwordSchema
   .is()

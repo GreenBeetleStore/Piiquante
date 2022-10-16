@@ -1,13 +1,13 @@
 // in backend/controllers/user.js
 // Importar bcrypt per al Hash de contrassenya.
 const bcrypt = require("bcrypt");
-//Importar jsonwebtoken per la creació del TOKEN.
+// Importar jsonwebtoken per la creació del TOKEN.
 const jwt = require("jsonwebtoken");
-//Importar el model d'Usuari.
+// Importar el model d'Usuari.
 const User = require("../models/User");
 // Importar dotenv.
 const dotenv = require("dotenv").config();
-//Importar crypto per encriptar email.
+// Importar crypto per encriptar email.
 const cryptojs = require("crypto-js");
 
 // Validació d'email Regex.
