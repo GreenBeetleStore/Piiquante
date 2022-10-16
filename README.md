@@ -1,5 +1,8 @@
 # Piiquante <br>
+<style>
+        background-image: "./imgReadme/charcoal-84670_1920.jpg";
 
+</style>
 <img src = "./imgReadme/Portada-Piiquante-charcoal-84670_1920.png"/>
 
 <h1>P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.</h1>
