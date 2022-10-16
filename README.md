@@ -233,4 +233,4 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 
 <p><b>· Configurer le routage.</b></p>
 <p><b>· Configurer les contrôleurs.</b></p>
-<p>· Voir ce chapitre: https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb/6466459-optimisez-la-structure-du-back-end </p>
+<p>· Voir ce chapitre: <a> https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb/6466459-optimisez-la-structure-du-back-end/> </a></p>
