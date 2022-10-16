@@ -15,7 +15,7 @@
 <p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes OWASP et RGPD.</p><br>
 <P>· Pour obtenir de bons résultats dans ce projet, je vous recommande de suivre ce cours: 
 <img src = "./imgReadme/OpenClassroom_LOGO.png"/><br>
-Passez au Full Stack avec Node.js, Express et MongoDB.</p><br>
+Passez au Full Stack avec Node.js, Express et MongoDB.</p>
 https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb 
 
 <h3>Commençons... !</h3>
@@ -24,7 +24,6 @@ https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-
 <img src = "./imgReadme/Inici_00.png"/>
 
 <p><b>Il est important d'avoir un terminal en cours d'exécution "npm run start" pendant que nous travaillons pour pouvoir tester le code en temps réel.</b></p>
-
 <br>
 <p>. N'oublier pas de créer un fichier ".gitignore" contenant la ligne "node_modules" pour éviter surcharger le dépôt.</p>
 
@@ -48,8 +47,8 @@ https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-
 
 <p><b>Recommandation:</b></p>
 <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
-<img src = "./imgReadme/postman.png"/><br>
-
+<img src = "./imgReadme/postman.png"/>
+<br>
 <p><b>Installer nodemon</b></p>
 <img src = "./imgReadme/nodemonio-ar21.png"/><br>
 
@@ -87,8 +86,7 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
 <p><b>Configurer MongoDB Atlas.</b></p>
 <p>· Créer un compte gratuit sur le site web de MongoDB.</p>
 <p>· Créer un <i>cluster</i> configuré avec l'<b>option AWS</b> et <b>uniquement les options gratuites</b>.</p>
-<p>· Ajouter un utilisateur disposant de la capacité de lecture et d'écriture pour n'importe quelle base de données, dans l'onglet <b>Database Access</b>.<br>
-N'oublier pas de bien noter le nom d'utilisateur et le mot de passe pour connecter l'API au <i>cluster</i>.</p>
+<p>· Ajouter un utilisateur disposant de la capacité de lecture et d'écriture pour n'importe quelle base de données, dans l'onglet <b>Database Access</b>. N'oublier pas de bien noter le nom d'utilisateur et le mot de passe pour connecter l'API au <i>cluster</i>.</p>
 <p>· Dans l'onglet <b>Network Access</b> ajouter une adresse IP "ADD IP ADDRESS", choisir l'option "ALLOW ACCESS FROM ANYWHERE" qui permet à tout utilisateur d'accéder à l'API. Une entrée de liste blanche sera créée avec l'IP "0.0.0.0".</p>
 
 <p><b>Connecter l'API au <i>cluster</i> MongoDB.</b></p>
@@ -98,7 +96,7 @@ N'oublier pas de bien noter le nom d'utilisateur et le mot de passe pour connect
 mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority</p>
 <p>· Revenir au projet et, à partir du backend, exécuter "npm install mongoose" pour installer le package Mongoose.</p>
 <p>· Importer et connecter mongoose dans app.js.</p>
-
+<br>
 <h2>Préparer la base de données pour les informations d'authentification.</h2>
 
 <p>· Étant donné que l'authentification doit être implémentée dans l'API, par e-mail et mot de passe, le mot de passe de chaque utilisateur doit être stocké sous la forme d'un <b>hash</b> ou d'une chaîne chiffrée.</p>
@@ -123,8 +121,8 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>. Importer le model User dans le controlleur.</p>
         <p>· Importer également bcrypt.</p>
         <p>· Dans la fonction signup, hacher le mot de pass et avec le <b>hash</b> créé par bcrypt, s'enregistre l'utilisateur "user" dans la base de donnés.</p>
-
-<h2>Vérifiez l'identification d'un utilisateur.</h2>
+<br>
+<h2>Vérifier l'identification d'un utilisateur.</h2>
 
 <p><b>Implémenter la fonction login.</b></p>
         <p>· Dans cette fonction, les informations d'identification de l'utilisateur sont vérifiées, le user_id est transmis à partir de la base de données ainsi qu'un token web JSON signé(contenant également l'_id de l'utilisateur).</p>
@@ -134,20 +132,20 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· Pour comparer le mot de passe saisi par l'utilisateur avec le <b>hash</b> enregistré dans la base de données, c'est utilisée la fonction "compare" de "bcrypt".</p>
         <p>     - S'ils ne correspondent pas, nous renvoyons une erreur <b>"401 Unauthorized"</b> avec le même message que lorsque l’utilisateur n’a pas été trouvé, afin de ne pas laisser quelqu’un vérifier si une autre personne est inscrite sur notre site.</p>
         <p>     - S'ils correspondent, les informations d'identification de notre utilisateur sont valides. Dans ce cas, nous renvoyons une réponse <b>"200</b> contenant l'ID utilisateur et un token. Ce token est une chaîne générique pour l'instant, mais nous allons le modifier et le crypter dans le prochain chapitre.</p>
-
+<br>
 <h2>Créer des tokens d'authentification.</h2>
 
 <p>Les <i>tokens</i> d'authentification permettent aux utilisateurs de se connecter une seule fois à leur compte. Lorsqu'ils se connectent, ils reçoivent leur <i>token</i> et le transmettent immédiatement dans chaque requête, ce qui permet au back-end de vérifier que la requête est authentifiée.</p>
 
 
-        <p>· Pour créer et vérifier les <i>tokens</i> d'authentification, nous avons besoin d'un nouveau package, installez-le avec la commande suivante : "npm install --save jsonwebtoken".</p>
+<p>· Pour créer et vérifier les <i>tokens</i> d'authentification, nous avons besoin d'un nouveau package, installez-le avec la commande suivante : "npm install --save jsonwebtoken".</p>
         <p>· Importer le package dans notre contrôleur utilisateur.</p>
         <p>· L'utiliser dans la fonction <b>login.</b></p>
         <p>· Utiliser la fonction <b>sign</b> de <b>jsonwebtoken</b> pour chiffrer un nouveau <i>token</i>.</p>
         <p>· Utiliser une chaîne secrète pour crypter le <i>token</i>; <b>Comprend la phrase secrète sous la forme d'une variable d'environnement.</b> .</p>
-        <p>· Définir la durée de validité du <i>token</i> à 24h.</p>
+        <p>· Définir la durée de validité du <i>token</i>; j'ai choisi, à 24h.</p>
         <p>. Envoyer le <i>token</i> au front-end avec la réponse.</p>
-
+<br>
 <h2>Configurer le middleware d'authentification.</h2>
 
 <p>· Créer un dossier middleware et un fichier auth.js à l'intérieur.</p>
@@ -159,15 +157,15 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         · Dans le cas contraire, tout fonctionne et notre utilisateur est authentifié. Nous passons à l'exécution à l'aide de la fonction <b>next()</b>.</p>
 
 <p>· Maintenant, nous devons appliquer ce <i>middleware</i> à nos routes <b>stuff</b>, qui sont celles à protéger. Dans notre routeur <b>stuff</b>, nous importons notre <i>middleware</i> et le passons comme argument aux routes à protéger.</p>
-
+<br>
 <h2>Créer une route GET.</h2>
 
 <p><b>Remettre le catalogue de sauces.</b></p>
-        <p>· Passer a l'argument supplémentaire du métode <b>get</b> un <i>string</i> qui correspond à la route où i faut enregistrer cet élément de <i>middleware</i>. La route sera <b>http://localhost:3000/api/sauces (aussi appelée <i>endpoint</i>)</b>.
+        <p>· Passer a l'argument supplémentaire du métode <b>get</b> un <i>string</i> qui correspond à la route où i faut enregistrer cet élément de <i>middleware</i>. La route sera <b>http://localhost:3000/api/sauces</b> (aussi appelée <i>endpoint</i>).
         <p>· Créer dans ce <i>middleware</i> un groupe d'articles avec le schéma de donnés comme demandé par le front-end. Puis envoyer ces articles sous le format JSON, avec un code (200) pou une demande réussie.</p>
 
 <p><b>Traiter les Erreurs de CORS.</b></p>
-<p>· CORS signifie « <b>Cross Origin Resource Sharing</b> ». Il s'agit d'un système de sécurité qui, par défaut, bloque les appels HTTP entre des serveurs <b><i>différents</b></i>, ce qui empêche donc les requêtes malveillantes d'accéder à des ressources sensibles. Dans notre cas, nous avons deux origines : <b>localhost:3000</b> et <b>localhost:4200</b> , et nous souhaiterions qu'elles puissent communiquer entre elles. Pour cela, nous devons ajouter des headers à nos objets <b>response</b>.</p>
+<p>· CORS signifie « <b>Cross Origin Resource Sharing</b> ». Il s'agit d'un système de sécurité qui, par défaut, bloque les appels HTTP entre des serveurs <b><i>différents</i></b>, ce qui empêche donc les requêtes malveillantes d'accéder à des ressources sensibles. Dans notre cas, nous avons deux origines : <b>localhost:3000</b> et <b>localhost:4200</b> , et nous souhaiterions qu'elles puissent communiquer entre elles. Pour cela, nous devons ajouter des headers à nos objets <b>response</b>.</p>
         <p>· Dans <b>app.js</b>, ajouter un middelware avec trois headers qui permettron.<p>
                 <p>- d'accéder à notre API depuis n'importe quelle origine ( <b>'*'</b> ) ;</p>
                 <p>- d'ajouter les headers mentionnés aux requêtes envoyées vers notre API (<b>Origin , X-Requested-With</b> , etc.) ;</p>
