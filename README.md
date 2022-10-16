@@ -28,7 +28,8 @@
         <p>· Pour démarrer le serveur, j'utilise la commande $ nodemon server dans mon terminal depuis le back-end.</p>
         <p>· Pour l'instant nous allons suivre les étapes de développement pour y arriver.</p>
         <p>· Lisez la suite et commençons à construire le serveur pour avoir le back-end.</p><br>
-· Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p><br>
+
+<p>· Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p><br>
 
 <h2>Construire le serveur.</h2>
 
@@ -40,15 +41,14 @@
 <p>· Déclarer le port de connexion "3000" et l'alternative.</p>
 
 <p><b>Recommandation:</b></p>
-        <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
-
+<p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
 <img src = "./imgReadme/postman.png"/><br>
 
 <p><b>Installer nodemon</b></p>
 <img src = "./imgReadme/nodemonio-ar21.png"/><br>
 
-        <p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
-        <p>· Désormais, au lieu d'utiliser "node server" pour démarrer le serveur, utiliser "nodemon server" .</p>
+<p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
+<p>· Désormais, au lieu d'utiliser "node server" pour démarrer le serveur, utiliser "nodemon server" .</p>
 
 <p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuallement.</p>
 
@@ -58,19 +58,19 @@
 <p>L'utilisation du framework Express simplifie les tâches pour coder des serveurs web en Node, en nous permettant de déployer nos API beaucoup plus rapidement.</p>
 
 <p><b>Installer Express.</b></p>
-        <p>· Exécuter la commande "npm install express --save" à partir du dossier backend.</p>
-        <p>· Créer un fichier "app.js" pour placer l'aplication Express.</p>
-        <p>· Exécuter l'application Express sur le serveur Node.</p>
+<p>· Exécuter la commande "npm install express --save" à partir du dossier backend.</p>
+<p>· Créer un fichier "app.js" pour placer l'aplication Express.</p>
+<p>· Exécuter l'application Express sur le serveur Node.</p>
 
 <p><b>Préparer des middlewares.</b></p>
-    <p>· Chaque élément de middleware reçoit les objets <b>request</b> et <b>response</b>, peut les lire, les analyser et les manipuler, le cas échéant. <br> 
-    · Le middleware Express reçoit également la méthode <b>next</b> , qui permet à chaque middleware de passer l'exécution au middleware suivant. <br>
-    · Cette application Express contiendra huit éléments de middleware.</p>
+<p>· Chaque élément de middleware reçoit les objets <b>request</b> et <b>response</b>, peut les lire, les analyser et les manipuler, le cas échéant. <br> 
+· Le middleware Express reçoit également la méthode <b>next</b> , qui permet à chaque middleware de passer l'exécution au middleware suivant. <br>
+· Cette application Express contiendra huit éléments de middleware.</p>
 
 <p><b>Améliorer server.js.</b></p>
-    <p>· La fonction normalizePort renvoie un port valide, qu'il soit fourni sous la forme d'un numéro ou d'une chaîne ;<br>
-    · La fonction errorHandler recherche les différentes erreurs et les gère de manière appropriée. Elle est ensuite enregistrée dans le serveur ;<br>
-    · Un écouteur d'évènements est également enregistré, consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.</p>
+<p>· La fonction normalizePort renvoie un port valide, qu'il soit fourni sous la forme d'un numéro ou d'une chaîne ;<br>
+· La fonction errorHandler recherche les différentes erreurs et les gère de manière appropriée. Elle est ensuite enregistrée dans le serveur ;<br>
+· Un écouteur d'évènements est également enregistré, consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.</p>
 
 <h2>Configurez votre base de données. MongoDB</h2>
 
@@ -79,19 +79,19 @@ Les données sont stockées comme des collections de documents individuels décr
 Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'on veut où l'on veut", et il n'y a pas de relation concrète entre les différentes données.</p>
 
 <p><b>Configurer MongoDB Atlas.</b></p>
-        <p>· Créer un compte gratuit sur le site web de MongoDB.</p>
-        <p>· Créer un <i>cluster</i> configuré avec l'<b>option AWS</b> et <b>uniquement les options gratuites</b>.</p>
-        <p>· Ajouter un utilisateur disposant de la capacité de lecture et d'écriture pour n'importe quelle base de données, dans l'onglet <b>Database Access</b>.<br>
-        N'oublier pas de bien noter le nom d'utilisateur et le mot de passe pour connecter l'API au <i>cluster</i>.</p>
-        <p>· Dans l'onglet <b>Network Access</b> ajouter une adresse IP "ADD IP ADDRESS", choisir l'option "ALLOW ACCESS FROM ANYWHERE" qui permet à tout utilisateur d'accéder à l'API. Une entrée de liste blanche sera créée avec l'IP "0.0.0.0".</p>
+<p>· Créer un compte gratuit sur le site web de MongoDB.</p>
+<p>· Créer un <i>cluster</i> configuré avec l'<b>option AWS</b> et <b>uniquement les options gratuites</b>.</p>
+<p>· Ajouter un utilisateur disposant de la capacité de lecture et d'écriture pour n'importe quelle base de données, dans l'onglet <b>Database Access</b>.<br>
+N'oublier pas de bien noter le nom d'utilisateur et le mot de passe pour connecter l'API au <i>cluster</i>.</p>
+<p>· Dans l'onglet <b>Network Access</b> ajouter une adresse IP "ADD IP ADDRESS", choisir l'option "ALLOW ACCESS FROM ANYWHERE" qui permet à tout utilisateur d'accéder à l'API. Une entrée de liste blanche sera créée avec l'IP "0.0.0.0".</p>
 
 <p><b>Connecter l'API au <i>cluster</i> MongoDB.</b></p>
-        <p>· Dans l'onglet <b>Atlas</b> cliquer sur <b>Connect</b> et choisir <b>Connect your application</b>.
-        <p>· Sélectionner la version la plus récente de Node.js, et <b>Connection String Only</b>.</p>
-        <p>· Copier la chaine de caractères du code retournée. Exemple: <br>
-        mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority</p>
-        <p>· Revenir au projet et, à partir du backend, exécuter "npm install mongoose" pour installer le package Mongoose.</p>
-        <p>· Importer et connecter mongoose dans app.js.</p>
+<p>· Dans l'onglet <b>Atlas</b> cliquer sur <b>Connect</b> et choisir <b>Connect your application</b>.
+<p>· Sélectionner la version la plus récente de Node.js, et <b>Connection String Only</b>.</p>
+<p>· Copier la chaine de caractères du code retournée. Exemple: <br>
+mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority</p>
+<p>· Revenir au projet et, à partir du backend, exécuter "npm install mongoose" pour installer le package Mongoose.</p>
+<p>· Importer et connecter mongoose dans app.js.</p>
 
 <h2>Préparer la base de données pour les informations d'authentification.</h2>
 
