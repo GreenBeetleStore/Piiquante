@@ -44,7 +44,7 @@
         <img src = "./imgReadme/postman.png"/>
 
 <p><b>Installer nodemon</b></p>
-<img src = "./imgReadme/nodemonio-ar21.svg"/>
+<img src = "./imgReadme/nodemonio-ar21.png"/>
         <p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
         <p>· Désormais, au lieu d'utiliser "node server" pour démarrer le serveur, utiliser "nodemon server" .</p>
 
