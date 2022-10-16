@@ -7,7 +7,7 @@
 <h2>Configuration de l'environnement de travail et initialisation du projet.</h2>
 
 <p><b>Cloner dans le dossier "frontend" le code fourni pour initialiser ce projet depuis ce repository : </b></p>
-<p> https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6 </p>
+<a href= "https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">Web Developer P6</a>
    <br>
 <p><b>Initialiser un dépôt Git del projecte.</b></p>
 <p><b>Note: </b></p> 
