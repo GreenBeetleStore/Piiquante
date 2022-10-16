@@ -28,7 +28,7 @@
 <p>· Un fichier "package.json" est généré dans lequel les détails de tous les packages "npm" qui seront utilisés dans le projet seront enregistrés.</p><br>
 
 <p><b>Note de l'auteur: </b></p> 
-<p>· Pour démarrer le serveur, j'utilise la commande $ nodemon server dans mon terminal depuis le back-end.</p>
+<p>· Pour démarrer le serveur, j'utilise la commande "nodemon server" dans mon terminal depuis le back-end.</p>
 <p>· Pour l'instant nous allons suivre les étapes de développement pour y arriver.</p>
 <p>· Lisez la suite et commençons à construire le serveur pour avoir le back-end.</p><br>
 
@@ -55,10 +55,10 @@
 
 <h2>Créer l'aplication Express.</h2>
 
-<img src = "./imgReadme/express-js.png"/>
 <p>L'utilisation du framework Express simplifie les tâches pour coder des serveurs web en Node, en nous permettant de déployer nos API beaucoup plus rapidement.</p>
 
 <p><b>Installer Express.</b></p>
+<img src = "./imgReadme/express-js.png"/>
 <p>· Exécuter la commande "npm install express --save" à partir du dossier backend.</p>
 <p>· Créer un fichier "app.js" pour placer l'aplication Express.</p>
 <p>· Exécuter l'application Express sur le serveur Node.</p>
@@ -74,7 +74,7 @@
 · Un écouteur d'évènements est également enregistré, consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.</p>
 
 <h2>Configurez votre base de données. MongoDB</h2>
-
+<img src = "./imgReadme/mongodb.png"/>
 <p>MongoDB est une base de données NoSQL. Cela signifie que l'on ne peut pas utiliser SQL pour communiquer avec. <br>
 Les données sont stockées comme des collections de documents individuels décrits en JSON "JavaScript Object Notation". <br>
 Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'on veut où l'on veut", et il n'y a pas de relation concrète entre les différentes données.</p>
