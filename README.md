@@ -41,6 +41,7 @@
 
 <p><b>Recommandation:</b></p>
         <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
+        <img src = "./imgReadme/postman.png"/>
 
 <p><b>Installer nodemon</b></p>
         <p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
