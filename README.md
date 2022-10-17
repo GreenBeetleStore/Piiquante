@@ -229,6 +229,7 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 <p>· La méthode <b>deleteOne()</b> de notre modèle fonctionne comme <b>findOne()</b> et <b>updateOne()</b> dans le sens où nous lui passons un objet correspondant au document à supprimer. Nous envoyons ensuite une réponse de réussite ou d'échec au front-end.</p>
 
 <h3>CRUD complet: Create, Read, Update, Delete.</h3>
+<img src = "./imgReadme/Page_HTML.png"/>
 <br>
 <h2>Optimiser la structure du back-end.</h2>
 
