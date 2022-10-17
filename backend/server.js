@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const helmet = require("helmet");
 
-// Utilitzar el middleware Helmet per capçaleres.
+// Utilitzar el middleware Helmet per protegir capçaleres.
 app.use(
   helmet({
     referrerPolicy: { policy: "no-referrer" },
