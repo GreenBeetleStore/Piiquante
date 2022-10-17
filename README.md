@@ -78,7 +78,7 @@
 · La fonction errorHandler recherche les différentes erreurs et les gère de manière appropriée. Elle est ensuite enregistrée dans le serveur ;<br>
 · Un écouteur d'évènements est également enregistré, consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.</p>
 
-<h2>Configurez votre base de données. MongoDB</h2>
+<h2>Configurer notre base de données. MongoDB</h2>
 <img src = "./imgReadme/mongodb.png"/>
 <p>MongoDB est une base de données NoSQL. Cela signifie que l'on ne peut pas utiliser SQL pour communiquer avec. <br>
 Les données sont stockées comme des collections de documents individuels décrits en JSON "JavaScript Object Notation". <br>
