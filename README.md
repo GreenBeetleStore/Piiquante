@@ -71,7 +71,7 @@
 <p><b>Préparer des middlewares.</b></p>
 <p>· Chaque élément de middleware reçoit les objets <b>request</b> et <b>response</b>, peut les lire, les analyser et les manipuler, le cas échéant. <br> 
 · Le middleware Express reçoit également la méthode <b>next</b> , qui permet à chaque middleware de passer l'exécution au middleware suivant. <br>
-· Cette application Express contiendra huit éléments de middleware.</p>
+· Cette application Express contiendra huit éléments middleware de base pour la gestion des sauces et des utilisateurs.</p>
 
 <p><b>Améliorer server.js.</b></p>
 <p>· La fonction normalizePort renvoie un port valide, qu'il soit fourni sous la forme d'un numéro ou d'une chaîne ;<br>
