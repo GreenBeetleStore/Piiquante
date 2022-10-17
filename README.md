@@ -9,7 +9,7 @@
 <p><b>Cloner dans le dossier "frontend" le code fourni pour initialiser ce projet depuis ce repository : </b></p>
 <a href= "https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">Web Developer P6</a>
    <br>
-<p><b>Initialiser un dépôt Git del projecte.</b></p>
+
 <p><b>Note: </b></p> 
 <p>· Dans cette documentation, vous pouvez voir que certaines informations sont ouvertes, par exemple les ports utilisés (frontend et backend) dans l'application. D'autres informations seront masquées pour des raisons de protection de l'application, telles que : noms d'utilisateur, e-mails, mots de passe, accès à des tiers, etc...</p>
 <p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes OWASP et RGPD.</p><br>
@@ -18,6 +18,7 @@
 <a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Passez au Full Stack avec Node.js, Express et MongoDB. </a>
 
 <h3>Commençons... !</h3>
+<p><b>Initialiser un dépôt Git del projecte.</b></p>
 <p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement à partir du front-end avec "npm run start", et on peut maintenant ouvrir la page <a href= "http://localhost:4200">http://localhost:4200</a> dans le navigateur.</p>
 
 <img src = "./imgReadme/Inici_00.png"/>
