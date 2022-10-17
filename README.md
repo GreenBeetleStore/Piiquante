@@ -13,6 +13,7 @@
 <p><b>Note: </b></p> 
 <p>· Dans cette documentation, vous pouvez voir que certaines informations sont ouvertes, par exemple les ports utilisés (frontend et backend) dans l'application. D'autres informations seront masquées pour des raisons de protection de l'application, telles que : noms d'utilisateur, e-mails, mots de passe, accès à des tiers, etc...</p>
 <p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes OWASP et RGPD.</p><br>
+<img src = "./imgReadme/grup_sec00.png"/>
 <P>· Pour obtenir de bons résultats dans ce projet, je vous recommande de suivre ce cours: </p>
 <img src = "./imgReadme/OpenClassroom_LOGO.png"/><br>
 <a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Passez au Full Stack avec Node.js, Express et MongoDB. </a>
