@@ -107,11 +107,11 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 
 ### Recommandation:
 <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
-<img src = "./imgReadme/postman.png"/>
+<a href="https://www.postman.com/"><img src = "./imgReadme/postman.png"/></a>
 <br>
 
 ### Installer nodemon
-<img src = "./imgReadme/nodemonio-ar21.png"/><br>
+<a href="https://nodemon.io/"><img src = "./imgReadme/nodemonio-ar21.png"/></a><br>
 
 <p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
 <p>· Désormais, au lieu d'utiliser "node server" pour démarrer le serveur, utiliser "nodemon server" .</p>
@@ -123,7 +123,7 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 <p>L'utilisation du framework Express simplifie les tâches pour coder des serveurs web en Node, en nous permettant de déployer nos API beaucoup plus rapidement.</p>
 
 ### Installer Express.
-<img src = "./imgReadme/express-js.png"/>
+<a href="https://expressjs.com/"><img src = "./imgReadme/express-js.png"/></a>
 <p>· Exécuter la commande "npm install express --save" à partir du dossier backend.</p>
 <p>· Créer un fichier "app.js" pour placer l'application Express.</p>
 <p>· Exécuter l'application Express sur le serveur Node.</p>
