@@ -62,7 +62,7 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 
 =========================================================================================
 
-<h2>Configuration de l'environnement de travail et initialisation du projet.</h2>
+## Configuration de l'environnement de travail et initialisation du projet.
 
 <p><b>Cloner dans le dossier "frontend" le code fourni pour initialiser ce projet depuis ce repository : </b></p>
 <a href= "https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">Web Developer P6</a><br>
@@ -76,7 +76,7 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 <img src = "./imgReadme/OpenClassroom_LOGO.png"/><br>
 <a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Passez au Full Stack avec Node.js, Express et MongoDB. </a>
 
-<h3>Commençons... !</h3>
+### Commençons... !
 <p><b>Initialiser un dépôt Git del projet.</b></p>
 <p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement à partir du front-end avec "npm run start", et on peut maintenant ouvrir la page <a href= "http://localhost:4200">http://localhost:4200</a> dans le navigateur.</p>
 
@@ -95,7 +95,7 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 <p>· Pour l'instant nous allons suivre les étapes de développement pour y arriver.</p>
 <p>· Lisez la suite et commençons à construire le serveur pour avoir le back-end.</p><br>
 
-<h2>Construire le serveur.</h2>
+## Construire le serveur.
 
 <p>. Créer le premier serveur Node avec le fichier "server.js" dans le dossier backend.</p>
 
@@ -116,7 +116,7 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 
 <p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuellement.</p>
 
-<h2>Créer l'application Express.</h2>
+## Créer l'application Express.
 
 <p>L'utilisation du framework Express simplifie les tâches pour coder des serveurs web en Node, en nous permettant de déployer nos API beaucoup plus rapidement.</p>
 
@@ -136,7 +136,7 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 · La fonction errorHandler recherche les différentes erreurs et les gère de manière appropriée. Elle est ensuite enregistrée dans le serveur ;<br>
 · Un écouteur d'évènements est également enregistré, consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.</p>
 
-<h2>Configurer notre base de données. MongoDB</h2>
+## Configurer notre base de données. MongoDB
 <img src = "./imgReadme/mongodb.png"/>
 <p>MongoDB est une base de données NoSQL. Cela signifie que l'on ne peut pas utiliser SQL pour communiquer avec. <br>
 Les données sont stockées comme des collections de documents individuels décrits en JSON "JavaScript Object Notation". <br>
@@ -156,7 +156,8 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 <p>· Revenir au projet et, à partir du backend, exécuter "npm install mongoose" pour installer le package Mongoose.</p>
 <p>· Importer et connecter mongoose dans app.js.</p>
 <br>
-<h2>Préparer la base de données pour les informations d'authentification.</h2>
+
+## Préparer la base de données pour les informations d'authentification.
 
 <p>· Étant donné que l'authentification doit être implémentée dans l'API, par e-mail et mot de passe, le mot de passe de chaque utilisateur doit être stocké sous la forme d'un <b>hash</b> ou d'une chaîne chiffrée.</p>
 
@@ -165,7 +166,7 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· On peut avoir des erreurs illisibles de la part de mongoose, pour le résoudre; installer un package de validation pour pré-valider les informations avant de les enregistrer. Exécuter la commande suivante à partir du backend "npm install --save mongoose-unique-validator".</p>
         <p>· Ajouter et appliquer ce validateur en tant que plug-in au schéma.</p>
 
-<h2>Créer des utilisateurs.</h2>
+## Créer des utilisateurs.
 
 <p><b>Configurer les routes d'authentification.</b></p>
         <p>· On besoin un contrôleur et un routeur, puis enregistrer ce routeur dans l'application Express.</p>
@@ -179,9 +180,9 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· Commencer par installer le package de chiffrement <b>bcrypt</b> pour la fonction <b>signup</b><br> "npm install --save bcrypt".</p>
         <p>. Importer le model User dans le controller.</p>
         <p>· Importer également bcrypt.</p>
-        <p>· Dans la fonction signup, hacher le mot de pass et avec le <b>hash</b> créé par bcrypt, s'enregistre l'utilisateur "user" dans la base de donnés.</p>
-<br>
-<h2>Vérifier l'identification d'un utilisateur.</h2>
+        <p>· Dans la fonction signup, hacher le mot de pass et avec le <b>hash</b> créé par bcrypt, s'enregistre l'utilisateur "user" dans la base de donnés.</p><br>
+
+## Vérifier l'identification d'un utilisateur.
 
 <p><b>Implémenter la fonction login.</b></p>
         <p>· Dans cette fonction, les informations d'identification de l'utilisateur sont vérifiées, le user_id est transmis à partir de la base de données ainsi qu'un token web JSON signé(contenant également l'_id de l'utilisateur).</p>
@@ -190,9 +191,9 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>     - Si l'e-mail correspond à un utilisateur existant, continue.</p>
         <p>· Pour comparer le mot de passe saisi par l'utilisateur avec le <b>hash</b> enregistré dans la base de données, c'est utilisée la fonction "compare" de "bcrypt".</p>
         <p>     - S'ils ne correspondent pas, nous renvoyons une erreur <b>"401 Unauthorized"</b> avec le même message que lorsque l’utilisateur n’a pas été trouvé, afin de ne pas laisser quelqu’un vérifier si une autre personne est inscrite sur notre site.</p>
-        <p>     - S'ils correspondent, les informations d'identification de notre utilisateur sont valides. Dans ce cas, nous renvoyons une réponse <b>"200</b> contenant l'ID utilisateur et un token. Ce token est une chaîne générique pour l'instant, mais nous allons le modifier et le crypter dans le prochain chapitre.</p>
-<br>
-<h2>Créer des tokens d'authentification.</h2>
+        <p>     - S'ils correspondent, les informations d'identification de notre utilisateur sont valides. Dans ce cas, nous renvoyons une réponse <b>"200</b> contenant l'ID utilisateur et un token. Ce token est une chaîne générique pour l'instant, mais nous allons le modifier et le crypter dans le prochain chapitre.</p><br>
+
+## Créer des tokens d'authentification.
 
 <p>Les <i>tokens</i> d'authentification permettent aux utilisateurs de se connecter une seule fois à leur compte. Lorsqu'ils se connectent, ils reçoivent leur <i>token</i> et le transmettent immédiatement dans chaque requête, ce qui permet au back-end de vérifier que la requête est authentifiée.</p>
 
@@ -202,9 +203,9 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· Utiliser la fonction <b>sign</b> de <b>jsonwebtoken</b> pour chiffrer un nouveau <i>token</i>.</p>
         <p>· Utiliser une chaîne secrète pour crypter le <i>token</i>; <b>Comprend la phrase secrète sous la forme d'une variable d'environnement.</b> .</p>
         <p>· Définir la durée de validité du <i>token</i>; j'ai choisi, à 24h.</p>
-        <p>. Envoyer le <i>token</i> au front-end avec la réponse.</p>
-<br>
-<h2>Configurer le middleware d'authentification.</h2>
+        <p>. Envoyer le <i>token</i> au front-end avec la réponse.</p><br>
+
+## Configurer le middleware d'authentification.
 
 <p>· Créer un dossier middleware et un fichier auth.js à l'intérieur.</p>
 <p>· Dans ce middleware :<br>
@@ -214,9 +215,9 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         · Nous extrayons l'ID utilisateur de notre <i>token</i> et le rajoutons à l’objet <b>Request</b> afin que nos différentes routes puissent l’exploiter.<br>
         · Dans le cas contraire, tout fonctionne et notre utilisateur est authentifié. Nous passons à l'exécution à l'aide de la fonction <b>next()</b>.</p>
 
-<p>· Maintenant, nous devons appliquer ce <i>middleware</i> à nos routes <b>stuff</b>, qui sont celles à protéger. Dans notre routeur <b>stuff</b>, nous importons notre <i>middleware</i> et le passons comme argument aux routes à protéger.</p>
-<br>
-<h2>Créer une route GET.</h2>
+<p>· Maintenant, nous devons appliquer ce <i>middleware</i> à nos routes <b>stuff</b>, qui sont celles à protéger. Dans notre routeur <b>stuff</b>, nous importons notre <i>middleware</i> et le passons comme argument aux routes à protéger.</p><br>
+
+## Créer une route GET.
 
 <p><b>Remettre le catalogue de sauces.</b></p>
         <p>· Passer a l'argument supplémentaire du méthode <b>get</b> un <i>string</i> qui correspond à la route où i faut enregistrer cet élément de <i>middleware</i>. La route sera <b>http://localhost:3000/api/sauces</b> (aussi appelée <i>endpoint</i>).
@@ -234,9 +235,9 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 
 <p><b>Recevoir des articles de l'app front-end.</b></p>
         <p>· Utiliser un middleware très simple disponible par le framework Express, qui prend toutes les requêtes qui ont comme Content-Type <b>application/json</b> et met à disposition leur <b>body</b> sur l'objet req.</p>
-        <p>· Placer la route POST au-dessus du middleware pour les requêtes GET, car la logique GET interceptera actuellement toutes les requêtes envoyées à votre endpoint <b>/api/sauces</b> , étant donné qu'on ne lui a pas indiqué de verbe spécifique.
-<br>
-<h2>Créer un schéma de données.</h2>
+        <p>· Placer la route POST au-dessus du middleware pour les requêtes GET, car la logique GET interceptera actuellement toutes les requêtes envoyées à votre endpoint <b>/api/sauces</b> , étant donné qu'on ne lui a pas indiqué de verbe spécifique.</p><br>
+
+## Créer un schéma de données.
 
 <p>· L'un des avantages que nous avons à utiliser Mongoose pour gérer notre base de données MongoDB est que nous pouvons implémenter des schémas de données stricts, qui permettent de rendre notre application plus robuste. Commençons par créer un schéma Salsa (« varieté de sauce ») pour tout objet mis dans notre application.</p>
 
@@ -245,9 +246,9 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· Salsa.js crée un schema de donnés qui contient tous les champs qu'on besoin pour chaque Salsa, indiquant leur type et leur caractère (required ou pas).</p>
         <p>· Pas besoin de mettre un champ pour l'Id puisqu'il est automatiquement généré par Mongoose.</p>
         <p>· La méthode  Schema  de Mongoose vous permet de créer un schéma de données pour votre base de données MongoDB.</p>
-        <p>· La méthode  model  transforme ce modèle en un modèle utilisable.</p>
-<br>
-<h2>Enregistrer et récupérer des données.</h2>
+        <p>· La méthode  model  transforme ce modèle en un modèle utilisable.</p><br>
+
+## Enregistrer et récupérer des données.
 
 <p>Commencer par implémenter correctement la route POST.</p>
 
@@ -272,9 +273,9 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· Utilisation des deux-points <b>:</b> en face du segment dynamique de la route pour la rendre accessible en tant que paramètre;</p>
         <p>· Ensuite utiliser la méthode <b>findOne()</b> dans notre modèle <b>Salsa</b> pour trouver le <b>Salsa</b> unique ayant le même <b>_id</b> que le paramètre de la requête ;</p>
         <p>· Ce <b>Salsa</b> est ensuite retourné dans une Promise et envoyé au front-end ;</p>
-        <p>· Si aucun <b>Salsa</b> n'est trouvé ou si un erreur se produit, c'est envoyé une erreur <b>404</b> au front-end, avec l'erreur générée;</p>
-<br>
-<h2>Modifiez et supprimez des données.</h2>
+        <p>· Si aucun <b>Salsa</b> n'est trouvé ou si un erreur se produit, c'est envoyé une erreur <b>404</b> au front-end, avec l'erreur générée;</p><br>
+
+## Modifiez et supprimez des données.
 
 <p><b>Mettre à jour un Salsa existant.</b></p>
 <p>· Ajouter, juste en dessous de la route POST, une autre route qui répondra aux enquêtes PUT.</p>
@@ -285,10 +286,13 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 <p><b>Suppression d'un Salsa.</b></p>
 <p>· La méthode <b>deleteOne()</b> de notre modèle fonctionne comme <b>findOne()</b> et <b>updateOne()</b> dans le sens où nous lui passons un objet correspondant au document à supprimer. Nous envoyons ensuite une réponse de réussite ou d'échec au front-end.</p>
 
-<h3>CRUD complet: Create, Read, Update, Delete.</h3>
+### CRUD complet: Create, Read, Update, Delete.
+
+<img src = "./imgReadme/Page040.png"/>
 <img src = "./imgReadme/Page_HTML.png"/>
 <br>
-<h2>Optimiser la structure du back-end.</h2>
+
+## Optimiser la structure du back-end.
 
 <p><b>· Configurer le routage.</b></p>
 <p><b>· Configurer les contrôleurs.</b></p>
