@@ -139,7 +139,7 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 · Un écouteur d'évènements est également enregistré, consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.</p>
 
 ## Configurer notre base de données. MongoDB
-<img src = "./imgReadme/mongodb.png"/>
+<a href="https://www.mongodb.com/"><img src = "./imgReadme/mongodb.png"/></a>
 <p>MongoDB est une base de données NoSQL. Cela signifie que l'on ne peut pas utiliser SQL pour communiquer avec. <br>
 Les données sont stockées comme des collections de documents individuels décrits en JSON "JavaScript Object Notation". <br>
 Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'on veut où l'on veut", et il n'y a pas de relation concrète entre les différentes données.</p>
