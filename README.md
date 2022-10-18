@@ -7,7 +7,7 @@
 
 · Vous trouverez ci-dessous la présentation de l'exposition du projet.
 
-https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing
+<a href="https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing">Presentation HotTakes</a>
 
 ## Technologies
 
@@ -73,8 +73,8 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 <p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes OWASP et RGPD.</p><br>
 <img src = "./imgReadme/grup_sec00.png"/>
 <p>· Pour obtenir de bons résultats dans ce projet, je vous recommande de suivre ce cours: </p>
+<a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Passez au Full Stack avec Node.js, Express et MongoDB. By : </a>
 <img src = "./imgReadme/OpenClassroom_LOGO.png"/><br>
-<a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Passez au Full Stack avec Node.js, Express et MongoDB. </a>
 
 ### Commençons... !
 
