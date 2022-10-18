@@ -56,7 +56,7 @@ const port = normalizePort(process.env.PORT);
 app.set(port);
 
 // Recuperar la contrasenya Hash.
-const CLAU_SECRETA = process.env.PUBLIC_BAIT;
+const PUBLIC_BAIT = process.env.PUBLIC_BAIT;
 app.get("/", (req, res, next) => {
   return res.send(process.env.PUBLIC_BAIT);
 });
