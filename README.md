@@ -54,13 +54,19 @@ Run <mark>ng e2e</mark> to execute the end-to-end tests via a platform of your c
 ## Further help
 To get more help on the Angular CLI use <mark>ng help</mark> or go check out the <a href="https://angular.io/cli"> Angular CLI Overview and Command Reference</a> page.
 
-=============================================================================================
+<img src = "./imgReadme/Page02.png"/>
+<img src = "./imgReadme/Page08.png"/>
+<img src = "./imgReadme/Page09.png"/>
+<img src = "./imgReadme/Page010.png"/>
+<img src = "./imgReadme/Page022.png"/>
+
+=========================================================================================
 
 <h2>Configuration de l'environnement de travail et initialisation du projet.</h2>
 
 <p><b>Cloner dans le dossier "frontend" le code fourni pour initialiser ce projet depuis ce repository : </b></p>
-<a href= "https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">Web Developer P6</a>
-   <br>
+<a href= "https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">Web Developer P6</a><br>
+
 
 <p><b>Note: </b></p> 
 <p>· Dans cette documentation, vous pouvez voir que certaines informations sont ouvertes, par exemple les ports utilisés (frontend et backend) dans l'application. D'autres informations seront masquées pour des raisons de protection de l'application, telles que : noms d'utilisateur, e-mails, mots de passe, accès à des tiers, etc...</p>
