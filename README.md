@@ -104,7 +104,7 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 
 <p><b>Créer un modèle de données.</b></p>
         <p>· Afin qu'il n'y ait pas d'e-mails en double entre différents utilisateurs, nous utiliserons dans le schéma le mot-clé <b>"unique"</b> pour l'attribut d'e-mail.</p>
-        <p>· On peut avoir des erreurs ilisibles de la part de mongoose, pour le résoudre; installer un package de validation pour prévalider les informations avant de les enregistrer. Exécuter la commande suivante à partir du backend "npm install --save mongoose-unique-validator".</p>
+        <p>· On peut avoir des erreurs illisibles de la part de mongoose, pour le résoudre; installer un package de validation pour prévalider les informations avant de les enregistrer. Exécuter la commande suivante à partir du backend "npm install --save mongoose-unique-validator".</p>
         <p>· Ajouter et appliquer ce validateur en tant que plug-in au schéma.</p>
 
 <h2>Créer des utilisateurs.</h2>
