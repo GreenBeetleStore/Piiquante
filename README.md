@@ -107,12 +107,14 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 
 ### Recommandation:
 <p>· Utiliser l'outil de test Postman pour effectuer les requêtes vers l'URL: http://localhost:3000 .</p>
+<br>
 <a href="https://www.postman.com/"><img src = "./imgReadme/postman.png"/></a>
 <br>
 
 ### Installer nodemon
+<br>
 <a href="https://nodemon.io/"><img src = "./imgReadme/nodemonio-ar21.png"/></a><br>
-
+<br>
 <p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
 <p>· Désormais, au lieu d'utiliser "node server" pour démarrer le serveur, utiliser "nodemon server" .</p>
 
@@ -123,7 +125,9 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 <p>L'utilisation du framework Express simplifie les tâches pour coder des serveurs web en Node, en nous permettant de déployer nos API beaucoup plus rapidement.</p>
 
 ### Installer Express.
+<br>
 <a href="https://expressjs.com/"><img src = "./imgReadme/express-js.png"/></a>
+<br>
 <p>· Exécuter la commande "npm install express --save" à partir du dossier backend.</p>
 <p>· Créer un fichier "app.js" pour placer l'application Express.</p>
 <p>· Exécuter l'application Express sur le serveur Node.</p>
@@ -139,7 +143,9 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 · Un écouteur d'évènements est également enregistré, consignant le port ou le canal nommé sur lequel le serveur s'exécute dans la console.</p>
 
 ## Configurer notre base de données. MongoDB
+<br>
 <a href="https://www.mongodb.com/"><img src = "./imgReadme/mongodb.png"/></a>
+<br>
 <p>MongoDB est une base de données NoSQL. Cela signifie que l'on ne peut pas utiliser SQL pour communiquer avec. <br>
 Les données sont stockées comme des collections de documents individuels décrits en JSON "JavaScript Object Notation". <br>
 Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'on veut où l'on veut", et il n'y a pas de relation concrète entre les différentes données.</p>
