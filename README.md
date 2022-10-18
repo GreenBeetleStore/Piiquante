@@ -4,6 +4,10 @@
 
 <h1>P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.</h1>
 
+## Presentation
+
+https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing
+
 ## Technologies
 
 Ce projet a été généré avec <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
