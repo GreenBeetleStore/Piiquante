@@ -1,25 +1,54 @@
-# Piiquante <br>
+# Piiquante . HotTakes<br>
 
 <img src = "./imgReadme/Portada-Piiquante-charcoal-84670_1920.png"/>
 
 <h1>P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.</h1>
 
 ## Technologies
-- JS
-- CSS 
-- React
 
-## Contribute to the project
+Ce projet a été généré avec <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
 
-Sleep Well is an open source project. Feel free to fork the source and contribute with your own features.
+<img src = "./imgReadme/Tecnologies.png"/>
 
-## Authors
+## Contribuer au projet
 
-Our code squad : Francis & Stéphane
+Piquante est un projet open source, réalisé comme une simulation fictive d'une application en ligne pour publier et noter des sauces.
 
-## Licensing
+C'est un exercice obligatoire pour valider le projet 6 de la formation Développeur Web OpenClassrooms.
 
-This project was built under the Creative Commons licence.
+Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprentissage.
+
+## Auteurs
+
+Développement front-end : https://github.com/lucbourrat . OpenClassrooms.
+
+Développement back-end : Xavier Torta, the Green Beetle
+
+## Consignes initiales
+
+# HotTakes
+
+This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
+
+## Development server
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
+
+## Build
+Run ng build to build the project. The build artifacts will be stored in the dist/ directory.
+
+## Running unit tests
+Run ng test to execute the unit tests via <a href="https://karma-runner.github.io/">Karma</a>.
+
+## Running end-to-end tests
+Run ng e2e to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+## Further help
+To get more help on the Angular CLI use ng help or go check out the <a href="https://angular.io/cli"> Angular CLI Overview and Command Reference</a> page.
+
+=============================================================================================
 
 <h2>Configuration de l'environnement de travail et initialisation du projet.</h2>
 
@@ -154,7 +183,6 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 <h2>Créer des tokens d'authentification.</h2>
 
 <p>Les <i>tokens</i> d'authentification permettent aux utilisateurs de se connecter une seule fois à leur compte. Lorsqu'ils se connectent, ils reçoivent leur <i>token</i> et le transmettent immédiatement dans chaque requête, ce qui permet au back-end de vérifier que la requête est authentifiée.</p>
-
 
 <p>· Pour créer et vérifier les <i>tokens</i> d'authentification, nous avons besoin d'un nouveau package, installez-le avec la commande suivante : "npm install --save jsonwebtoken".</p>
         <p>· Importer le package dans notre contrôleur utilisateur.</p>
