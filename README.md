@@ -299,8 +299,16 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 ## Optimiser la structure du back-end.
 
 ### Configurer le routage.
-<p>Maintenant que nous avons notre application bien complète avec tous les éléments nécessaires au fonctionnement de CRUD, nous commençons à simplifier sa structure, en déportant tout ce qui est logique de routage.
-· Créez un dossier appelé <b>routes</b> où nous créons le fichier <b>sauces.js</b> où nous déplacerons toutes nos routes depuis <b>app.js</b>.</p>
+<p>Maintenant que nous avons notre application bien complète avec tous les éléments nécessaires au fonctionnement de CRUD, nous commençons à simplifier sa structure, en déportant tout ce qui est logique de routage.<br>
+· Créer un dossier appelé <b>routes</b> où nous créons le fichier <b>sauces.js</b> où nous déplacerons toutes nos routes depuis <b>app.js</b>.</p>
+<p>· À l'intérieur de ce fichier, importer Express et construire notre routeur avec la méthode Express <b>Router</b>.
+· Couper tous les <i>middlewares</i> de <b>app.js</b> et les coller dans notre fichier de routes, en modifiant la syntaxe et le chemin des <i>endpoints</i>.
+· Exporter notre routeur pour le rendre accessible depuis toutes nos applications.
+· Couper la sentence d'importation du modèle <b>Salsa</b> de app.js et la coller dans notre routeur en modifiant le chemin vers le dossier.
+. Dans app.js, importer le routeur et créer un <i>middleware</i> (<mark> app.use("/api/sauces", saucesRoutes); </mark>) plus simplifié pour utiliser toutes les routes que nous venons d'exporter vers sauces.js.
+· Cela nous permet de simplifier et d'organiser considérablement notre code, en nettoyant toute la pollution que nous avions accumulée dans notre fichier app.js.
+· Tester l'application pour voir que tout fonctionne comme avant.</p>
+
 ### Configurer les contrôleurs.
 
 <p>· Voir ce chapitre:  https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb/6466459-optimisez-la-structure-du-back-end/> </p>
