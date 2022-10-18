@@ -5,6 +5,8 @@
 
 ## Presentation
 
+· Vous trouverez ci-dessous la présentation de l'exposition du projet.
+
 https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing
 
 ## Technologies
