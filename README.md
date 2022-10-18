@@ -28,6 +28,8 @@ Développement front-end : https://github.com/lucbourrat . <a href="https://open
 
 Développement back-end : <a href="https://github.com/GreenBeetleStore/Piiquante"> Xavier Torta, the Green Beetle </a>
 
+<img src = "./imgReadme/GreenBeetleLogo.png"/>
+
 ## Consignes initiales
 
 # HotTakes
