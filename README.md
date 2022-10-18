@@ -20,9 +20,9 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 ## Auteurs
 
-Développement front-end : https://github.com/lucbourrat . OpenClassrooms.
+Développement front-end : https://github.com/lucbourrat . <a href="https://openclassrooms.com/fr/paths/556/projects/676/assignment"> OpenClassrooms</a>.
 
-Développement back-end : Xavier Torta, the Green Beetle
+Développement back-end : <a href="https://github.com/GreenBeetleStore/Piiquante"> Xavier Torta, the Green Beetle </a>
 
 ## Consignes initiales
 
@@ -31,22 +31,22 @@ Développement back-end : Xavier Torta, the Green Beetle
 This project was generated with <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
 
 ## Development server
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+Run <mark>ng serve</mark> for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
-Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
+Run <mark>ng generate component component-name</mark> to generate a new component. You can also use <mark>ng generate directive|pipe|service|class|guard|interface|enum|module</mark>.
 
 ## Build
-Run ng build to build the project. The build artifacts will be stored in the dist/ directory.
+Run <mark>ng build</mark> to build the project. The build artifacts will be stored in the <q>dist/</q> directory.
 
 ## Running unit tests
-Run ng test to execute the unit tests via <a href="https://karma-runner.github.io/">Karma</a>.
+Run <mark>ng test</mark> to execute the unit tests via <a href="https://karma-runner.github.io/">Karma</a>.
 
 ## Running end-to-end tests
-Run ng e2e to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Run <mark>ng e2e</mark> to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
 ## Further help
-To get more help on the Angular CLI use ng help or go check out the <a href="https://angular.io/cli"> Angular CLI Overview and Command Reference</a> page.
+To get more help on the Angular CLI use <mark>ng help</mark> or go check out the <a href="https://angular.io/cli"> Angular CLI Overview and Command Reference</a> page.
 
 =============================================================================================
 
