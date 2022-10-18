@@ -70,11 +70,11 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 
 ### Note:
 <p>· Dans cette documentation, vous pouvez voir que certaines informations sont ouvertes, par exemple les ports utilisés (frontend et backend) dans l'application. D'autres informations seront masquées pour des raisons de protection de l'application, telles que : noms d'utilisateur, e-mails, mots de passe, accès à des tiers, etc...</p>
-<p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes OWASP et RGPD.</p><br>
+<p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes <a href="https://owasp.org/">OWASP</a> et <a href="https://rgpd.com/">RGPD</a>.</p><br>
 <img src = "./imgReadme/grup_sec00.png"/>
 <p>· Pour obtenir de bons résultats dans ce projet, je vous recommande de suivre ce cours: </p>
 <a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Passez au Full Stack avec Node.js, Express et MongoDB. By : </a>
-<img src = "./imgReadme/OpenClassroom_LOGO.png"/><br>
+<a href="https://openclassrooms.com/fr/"><img src = "./imgReadme/OpenClassroom_LOGO.png"/></a><br>
 
 ### Commençons... !
 
