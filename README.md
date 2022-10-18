@@ -19,7 +19,7 @@
 <a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Passez au Full Stack avec Node.js, Express et MongoDB. </a>
 
 <h3>Commençons... !</h3>
-<p><b>Initialiser un dépôt Git del projecte.</b></p>
+<p><b>Initialiser un dépôt Git del projet.</b></p>
 <p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement à partir du front-end avec "npm run start", et on peut maintenant ouvrir la page <a href= "http://localhost:4200">http://localhost:4200</a> dans le navigateur.</p>
 
 <img src = "./imgReadme/Inici_00.png"/>
@@ -56,16 +56,16 @@
 <p>· Depuis le backend exécuter la commande: "npm install -g nodemon" .</p>
 <p>· Désormais, au lieu d'utiliser "node server" pour démarrer le serveur, utiliser "nodemon server" .</p>
 
-<p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuallement.</p>
+<p> Nodemon surveille les modifications des fichiers et redémarre le serveur et garantit d'avoir le server toujours mise à jour sans devoir le relancer manuellement.</p>
 
-<h2>Créer l'aplication Express.</h2>
+<h2>Créer l'application Express.</h2>
 
 <p>L'utilisation du framework Express simplifie les tâches pour coder des serveurs web en Node, en nous permettant de déployer nos API beaucoup plus rapidement.</p>
 
 <p><b>Installer Express.</b></p>
 <img src = "./imgReadme/express-js.png"/>
 <p>· Exécuter la commande "npm install express --save" à partir du dossier backend.</p>
-<p>· Créer un fichier "app.js" pour placer l'aplication Express.</p>
+<p>· Créer un fichier "app.js" pour placer l'application Express.</p>
 <p>· Exécuter l'application Express sur le serveur Node.</p>
 
 <p><b>Préparer des middlewares.</b></p>
@@ -93,7 +93,7 @@ Il n'y a pas de schéma strict de données "on peut écrire, en gros, ce que l'o
 <p><b>Connecter l'API au <i>cluster</i> MongoDB.</b></p>
 <p>· Dans l'onglet <b>Atlas</b> cliquer sur <b>Connect</b> et choisir <b>Connect your application</b>.
 <p>· Sélectionner la version la plus récente de Node.js, et <b>Connection String Only</b>.</p>
-<p>· Copier la chaine de caractères du code retournée. Exemple: <br>
+<p>· Copier la chaîne de caractères du code retournée. Exemple: <br>
 mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority</p>
 <p>· Revenir au projet et, à partir du backend, exécuter "npm install mongoose" pour installer le package Mongoose.</p>
 <p>· Importer et connecter mongoose dans app.js.</p>
@@ -104,22 +104,22 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 
 <p><b>Créer un modèle de données.</b></p>
         <p>· Afin qu'il n'y ait pas d'e-mails en double entre différents utilisateurs, nous utiliserons dans le schéma le mot-clé <b>"unique"</b> pour l'attribut d'e-mail.</p>
-        <p>· On peut avoir des erreurs illisibles de la part de mongoose, pour le résoudre; installer un package de validation pour prévalider les informations avant de les enregistrer. Exécuter la commande suivante à partir du backend "npm install --save mongoose-unique-validator".</p>
+        <p>· On peut avoir des erreurs illisibles de la part de mongoose, pour le résoudre; installer un package de validation pour pré-valider les informations avant de les enregistrer. Exécuter la commande suivante à partir du backend "npm install --save mongoose-unique-validator".</p>
         <p>· Ajouter et appliquer ce validateur en tant que plug-in au schéma.</p>
 
 <h2>Créer des utilisateurs.</h2>
 
 <p><b>Configurer les routes d'authentification.</b></p>
-        <p>· On besoin un contrôlleur et un routeur, puis enregistrer ce routeur dans l'application Express.</p>
+        <p>· On besoin un contrôleur et un routeur, puis enregistrer ce routeur dans l'application Express.</p>
         <p>· Créer le dossier controllers et dedans le fichier user.js.</p>
         <p>· Créer le dossier routes et dedans, a nouveau un autre fichier user.js.</p>
         <p>· Créer les routes d'authentification selon sont prévues par l'application front-end.</p>
         <p>. Importer le routeur dans app.js et enregistrer les routes vers la racine API de toutes les routes.</p>
-        <p>· Importer le controlleur dans routes/user.js pour associer les fonctions des differentes routes, utilisant deux routes POST avec les métodes "/signup" et "/login".</p>
+        <p>· Importer le controller dans routes/user.js pour associer les fonctions des différentes routes, utilisant deux routes POST avec les méthodes "/signup" et "/login".</p>
 
 <p><b>Créer des utilisateurs.</b></p>
-        <p>· Comencer par installer le package de chiffrement <b>bcrypt</b> pour la fonction <b>signup</b><br> "npm install --save bcrypt".</p>
-        <p>. Importer le model User dans le controlleur.</p>
+        <p>· Commencer par installer le package de chiffrement <b>bcrypt</b> pour la fonction <b>signup</b><br> "npm install --save bcrypt".</p>
+        <p>. Importer le model User dans le controller.</p>
         <p>· Importer également bcrypt.</p>
         <p>· Dans la fonction signup, hacher le mot de pass et avec le <b>hash</b> créé par bcrypt, s'enregistre l'utilisateur "user" dans la base de donnés.</p>
 <br>
@@ -162,12 +162,12 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 <h2>Créer une route GET.</h2>
 
 <p><b>Remettre le catalogue de sauces.</b></p>
-        <p>· Passer a l'argument supplémentaire du métode <b>get</b> un <i>string</i> qui correspond à la route où i faut enregistrer cet élément de <i>middleware</i>. La route sera <b>http://localhost:3000/api/sauces</b> (aussi appelée <i>endpoint</i>).
+        <p>· Passer a l'argument supplémentaire du méthode <b>get</b> un <i>string</i> qui correspond à la route où i faut enregistrer cet élément de <i>middleware</i>. La route sera <b>http://localhost:3000/api/sauces</b> (aussi appelée <i>endpoint</i>).
         <p>· Créer dans ce <i>middleware</i> un groupe d'articles avec le schéma de donnés comme demandé par le front-end. Puis envoyer ces articles sous le format JSON, avec un code (200) pou une demande réussie.</p>
 
 <p><b>Traiter les Erreurs de CORS.</b></p>
 <p>· CORS signifie « <b>Cross Origin Resource Sharing</b> ». Il s'agit d'un système de sécurité qui, par défaut, bloque les appels HTTP entre des serveurs <b><i>différents</i></b>, ce qui empêche donc les requêtes malveillantes d'accéder à des ressources sensibles. Dans notre cas, nous avons deux origines : <b>localhost:3000</b> et <b>localhost:4200</b> , et nous souhaiterions qu'elles puissent communiquer entre elles. Pour cela, nous devons ajouter des headers à nos objets <b>response</b>.</p>
-        <p>· Dans <b>app.js</b>, ajouter un middelware avec trois headers qui permettron.<p>
+        <p>· Dans <b>app.js</b>, ajouter un middleware avec trois headers qui permettront.<p>
                 <p>- d'accéder à notre API depuis n'importe quelle origine ( <b>'*'</b> ) ;</p>
                 <p>- d'ajouter les headers mentionnés aux requêtes envoyées vers notre API (<b>Origin , X-Requested-With</b> , etc.) ;</p>
                 <p>- d'envoyer des requêtes avec les méthodes mentionnées ( <b>GET</b> ,<b>POST</b> , etc.).
@@ -199,7 +199,7 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· Enlever le faux _id du corps de la requête, puis sera généré à nouveau par Mongoose.<p>
         <p>· Modifier la premier route POST, en declarant une nouvelle constant pour créer une nouvelle instance Salsa.</p>
         <p>· Une instance du modèle Salsa a été créée en lui passant un objet JavaScript contenant toutes les informations requises du corps de la requête analysée (après avoir supprimé le false_id envoyé par le frontend).</p>
-        <p>· Appeller la métode <b>save</b> pour enregistrer ce Salsa dans la base de données et retourne une promise.</p>
+        <p>· Appeler la méthode <b>save</b> pour enregistrer ce Salsa dans la base de données et retourne une promise.</p>
 
 <p><b>NOTE: </b>La base de données MongoDB est fractionnée en <b>collections</b> : le nom de la collection est défini par défaut sur le pluriel du nom du modèle. Ici, ce sera <b>Salses</b>.</p>
 
@@ -210,12 +210,12 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
         <p>· Utiliser la méthode <b>find()</b> dans le modèle Mongoose afin de renvoyer un tableau contenant tous les <b>Salses</b> dans la base de données. À présent, s'il s'ajoute un <b>Salsa</b>, il doit s'afficher immédiatement sur votre page.</p>
 
 <p><b>Récupération d'un Salsa spécifique.</b></p>
-<p>· Ajouter une nouvelle route à notre aplication, juste après la route POST.</p>
+<p>· Ajouter une nouvelle route à notre application, juste après la route POST.</p>
         <p>· Utiliser la méthode <b>get()</b> pour répondre uniquement aux demandes GET à cet endpoint;</p>
         <p>· Utilisation des deux-points <b>:</b> en face du segment dynamique de la route pour la rendre accessible en tant que paramètre;</p>
         <p>· Ensuite utiliser la méthode <b>findOne()</b> dans notre modèle <b>Salsa</b> pour trouver le <b>Salsa</b> unique ayant le même <b>_id</b> que le paramètre de la requête ;</p>
         <p>· Ce <b>Salsa</b> est ensuite retourné dans une Promise et envoyé au front-end ;</p>
-        <p>· Si aucun <b>Salsa</b> n'est trouvé ou si un erreur se produit, cést envoyé une erreur 404 au front-end, avec l'erreur générée;</p>
+        <p>· Si aucun <b>Salsa</b> n'est trouvé ou si un erreur se produit, c'est envoyé une erreur <b>404</b> au front-end, avec l'erreur générée;</p>
 <br>
 <h2>Modifiez et supprimez des données.</h2>
 
