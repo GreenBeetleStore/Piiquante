@@ -1,8 +1,10 @@
-[![forthebadge](https://forthebadge.com/images/badges/cc-0.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+[![forthebadge] https://forthebadge.com/generator/?pbg=%238FC965&sbg=%235D9741
 
-# Sleep Well : the smart alarm-clock app
+# Piiquante <br>
 
-Sleep Well aims at developing a smart alarm clock for iPhones that monitors your breathing rhythm while you sleep to determine your sleep cycles.
+<img src = "./imgReadme/Portada-Piiquante-charcoal-84670_1920.png"/>
+
+<h1>P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.</h1>
 
 ## Technologies
 - JS
@@ -20,13 +22,6 @@ Our code squad : Francis & Stéphane
 ## Licensing
 
 This project was built under the Creative Commons licence.
-
-
-# Piiquante <br>
-
-<img src = "./imgReadme/Portada-Piiquante-charcoal-84670_1920.png"/>
-
-<h1>P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.</h1>
 
 <h2>Configuration de l'environnement de travail et initialisation du projet.</h2>
 
