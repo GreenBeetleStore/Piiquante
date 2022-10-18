@@ -61,7 +61,7 @@ To get more help on the Angular CLI use <mark>ng help</mark> or go check out the
 <img src = "./imgReadme/Page010.png"/>
 <img src = "./imgReadme/Page022.png"/>
 
-=========================================================================================
+===========================================================================
 
 ## Configuration de l'environnement de travail et initialisation du projet.
 
@@ -319,4 +319,4 @@ mongodb+srv://<b>NomUtilisateur</b>:<b>password</b>@clusterocr.76dpav8.mongodb.n
 
 ### Configurer les contrôleurs.
 
-<p>· Voir ce chapitre:  https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb/6466459-optimisez-la-structure-du-back-end/> </p>
+
