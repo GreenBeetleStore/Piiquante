@@ -1,5 +1,3 @@
-[![forthebadge] https://forthebadge.com/generator/?pbg=%238FC965&sbg=%235D9741
-
 # Piiquante <br>
 
 <img src = "./imgReadme/Portada-Piiquante-charcoal-84670_1920.png"/>
