@@ -1,7 +1,10 @@
-// in backend/middleware/auth.js
+/** in backend/middleware/auth.js */
+
+// Importacions.
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 
+// Mòdul d'autentificació per crear i verificar el Token del Bearer(Portador).
 module.exports = (req, res, next) => {
   try {
     // Captura del token.

@@ -1,6 +1,9 @@
-// in backend/models/Salsa.js
+/** in backend/models/Salsa.js */
+
+// Importar.
 const mongoose = require('mongoose');
 
+// Esquema de dades de Salsa.
 const salsaSchema = mongoose.Schema({
   userId: { type: String, required: true },
   name: { type: String, required: true },
@@ -16,4 +19,5 @@ const salsaSchema = mongoose.Schema({
 
 });
 
+// Exportar el mòdul.
 module.exports = mongoose.model('Salsa', salsaSchema); 

@@ -1,7 +1,10 @@
-// in backend/controllers/sauces.js
+/** in backend/controllers/sauces.js */
+
+// Importacions.
 const Salsa = require("../models/Salsa");
 const fs = require("fs");
 
+// Controladors "Salsa" amb noms sintàctics per la interacció amb l'API.
 exports.createSalsa = (req, res, next) => {
   const coeur = JSON.parse(req.body.sauce);
   delete coeur._id;

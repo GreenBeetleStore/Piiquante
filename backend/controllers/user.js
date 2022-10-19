@@ -1,12 +1,17 @@
-// in backend/controllers/user.js
+/** in backend/controllers/user.js */
+
 // Importar bcrypt per al Hash de contrassenya.
 const bcrypt = require("bcrypt");
+
 // Importar jsonwebtoken per la creació del TOKEN.
 const jwt = require("jsonwebtoken");
-// Importar el model d'Usuari.
+
+// Importar el nostre model d'Usuari.
 const User = require("../models/User");
-// Importar dotenv.
+
+// Importar dotenv per utilitzar variables d'entorn.
 const dotenv = require("dotenv").config();
+
 // Importar crypto per encriptar email.
 const cryptojs = require("crypto-js");
 
@@ -17,6 +22,7 @@ emailRegex = (email) => {
   );
 };
 
+// Controladors "User" amb noms sintàctics per la interacció amb l'API.
 exports.signup = (req, res, next) => {
   if (emailRegex(req.body.email)) {
     // Encriptar email.

@@ -1,12 +1,16 @@
-// in backend/middleware/multer-config.js
+/** in backend/middleware/multer-config.js */
+
+// Importar.
 const multer = require("multer");
-// Esquema de conversió de les imatges.
+
+// Protocol (Multipurpose Internet Mail Extensions) per l'intercanvi d'imatges.
 const MIME_TYPES = {
   "image/jpg": "jpg",
   "image/jpeg": "jpg",
   "image/png": "png",
 };
-// Enregistrar les imatges aplicant el canvi de nom de fitxer i data timing.
+
+// Enregistrar les imatges aplicant el nou nom de fitxer i un mètode "data-timing".
 const storage = multer.diskStorage({
   destination: (req, file, callback) => {
     callback(null, "images");
@@ -18,4 +22,5 @@ const storage = multer.diskStorage({
   },
 });
 
+// Exportar el mòdul Multer.
 module.exports = multer({ storage: storage }).single("image");
