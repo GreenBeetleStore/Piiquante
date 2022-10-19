@@ -62,7 +62,7 @@ Vous pouvez vous aider de certains chapitres de cette vidéo pour votre projet.
 <a href="http://expressjs.com/fr/">Utilisation d'Express</a>
 Site web officiel d'Express.
 
-*ARTICLE*
+*ARTICLES*
 
 <a href="https://atinux.developpez.com/tutoriels/javascript/mongodb-nodejs-mongoose/">Comment connecter et utiliser votre MongoDB avec Node.js</a>
 Tutoriel par Sébastien Chopin (02/2012).
