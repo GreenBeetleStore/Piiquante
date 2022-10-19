@@ -259,17 +259,17 @@ Avant que l'utilisateur puisse apporter des modifications à la route sauce, le 
         
 ## Data ModelsSauce
         
-        ● <b>userId</b> : String — l'identifiant MongoDB unique de l'utilisateur qui a créé la sauce
-        ● <b>name</b> : String — nom de la sauce
-        ● <b>manufacturer</b> : String — fabricant de la sauce
-        ● <b>description</b> : String — description de la sauce
-        ● <b>mainPepper</b> : String — le principal ingrédient épicé de la sauce
-        ● <b>imageUrl</b> : String — l'URL de l'image de la sauce téléchargée par l'utilisateur
-        ● <b>heat</b> : Number — nombre entre 1 et 10 décrivant la sauce
-        ● <b>likes</b> : Number — nombre d'utilisateurs qui aiment (= likent) la sauce
-        ● <b>dislikes</b> : Number — nombre d'utilisateurs qui n'aiment pas (= dislike) la sauce
-        ● <b>usersLiked</b> : [ "String <userId>" ] — tableau des identifiants des utilisateurs qui ont aimé (= liked) la sauce
-        ● <b>usersDisliked</b> : [ "String <userId>" ] — tableau des identifiants des utilisateurs qui n'ont pas aimé (= disliked) la sauce 
+● <b>userId</b> : String — l'identifiant MongoDB unique de l'utilisateur qui a créé la sauce
+● <b>name</b> : String — nom de la sauce
+● <b>manufacturer</b> : String — fabricant de la sauce
+● <b>description</b> : String — description de la sauce
+● <b>mainPepper</b> : String — le principal ingrédient épicé de la sauce
+● <b>imageUrl</b> : String — l'URL de l'image de la sauce téléchargée par l'utilisateur
+● <b>heat</b> : Number — nombre entre 1 et 10 décrivant la sauce
+● <b>likes</b> : Number — nombre d'utilisateurs qui aiment (= likent) la sauce
+● <b>dislikes</b> : Number — nombre d'utilisateurs qui n'aiment pas (= dislike) la sauce
+● <b>usersLiked</b> : [ "String <userId>" ] — tableau des identifiants des utilisateurs qui ont aimé (= liked) la sauce
+● **usersDisliked** : [ "String <userId>" ] — tableau des identifiants des utilisateurs qui n'ont pas aimé (= disliked) la sauce 
         
 ### Utilisateur
         ● <b>email</b> : String — adresse e-mail de l'utilisateur <b>[unique]</b>
