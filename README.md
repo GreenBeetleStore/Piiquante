@@ -27,7 +27,7 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 ## Auteurs
 
-Développement front-end : <a href"https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6"></a>
+Développement front-end : <a href="https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6"></a>
 <img src = "./imgReadme/Inici_00.png"/>
 
 <a href="https://openclassrooms.com/fr/paths/556/projects/676/assignment"> P6 - OpenClassrooms</a>.
@@ -112,7 +112,7 @@ Dans ce document, vous trouverez un exemple des étapes clés à suivre pour men
         ● Les problèmes potentiels à connaître ou les erreurs à éviter.
         ● Le temps nécessaire estimé de l'ensemble du projet.
         ● Des ressources externes utiles pour chaque étape.
-        
+
 ### Recommandations générales
 
 À chaque étape, assurez-vous que le serveur démarre correctement, avec un message dans la console indiquant que le serveur a démarré et s'est connecté avec succès à MongoDB. Si vous recevez un message indiquant que le serveur ne parvient pas à démarrer,vérifiez qu’il n’y ait pas d'erreur dans la console du backend.
@@ -120,11 +120,13 @@ Dans ce document, vous trouverez un exemple des étapes clés à suivre pour men
 Testez votre code à chaque grande étape. Des tests fréquents peuvent vous éviter d'oublier des parties importantes du code et vous alerter sur les erreurs.
 
 ## Étape 1 : Démarrer le serveur backend
+
 15 % d’avance
 
-### 🎯 Partie du livrable : 
+### 🎯 Partie du livrable :
+
         Projet initialisé
-        
+
 ### 📌 Recommandations :
 
 ● Suivez ces étapes :
@@ -132,11 +134,11 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
         ○ Créer un projet vide pour démarrer le serveur Node.js ;
         ○ Installer Express ;
         ○ Installer Mongoose.
-        
+
 ● À partir de la version 4.16 d'Express, bodyparser est inclus et vous n'avez pas besoin de l'installer.
 
         ○ Utilisez ( express.json() ) pour analyser le corps de la requête.
-        
+
 ### ⚠️ Les problèmes à connaître :
 
 ● Si le port 3000 est utilisé par un autre processus, redémarrez complètement votre ordinateur (pour permettre l'utilisation du port) ou changez le port utilisé dans l’application Express.
@@ -152,11 +154,12 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 ● <a href="https://ichi.pro/fr/gerez-les-variables-d-environnement-dans-votre-application-nodejs-avec-dotenv-90198954812747">Travailler avec des variables d'environnement</a>
 
 ## Étape 2 : Construire le parcours utilisateur
+
 30 % d’avance
 
-### 🎯 Partie du livrable : 
+### 🎯 Partie du livrable :
         API
-        
+
 ### 📌 Recommandations :
 
 ● Créez les éléments suivants :
@@ -164,12 +167,12 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
         ○ Modèle d'utilisateur ;
         ○ Parcours utilisateur ;
         ○ Contrôleur d'utilisateur.
-        
+
 ● L'utilisateur est en mesure d'effectuer les opérations suivantes :
 
         ○ Créer un compte ;
         ○ Se connecter et disposer d'un token valide.
-        
+
 ● Consultez l'onglet réseau de Devtools pour plus d'informations.
 
 ### ⚠️ Les problèmes à connaître :
@@ -183,11 +186,12 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 ● <a href="https://mobiskill.fr/blog/conseils-emploi-tech/les-meilleures-pratiques-pour-le-developpement-de-rest-api/">Ce que sont les verbes de requêtes d'API.</a>
 
 ## Étape 3 : Démarrer le middleware
+
 40 % d’avance
 
 ### 🎯 Partie du livrable : 
         API
-        
+
 ### 📌 Recommandations :
 
 ● Ajout de multer pour les images.
@@ -195,7 +199,7 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 ● Ajout d’authorize pour la validation des tokens.
 
         ○ Authorize doit être ajoutée avant de commencer à construire le parcours pour les sauces car l'authentification est nécessaire pour qu'un utilisateur puisse effectuer une action sur le parcours des sauces.
-        
+
 ### ⚠️ Les problèmes à connaître :
 
 ● Les images importées sont manquantes.
@@ -223,7 +227,7 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
         ○ Le Modèle Sauce ;
         ○ La Route Sauce ;
         ○ Le Contrôleur Sauce.
-        
+
 ● Autorisez toutes les fonctions en utilisant middleware Authorize.
 
 ● L'utilisateur est en mesure d'effectuer les opérations suivantes :
@@ -231,7 +235,7 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
         ○ Ajouter une nouvelle sauce ;
         ○ Supprimer une sauce ;
         ○ Voir toutes les sauces.
-        
+
 ● Consultez l'onglet réseau de Devtools pour plus d'informations.
 
 ### ⚠️ Les problèmes à connaître :
@@ -253,7 +257,7 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 
 ### 🎯 Partie du livrable : 
         API complété
-        
+
 ### 📌 Recommandations :
 
 ● Exécutez l'application en tant qu'utilisateur pour vérifier que toutes les fonctions ont été correctement mises en œuvre, testez :
@@ -266,7 +270,7 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
                 ■ L’utilisateur peut liker ou ne pas aimer une sauce (ou aucun des deux)
                 
         ○ Seul le propriétaire de la sauce peut modifier ou supprimer une sauce existante.
-        
+
 ### ⚠️ Les problèmes à connaître :
 
 ● Erreur 401 (l'utilisateur n'est pas autorisé).
@@ -320,63 +324,63 @@ Les erreurs éventuelles doivent être renvoyées telles qu'elles sont produites
 ### API Routes
 
 Toutes les routes sauce pour les sauces doivent disposer d’une autorisation (le token est envoyé par le front-end avec l'en-tête d’autorisation : « Bearer <token> »).
-        
+
 Avant que l'utilisateur puisse apporter des modifications à la route sauce, le code doit vérifier si l'userId actuel correspond à l'userId de la sauce. Si l'userId ne correspond pas, renvoyer « 403: unauthorized request. » Cela permet de s'assurer que seul le propriétaire de la sauce peut apporter des modifications à celle-ci.
-        
-## Data ModelsSauce
-        
+
+# Data ModelsSauce
+
 ● **userId** : String — l'identifiant MongoDB unique de l'utilisateur qui a créé la sauce
-        
+
 ● **name** : String — nom de la sauce
-        
+
 ● **manufacturer** : String — fabricant de la sauce
-        
+
 ● **description** : String — description de la sauce
-        
+
 ● **mainPepper** : String — le principal ingrédient épicé de la sauce
-        
+
 ● **imageUrl** : String — l'URL de l'image de la sauce téléchargée par l'utilisateur
-        
+
 ● **heat** : Number — nombre entre 1 et 10 décrivant la sauce
-        
+
 ● **likes** : Number — nombre d'utilisateurs qui aiment (= likent) la sauce
-        
+
 ● **dislikes** : Number — nombre d'utilisateurs qui n'aiment pas (= dislike) la sauce
-        
-● **usersLiked** : [ "String <userId>" ] — tableau des identifiants des utilisateurs qui ont aimé (= liked) la sauce
-        
-● **usersDisliked** : [ "String <userId>" ] — tableau des identifiants des utilisateurs qui n'ont pas aimé (= disliked) la sauce 
-        
+
+● **usersLiked** : [ "String `<userId>`" ] — tableau des identifiants des utilisateurs qui ont aimé (= liked) la sauce
+
+● **usersDisliked** : [ "String `<userId>`" ] — tableau des identifiants des utilisateurs qui n'ont pas aimé (= disliked) la sauce 
+
 ### Utilisateur
-        
+
 ● **email** : String — adresse e-mail de l'utilisateur **[unique]**
-        
+
 ● **password** : String — mot de passe de l'utilisateur haché
-        
+
 ## Exigences de sécurité
-        
+
 ● Le mot de passe de l'utilisateur doit être haché.
-        
+
 ● L'authentification doit être renforcée sur toutes les routes sauce requises.
-        
+
 ● Les adresses électroniques dans la base de données sont uniques et un plugin Mongoose approprié est utilisé pour garantir leur unicité et signaler les erreurs.
-        
+
 ● La sécurité de la base de données MongoDB (à partir d'un service tel que MongoDB Atlas) ne doit pas empêcher l'application de se lancer sur la machine d'un utilisateur.
-        
+
 ● Un plugin Mongoose doit assurer la remontée des erreurs issues de la base de données.
-        
+
 ● Les versions les plus récentes des logiciels sont utilisées avec des correctifs de sécurité actualisés.
-        
+
 ● Le contenu du dossier images ne doit pas être téléchargé sur GitHub.
-        
+
 ## Sécurité appliquée
-        
+
 <img src = "./imgReadme/Seguretat.png"/>
-        
+
 ## Repository GitHub
-        
+
 Retirez le code de l'application front-end du repository du projet et suivez les étapes suivantes :
-        
+
         1. Clonez le repository
         
         2. Ouvrez un terminal (Linux/Mac) ou une invite de commande/PowerShell (Windows)
@@ -386,10 +390,10 @@ Retirez le code de l'application front-end du repository du projet et suivez les
         4. Exécutez npm start
         
         5. Exécutez le back-end sur http://localhost:3000 seulement
-        
+
 Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner le serveur front-end sans avoir recours à npm install.
 
-        
+
 <br>
 <br>
 <br>
@@ -397,7 +401,7 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 <br>
 
 ## Outils
-       
+
 <a href="https://www.postman.com/"><img src = "./imgReadme/postman.png"/></a>
 <br>
 
@@ -410,20 +414,19 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 <a href="https://www.mongodb.com/"><img src = "./imgReadme/mongodb.png"/></a>
 
 # HotTakes by Piiquante
-        
+
 <img src = "./imgReadme/Page02.png"/>
-        
+
 <img src = "./imgReadme/Page08.png"/>
-        
+
 <img src = "./imgReadme/Page09.png"/>
-        
+
 <img src = "./imgReadme/Page010.png"/>
-        
+
 <img src = "./imgReadme/Page022.png"/>
 
 <img src = "./imgReadme/Page040.png"/>
-        
-<img src = "./imgReadme/Page_HTML.png"/>
-        
-<br>
 
+<img src = "./imgReadme/Page_HTML.png"/>
+
+<br>
