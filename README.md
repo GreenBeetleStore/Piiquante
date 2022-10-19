@@ -259,38 +259,62 @@ Avant que l'utilisateur puisse apporter des modifications à la route sauce, le 
         
 ## Data ModelsSauce
         
-● <b>userId</b> : String — l'identifiant MongoDB unique de l'utilisateur qui a créé la sauce
-● <b>name</b> : String — nom de la sauce
-● <b>manufacturer</b> : String — fabricant de la sauce
-● <b>description</b> : String — description de la sauce
-● <b>mainPepper</b> : String — le principal ingrédient épicé de la sauce
-● <b>imageUrl</b> : String — l'URL de l'image de la sauce téléchargée par l'utilisateur
-● <b>heat</b> : Number — nombre entre 1 et 10 décrivant la sauce
-● <b>likes</b> : Number — nombre d'utilisateurs qui aiment (= likent) la sauce
-● <b>dislikes</b> : Number — nombre d'utilisateurs qui n'aiment pas (= dislike) la sauce
-● <b>usersLiked</b> : [ "String <userId>" ] — tableau des identifiants des utilisateurs qui ont aimé (= liked) la sauce
+● **userId** : String — l'identifiant MongoDB unique de l'utilisateur qui a créé la sauce
+        
+● **name** : String — nom de la sauce
+        
+● **manufacturer** : String — fabricant de la sauce
+        
+● **description** : String — description de la sauce
+        
+● **mainPepper** : String — le principal ingrédient épicé de la sauce
+        
+● **imageUrl** : String — l'URL de l'image de la sauce téléchargée par l'utilisateur
+        
+● **heat** : Number — nombre entre 1 et 10 décrivant la sauce
+        
+● **likes** : Number — nombre d'utilisateurs qui aiment (= likent) la sauce
+        
+● **dislikes** : Number — nombre d'utilisateurs qui n'aiment pas (= dislike) la sauce
+        
+● **usersLiked** : [ "String <userId>" ] — tableau des identifiants des utilisateurs qui ont aimé (= liked) la sauce
+        
 ● **usersDisliked** : [ "String <userId>" ] — tableau des identifiants des utilisateurs qui n'ont pas aimé (= disliked) la sauce 
         
 ### Utilisateur
-        ● <b>email</b> : String — adresse e-mail de l'utilisateur <b>[unique]</b>
-        ● <b>password</b> : String — mot de passe de l'utilisateur haché
+        
+● **email** : String — adresse e-mail de l'utilisateur **[unique]**
+        
+● **password** : String — mot de passe de l'utilisateur haché
         
 ## Exigences de sécurité
-        ● Le mot de passe de l'utilisateur doit être haché.
-        ● L'authentification doit être renforcée sur toutes les routes sauce requises.
-        ● Les adresses électroniques dans la base de données sont uniques et un plugin Mongoose approprié est utilisé pour garantir leur unicité et signaler les erreurs.
-        ● La sécurité de la base de données MongoDB (à partir d'un service tel que MongoDB Atlas) ne doit pas empêcher l'application de se lancer sur la machine d'un utilisateur.
-        ● Un plugin Mongoose doit assurer la remontée des erreurs issues de la base de données.
-        ● Les versions les plus récentes des logiciels sont utilisées avec des correctifs de sécurité actualisés.
-        ● Le contenu du dossier images ne doit pas être téléchargé sur GitHub.
+        
+● Le mot de passe de l'utilisateur doit être haché.
+        
+● L'authentification doit être renforcée sur toutes les routes sauce requises.
+        
+● Les adresses électroniques dans la base de données sont uniques et un plugin Mongoose approprié est utilisé pour garantir leur unicité et signaler les erreurs.
+        
+● La sécurité de la base de données MongoDB (à partir d'un service tel que MongoDB Atlas) ne doit pas empêcher l'application de se lancer sur la machine d'un utilisateur.
+        
+● Un plugin Mongoose doit assurer la remontée des erreurs issues de la base de données.
+        
+● Les versions les plus récentes des logiciels sont utilisées avec des correctifs de sécurité actualisés.
+        
+● Le contenu du dossier images ne doit pas être téléchargé sur GitHub.
         
 ## Repository GitHub
         
 Retirez le code de l'application front-end du repository du projet et suivez les étapes suivantes :
+        
         1. Clonez le repository
+        
         2. Ouvrez un terminal (Linux/Mac) ou une invite de commande/PowerShell (Windows)
+        
         3. Exécutez npm install à partir du répertoire du projet
+        
         4. Exécutez npm start
+        
         5. Exécutez le back-end sur http://localhost:3000 seulement
         
 Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner le serveur front-end sans avoir recours à npm install.
