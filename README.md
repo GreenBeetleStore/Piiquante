@@ -27,13 +27,75 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 ## Auteurs
 
-Développement front-end : [https://github.com/lucbourrat](https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6) . 
+Développement front-end : <a href"https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6"></a>
+<img src = "./imgReadme/Inici_00.png"/>
 
 <a href="https://openclassrooms.com/fr/paths/556/projects/676/assignment"> P6 - OpenClassrooms</a>.
 
 Développement back-end : <a href="https://github.com/GreenBeetleStore/Piiquante"> Xavier Torta, the Green Beetle </a>
 
 <img src = "./imgReadme/GreenBeetleLogo.png"/>
+
+## Cours
+
+### Développement
+
+<a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Cours Passez au Full Stack avec Node.js, Express et MongoDB.</a>
+
+<a href="https://openclassrooms.com/fr/courses/6573181-adoptez-les-api-rest-pour-vos-projets-web">Cours Adoptez les API REST pour vos projets web.</a>
+
+### Cybersécurité
+
+<a href="https://openclassrooms.com/fr/courses/6179306-securisez-vos-applications-web-avec-lowasp">Sécurisez vos applications web avec l'OWASP.</a>
+
+## Ressources
+
+*VIDÉO*
+
+<a href="https://www.youtube.com/watch?v=NRxzvpdduvQ">Node JS Tutorial Français pour Débutant - Cours complet 8h [2022]</a>
+Vous pouvez vous aider de certains chapitres de cette vidéo pour votre projet.
+
+*SITE WEB*
+
+<a href="http://expressjs.com/fr/">Utilisation d'Express</a>
+Site web officiel d'Express.
+
+*ARTICLE*
+
+<a href="https://atinux.developpez.com/tutoriels/javascript/mongodb-nodejs-mongoose/">Comment connecter et utiliser votre MongoDB avec Node.js</a>
+Tutoriel par Sébastien Chopin (02/2012).
+
+<a href="https://ichi.pro/fr/gerez-les-variables-d-environnement-dans-votre-application-nodejs-avec-dotenv-90198954812747">Travailler avec des variables d'environnement</a>
+Article sur ichi.pro.
+
+<a href="https://www.ipgirl.com/1097/comprendre-rest-verbes-codes-derreur-et-authentification.html">Comprendre REST: Verbes, codes d’erreur et authentification</a>
+Tutoriel par IP Girl (2017).
+
+<a href="https://dev.to/aimalm/upload-single-file-in-node-js-using-express-and-multer-in-6-steps-4o9p">Configuration de multer</a>
+Contenu rédigé en anglais, par Aimal Maarij, 04/2021 (v2: 05/2021).
+
+<a href="https://ichi.pro/fr/telecharger-un-fichier-avec-multer-dans-les-applications-node-js-208100977885636">Configuration de multer</a>
+Article sur ichi.pro.
+
+<a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Arrays">Les méthodes des tableaux expliquées</a>
+Guide de Mozilla officiel.
+
+*LIVRE*
+
+<a href="https://alexgirard.com/git-book/intermediaire/git-ignore/">Ajout ou suppression d'un fichier de gitignore</a>
+§2.2 du Livre Pro Git, par Scott Chacon et Ben Straub, traduit par Alex Girard.
+
+
+<a href="https://openclassrooms.com/fr/"><img src = "./imgReadme/OpenClassroom_LOGO.png"/></a><br>
+
+        
+        
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 ## <a href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P6/Guide+E%CC%81tapes+Cle%CC%81s_DW_P6.pdf">Guide des étapes clés</a>
 
@@ -338,25 +400,9 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 
 ===========================================================================
 
-## Configuration de l'environnement de travail et initialisation du projet.
 
-### Cloner dans le dossier "frontend" le code fourni pour initialiser ce projet depuis ce repository :
-<a href= "https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">Web Developer P6</a><br>
 
-### Note:
-<p>· Dans cette documentation, vous pouvez voir que certaines informations sont ouvertes, par exemple les ports utilisés (frontend et backend) dans l'application. D'autres informations seront masquées pour des raisons de protection de l'application, telles que : noms d'utilisateur, e-mails, mots de passe, accès à des tiers, etc...</p>
-<p>· Pour sécuriser l'application j'ai utilisé quelques techniques suivant les normes <a href="https://owasp.org/">OWASP</a> et <a href="https://rgpd.com/">RGPD</a>.</p><br>
-<img src = "./imgReadme/grup_sec00.png"/>
-<p>· Pour obtenir de bons résultats dans ce projet, je vous recommande de suivre ce cours: </p>
-<a href= "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb"> Passez au Full Stack avec Node.js, Express et MongoDB. By : </a>
-<a href="https://openclassrooms.com/fr/"><img src = "./imgReadme/OpenClassroom_LOGO.png"/></a><br>
 
-### Commençons... !
-
-### Initialiser un dépôt Git del projet.
-<p>Depuis la terminal, entrer dans le répertoire frontend "cd frontend" et exécuter "npm install" pour installer les dépendances requises par l'application. Lancer le serveur de développement à partir du front-end avec "npm run start", et on peut maintenant ouvrir la page <a href= "http://localhost:4200">http://localhost:4200</a> dans le navigateur.</p>
-
-<img src = "./imgReadme/Inici_00.png"/>
 
 <p><b>Il est important d'avoir un terminal en cours d'exécution "npm run start" pendant que nous travaillons pour pouvoir tester le code en temps réel.</b></p>
 <br>
