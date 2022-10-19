@@ -114,75 +114,108 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 
 ### 📃 Ressources
 
-● Ce que sont les verbes de requêtes d'API.
-Étape 3 : Démarrer le middleware
+● <a href="https://mobiskill.fr/blog/conseils-emploi-tech/les-meilleures-pratiques-pour-le-developpement-de-rest-api/">Ce que sont les verbes de requêtes d'API.</a>
+
+## Étape 3 : Démarrer le middleware
 40 % d’avance
-🎯 Partie du livrable : API
-📌 Recommandations :
+
+### 🎯 Partie du livrable : 
+        API
+        
+### 📌 Recommandations :
+
 ● Ajout de multer pour les images.
+
 ● Ajout d’authorize pour la validation des tokens.
-○ Authorize doit être ajoutée avant de commencer à construire
-le parcours pour les sauces car l'authentification est nécessaire
-pour qu'un utilisateur puisse effectuer une action sur le
-parcours des sauces.
-⚠️ Les problèmes à connaître :
+
+        ○ Authorize doit être ajoutée avant de commencer à construire le parcours pour les sauces car l'authentification est nécessaire pour qu'un utilisateur puisse effectuer une action sur le parcours des sauces.
+        
+### ⚠️ Les problèmes à connaître :
+
 ● Les images importées sont manquantes.
+
 ● Multer n'est pas correctement configuré.
-● Le chemin statique n'a pas été ajouté à l'application pour fournir les
-images. Assurez-vous d'ajouter le chemin statique à l'application.
-📃 Ressources
-● Configuration de multer (en anglais) .
-● Configuration de multer (en français)
-Étape 4 : Construire la route Sauce de l’API
+
+● Le chemin statique n'a pas été ajouté à l'application pour fournir les images. Assurez-vous d'ajouter le chemin statique à l'application.
+
+### 📃 Ressources
+
+● <a href="https://dev.to/aimalm/upload-single-file-in-node-js-using-express-and-multer-in-6-steps-4o9p">Configuration of multer</a> (en anglais).
+● <a href="https://ichi.pro/fr/telecharger-un-fichier-avec-multer-dans-les-applications-node-js-208100977885636">Configuration de multer</a> (en français).
+
+## Étape 4 : Construire la route Sauce de l’API
 70 % d’avance
-🎯 Partie du livrable : API
-📌 Recommandations :
+
+### 🎯 Partie du livrable : 
+        API
+        
+### 📌 Recommandations :
+
 ● Créez les éléments suivants :
-○ Le Modèle Sauce ;
-○ La Route Sauce ;
-○ Le Contrôleur Sauce.
+
+        ○ Le Modèle Sauce ;
+        ○ La Route Sauce ;
+        ○ Le Contrôleur Sauce.
+        
 ● Autorisez toutes les fonctions en utilisant middleware Authorize.
+
 ● L'utilisateur est en mesure d'effectuer les opérations suivantes :
-○ Ajouter une nouvelle sauce ;
-○ Supprimer une sauce ;
-○ Voir toutes les sauces.
+
+        ○ Ajouter une nouvelle sauce ;
+        ○ Supprimer une sauce ;
+        ○ Voir toutes les sauces.
+        
 ● Consultez l'onglet réseau de Devtools pour plus d'informations.
-⚠️ Les problèmes à connaître :
+
+### ⚠️ Les problèmes à connaître :
+
 ● Erreur 401 (l'utilisateur n'est pas autorisé).
+
 ● Multer ne sauvegarde pas les images.
+
 ● Les images ne sont pas affichées sur le frontend.
-📃 Ressources
-● Ajout ou suppression d'un fichier de gitignore.
-● Les méthodes des tableaux expliquées.
+
+### 📃 Ressources
+
+● <a href="https://alexgirard.com/git-book/intermediaire/git-ignore/">Ajout ou suppression d'un fichier de gitignore</a>.
+● <a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/First_steps/Arrays">Les méthodes des tableaux expliquées</a>.
+
 Étape 5 : Terminer la route Sauce de l’API
 100 % d’avance
-🎯 Partie du livrable : API complété
-📌 Recommandations :
-● Exécutez l'application en tant qu'utilisateur pour vérifier que toutes
-les fonctions ont été correctement mises en œuvre, testez :
-○ Les deux types de demandes :
-■ Avec un fichier présent ;
-■ Sans fichier.
-○ Les trois scénarios de la fonction « like » (1, 0, -1) ;
-■ L’utilisateur peut liker ou ne pas aimer une sauce (ou
-aucun des deux)
-○ Seul le propriétaire de la sauce peut modifier ou supprimer
-une sauce existante.
-⚠️ Les problèmes à connaître :
+
+### 🎯 Partie du livrable : 
+        API complété
+        
+### 📌 Recommandations :
+
+● Exécutez l'application en tant qu'utilisateur pour vérifier que toutes les fonctions ont été correctement mises en œuvre, testez :
+
+        ○ Les deux types de demandes :
+                ■ Avec un fichier présent ;
+                ■ Sans fichier.
+                
+        ○ Les trois scénarios de la fonction « like » (1, 0, -1) ;
+                ■ L’utilisateur peut liker ou ne pas aimer une sauce (ou aucun des deux)
+                
+        ○ Seul le propriétaire de la sauce peut modifier ou supprimer une sauce existante.
+        
+### ⚠️ Les problèmes à connaître :
+
 ● Erreur 401 (l'utilisateur n'est pas autorisé).
+
 ● Multer ne sauvegarde pas les images.
+
 ● Les images ne sont pas affichées sur le frontend.
-● Les données ne sont pas modifiées lorsque l'utilisateur tente de
-modifier une sauce existante.
-● La fonction « modifier » échoue lorsqu'une image est téléchargée ou
-modifiée.
-● La fonction « like » échoue lorsque l'utilisateur essaie de liker ou de
-ne pas aimer une sauce plusieurs fois.
-● Le propriétaire de la sauce ne peut pas voir les boutons « modifier »
-et « supprimer ». L'identifiant de la Sauce doit être valide et ne pas
-contenir de faute de frappe, car seul le propriétaire de la Sauce peut
-la modifier ou la supprimer.
-🎉 Projet terminé !
+
+● Les données ne sont pas modifiées lorsque l'utilisateur tente de modifier une sauce existante.
+
+● La fonction « modifier » échoue lorsqu'une image est téléchargée ou modifiée.
+
+● La fonction « like » échoue lorsque l'utilisateur essaie de liker ou de ne pas aimer une sauce plusieurs fois.
+
+● Le propriétaire de la sauce ne peut pas voir les boutons « modifier » et « supprimer ». L'identifiant de la Sauce doit être valide et ne pas contenir de faute de frappe, car seul le propriétaire de la Sauce peut la modifier ou la supprimer.
+
+## 🎉 Projet terminé !
 
 
 
