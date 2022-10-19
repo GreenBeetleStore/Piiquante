@@ -74,26 +74,40 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 ### ⚠️ Les problèmes à connaître :
 
 ● Si le port 3000 est utilisé par un autre processus, redémarrez complètement votre ordinateur (pour permettre l'utilisation du port) ou changez le port utilisé dans l’application Express.
+
 ● Impossible de se connecter à MongoDB. Vérifiez la chaîne de connexion, le nom d'utilisateur et le mot de passe de MongoDB et vérifiez que MongoDB Atlas (ou un service similaire) autorise toutes les adresses IP à se connecter au cluster.
 
 ### 📃 Ressources (en anglais)
 
 ● Utilisation d'Express
+
 ● Comment connecter et utiliser votre MongoDb avec Node.js
+
 ● Travailler avec des variables d'environnement
-Étape 2 : Construire le parcours utilisateur
+
+## Étape 2 : Construire le parcours utilisateur
 30 % d’avance
-🎯 Partie du livrable : API
-📌 Recommandations :
+
+### 🎯 Partie du livrable : 
+        API
+        
+### 📌 Recommandations :
+
 ● Créez les éléments suivants :
-○ Modèle d'utilisateur ;
-○ Parcours utilisateur ;
-○ Contrôleur d'utilisateur.
+
+        ○ Modèle d'utilisateur ;
+        ○ Parcours utilisateur ;
+        ○ Contrôleur d'utilisateur.
+        
 ● L'utilisateur est en mesure d'effectuer les opérations suivantes :
-○ Créer un compte ;
-○ Se connecter et disposer d'un token valide.
+
+        ○ Créer un compte ;
+        ○ Se connecter et disposer d'un token valide.
+        
 ● Consultez l'onglet réseau de Devtools pour plus d'informations.
-⚠️ Les problèmes à connaître :
+
+### ⚠️ Les problèmes à connaître :
+
 ● Le mot de passe n'est pas haché. Veillez à hacher le mot de passe.
 ● Un utilisateur peut s'inscrire plusieurs fois avec la même adresse
 électronique. Assurez-vous que le code vérifie qu’une adresse
