@@ -27,7 +27,7 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 ## Auteurs
 
-Développement front-end : <a href="https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6"></a>
+Développement front-end : <a href="https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">luc.bourrat</a>
 <img src = "./imgReadme/Inici_00.png"/>
 
 <a href="https://openclassrooms.com/fr/paths/556/projects/676/assignment"> P6 - OpenClassrooms</a>.
@@ -422,6 +422,10 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 <img src = "./imgReadme/Page09.png"/>
 
 <img src = "./imgReadme/Page010.png"/>
+        
+<img src = "./imgReadme/AjoutSauce.png"/>
+        
+<img src = "./imgReadme/ModificarSalsa.png"/>
 
 <img src = "./imgReadme/Page022.png"/>
 
