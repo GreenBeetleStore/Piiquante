@@ -1,13 +1,13 @@
-// in backend/server.js
+/** in backend/server.js */
+
+// Importacions .
 const http = require("http");
 const app = require("./app");
-
-// Importar mongoose, dotenv, helmet.
 const mongoose = require("mongoose");
 const dotenv = require("dotenv").config();
 const helmet = require("helmet");
 
-// Utilitzar el middleware Helmet per protegir capçaleres.
+// Middleware General Helmet per protegir capçaleres.
 app.use(
   helmet({
     referrerPolicy: { policy: "no-referrer" },
@@ -35,6 +35,8 @@ app.use(
     permittedCrossDomainPolicies: { permittedPolicies: "none" },
   })
 );
+
+// Middlewares autònoms Helmet.
 app.use(helmet.noSniff("dont-sniff-mimetype"));
 app.use(helmet.originAgentCluster());
 app.use(helmet.ieNoOpen("ienoopen"));
@@ -55,13 +57,13 @@ const normalizePort = (val) => {
 const port = normalizePort(process.env.PORT);
 app.set(port);
 
-// Recuperar la contrasenya Hash.
-const PUBLIC_BAIT = process.env.PUBLIC_BAIT;
+// Recuperar la contrasenya Hash. Pista falsa anti-piratatge per despistar.
+const CLAU_SECRETA = process.env.CLAU_SECRETA;
 app.get("/", (req, res, next) => {
-  return res.send(process.env.PUBLIC_BAIT);
+  return res.send(process.env.CLAU_SECRETA);
 });
 
-// Insruccions del Server.
+// Insruccions de generació del Servidor.
 const errorHandler = (error) => {
   if (error.syscall !== "listen") {
     throw error;
@@ -82,9 +84,7 @@ const errorHandler = (error) => {
       throw error;
   }
 };
-
 const server = http.createServer(app);
-
 server.on("error", errorHandler);
 server.on("listening", () => {
   const address = server.address();
@@ -92,4 +92,5 @@ server.on("listening", () => {
   console.log("Listening on " + bind);
 });
 
+// El servidor escolta al port.
 server.listen(port);
