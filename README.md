@@ -422,6 +422,10 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 <img src = "./imgReadme/Page09.png"/>
 
 <img src = "./imgReadme/Page010.png"/>
+        
+<img src = "./imgReadme/AjoutSauce.png"/>
+        
+<img src = "./imgReadme/ModificarSalsa.png"/>
 
 <img src = "./imgReadme/Page022.png"/>
 
