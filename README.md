@@ -56,7 +56,7 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 ## Étape 1 : Démarrer le serveur backend
 15 % d’avance
 
-### 🎯 Partie du livrable : <p>Projet initialisé</p>
+### 🎯 Partie du livrable : ###### Projet initialisé</p>
 📌 Recommandations :
 ● Suivez ces étapes :
 ○ Créer un projet vide pour démarrer le serveur Node.js ;
