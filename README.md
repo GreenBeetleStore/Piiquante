@@ -27,7 +27,9 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 ## Auteurs
 
-Développement front-end : https://github.com/lucbourrat . <a href="https://openclassrooms.com/fr/paths/556/projects/676/assignment"> OpenClassrooms</a>.
+Développement front-end : [https://github.com/lucbourrat](https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6) . 
+
+<a href="https://openclassrooms.com/fr/paths/556/projects/676/assignment"> P6 - OpenClassrooms</a>.
 
 Développement back-end : <a href="https://github.com/GreenBeetleStore/Piiquante"> Xavier Torta, the Green Beetle </a>
 
