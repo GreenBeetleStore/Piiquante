@@ -62,10 +62,13 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 ### 📌 Recommandations :
 
 ● Suivez ces étapes :
+
         ○ Créer un projet vide pour démarrer le serveur Node.js ;
         ○ Installer Express ;
         ○ Installer Mongoose.
+        
 ● À partir de la version 4.16 d'Express, bodyparser est inclus et vous n'avez pas besoin de l'installer.
+
         ○ Utilisez ( express.json() ) pour analyser le corps de la requête.
         
 ### ⚠️ Les problèmes à connaître :
