@@ -141,6 +141,7 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 ### 📃 Ressources
 
 ● <a href="https://dev.to/aimalm/upload-single-file-in-node-js-using-express-and-multer-in-6-steps-4o9p">Configuration of multer</a> (en anglais).
+
 ● <a href="https://ichi.pro/fr/telecharger-un-fichier-avec-multer-dans-les-applications-node-js-208100977885636">Configuration de multer</a> (en français).
 
 ## Étape 4 : Construire la route Sauce de l’API
