@@ -369,6 +369,10 @@ Avant que l'utilisateur puisse apporter des modifications à la route sauce, le 
         
 ● Le contenu du dossier images ne doit pas être téléchargé sur GitHub.
         
+## Sécurité appliquée
+        
+<img src = "./imgReadme/Seguretat.png"/>
+        
 ## Repository GitHub
         
 Retirez le code de l'application front-end du repository du projet et suivez les étapes suivantes :
