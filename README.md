@@ -36,6 +36,8 @@ Développement back-end : <a href="https://github.com/GreenBeetleStore/Piiquante
 
 <img src = "./imgReadme/GreenBeetleLogo.png"/>
 
+<br>
+
 ## Cours
 
 ### Développement
