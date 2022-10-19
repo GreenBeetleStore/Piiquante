@@ -219,10 +219,14 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 
 ## 🎉 Projet terminé !
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-
-## Requirements
+## <a href="https://s3.eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P6/Requirements_DW_P6.pdf">Requirements</a>
 
 ## Application API Requirements
 
@@ -232,91 +236,18 @@ Piiquante se dédie à la création de sauces épicées dont les recettes sont g
 
 ### Spécifications de l'API
 | Verb | Point d'accès | Request body | Type de réponse attendue | Fonction |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | POST | /api/auth/signup | { email: string, password: string } | { message: string } | Hachage du mot de passe de l'utilisateur, ajout de l'utilisateur à la base de données. |
-| POST | /api/auth/login | { email: string, password: string } | { userId: string, token: string } | Vérification des informations d'identification de l'utilisateur, renvoie l\'_id de l'utilisateur depuis la base de données et un token web JSON signé (contenant également l\'_id de l\'utilisateur). |
+| POST | /api/auth/login | { email: string, password: string } | { userId: string, token: string } | Vérification des informations d'identification de l'utilisateur, renvoie l'_id de l'utilisateur depuis la base de données et un token web JSON signé (contenant également l'_id de l'utilisateur). |
+| GET | /api/sauces | - | Array of sauces | Renvoie un tableau de toutes les sauces de la base de données. |
+| GET | /api/sauces/:id  | - | Single sauce | Renvoie la sauce avec l’_id fourni. |
+| POST | /api/sauces | { sauce: String, image: File } | { message: String } **Verb** | Capture et enregistre l'image, analyse la sauce transformée en chaîne de caractères et l'enregistre dans la base de données en définissant correctement son imageUrl. Initialise les likes et dislikes de la sauce à 0 et les usersLiked et usersDisliked avec des tableaux vides. Remarquez que le corps de la demande initiale est vide ; lorsque multer est ajouté, il renvoie une chaîne pour le corps de la demande en fonction des données soumises avec le fichier.
+| PUT | /api/sauces/:id | EITHER Sauce as JSON OR { sauce: String, image: File } | { message: String } | Met à jour la sauce avec l'_id fourni. Si une image est téléchargée, elle est capturée et l’imageUrl de la sauce est mise à jour. Si aucun fichier n'est fourni, les informations sur la sauce se trouvent directement dans le corps de la requête (req.body.name, req.body.heat, etc.). Si un fichier est fourni, la sauce transformée en chaîne de caractères se trouve dans req.body.sauce. Notez que le corps de la demande initiale est vide ; lorsque multer est ajouté, il renvoie une chaîne du corps de la demande basée sur les données soumises avec le fichier.  |
+| DELETE | /api/sauces/:id | - | { message: String } | Supprime la sauce avec l'_id fourni. |
+| POST | /api/sauces/:id/like | { userId: String, like: Number } | { message: String } | Définit le statut « Like » pour l' userId fourni. Si like = 1, l'utilisateur aime (= like) la sauce. Si like = 0, l'utilisateur annule son like ou son dislike. Si like = -1, l'utilisateur n'aime pas (= dislike) la sauce. L'ID de l'utilisateur doit être ajouté ou retiré du tableau approprié. Cela permet de garder une trace de leurs préférences et les empêche de liker ou de ne pas disliker la même sauce plusieurs fois : un utilisateur ne peut avoir qu'une seule valeur pour chaque sauce. Le nombre total de « Like » et de « Dislike » est mis à jour à chaque nouvelle notation. |
 
-|
-GET /api/sauces - Array of sauces Renvoie un tableau de
-toutes les sauces de la base
-de données.
-GET /api/sauces/:id - Single sauce Renvoie la sauce avec l’_id
-fourni.
-POST /api/sauces { sauce: String,
-image: File }
-{ message: String }
-Verb
-Capture et enregistre
-l'image, analyse la sauce
-transformée en chaîne de
-caractères et l'enregistre
-dans la base de données en
-définissant correctement
-son imageUrl. Initialise les
-likes et dislikes de la sauce à
-0 et les usersLiked et
-usersDisliked avec des
-tableaux vides. Remarquez
-que le corps de la demande
-initiale est vide ; lorsque
-multer est ajouté, il renvoie
-une chaîne pour le corps de
-la demande en fonction des
-données soumises avec le
-fichier.
-PUT /api/sauces/:id EITHER
-Sauce as JSON
-OR { sauce:
-String,
-image: File }
-{ message: String } Met à jour la sauce avec l'_id
-fourni. Si une image est
-téléchargée, elle est
-capturée et l’imageUrl de la
-sauce est mise à jour. Si
-aucun fichier n'est fourni,
-les informations sur la sauce
-se trouvent directement
-dans le corps de la requête
-(req.body.name,
-req.body.heat, etc.). Si un
-fichier est fourni, la sauce
-transformée en chaîne de
-caractères se trouve dans
-req.body.sauce. Notez que
-le corps de la demande
-initiale est vide ; lorsque
-multer est ajouté, il renvoie
-une chaîne du corps de la
-demande basée sur les
-données soumises avec le
-fichier.
-DELETE /api/sauces/:id - { message: String } Supprime la sauce avec l'_id
-fourni.
-POST /api/sauces/:id/like { userId: String,
-like: Number }
-{ message: String } Définit le statut « Like » pour
-l' userId fourni. Si like = 1,
-l'utilisateur aime (= like) la
-sauce. Si like = 0, l'utilisateur
-annule son like ou son
-dislike. Si like = -1,
-l'utilisateur n'aime pas (=
-dislike) la sauce. L'ID de
-l'utilisateur doit être ajouté
-ou retiré du tableau
-approprié. Cela permet de
-garder une trace de leurs
-préférences et les empêche
-de liker ou de ne pas disliker
-la même sauce plusieurs
-fois : un utilisateur ne peut
-avoir qu'une seule valeur
-pour chaque sauce. Le
-nombre total de « Like » et
-de « Dislike » est mis à jour à
-chaque nouvelle notation.
-API Errors
+### API Errors
+
 Les erreurs éventuelles doivent être renvoyées telles qu'elles sont produites, sans
 modification ni ajout. Si nécessaire, utilisez une nouvelle Error().
 API Routes
