@@ -56,24 +56,25 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 ## Étape 1 : Démarrer le serveur backend
 15 % d’avance
 
-### 🎯 Partie du livrable : ###### Projet initialisé</p>
-📌 Recommandations :
+### 🎯 Partie du livrable : 
+        Projet initialisé
+        
+### 📌 Recommandations :
+
 ● Suivez ces étapes :
-○ Créer un projet vide pour démarrer le serveur Node.js ;
-○ Installer Express ;
-○ Installer Mongoose.
-● À partir de la version 4.16 d'Express, bodyparser est inclus et vous
-n'avez pas besoin de l'installer.
-○ Utilisez ( express.json() ) pour analyser le corps de la requête.
-⚠️ Les problèmes à connaître :
-● Si le port 3000 est utilisé par un autre processus, redémarrez
-complètement votre ordinateur (pour permettre l'utilisation du port)
-ou changez le port utilisé dans l’application Express.
-● Impossible de se connecter à MongoDB. Vérifiez la chaîne de
-connexion, le nom d'utilisateur et le mot de passe de MongoDB et
-vérifiez que MongoDB Atlas (ou un service similaire) autorise toutes
-les adresses IP à se connecter au cluster.
-📃 Ressources (en anglais)
+        ○ Créer un projet vide pour démarrer le serveur Node.js ;
+        ○ Installer Express ;
+        ○ Installer Mongoose.
+● À partir de la version 4.16 d'Express, bodyparser est inclus et vous n'avez pas besoin de l'installer.
+        ○ Utilisez ( express.json() ) pour analyser le corps de la requête.
+        
+### ⚠️ Les problèmes à connaître :
+
+● Si le port 3000 est utilisé par un autre processus, redémarrez complètement votre ordinateur (pour permettre l'utilisation du port) ou changez le port utilisé dans l’application Express.
+● Impossible de se connecter à MongoDB. Vérifiez la chaîne de connexion, le nom d'utilisateur et le mot de passe de MongoDB et vérifiez que MongoDB Atlas (ou un service similaire) autorise toutes les adresses IP à se connecter au cluster.
+
+### 📃 Ressources (en anglais)
+
 ● Utilisation d'Express
 ● Comment connecter et utiliser votre MongoDb avec Node.js
 ● Travailler avec des variables d'environnement
