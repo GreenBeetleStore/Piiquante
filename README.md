@@ -79,11 +79,11 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 
 ### 📃 Ressources (en anglais)
 
-● Utilisation d'Express
+● <a href="http://expressjs.com/fr/">Utilisation d'Express</a>
 
-● Comment connecter et utiliser votre MongoDb avec Node.js
+● <a href="https://atinux.developpez.com/tutoriels/javascript/mongodb-nodejs-mongoose/">Comment connecter et utiliser votre MongoDb avec Node.js</a>
 
-● Travailler avec des variables d'environnement
+● <a href="https://ichi.pro/fr/gerez-les-variables-d-environnement-dans-votre-application-nodejs-avec-dotenv-90198954812747">Travailler avec des variables d'environnement</a>
 
 ## Étape 2 : Construire le parcours utilisateur
 30 % d’avance
@@ -109,10 +109,11 @@ Testez votre code à chaque grande étape. Des tests fréquents peuvent vous év
 ### ⚠️ Les problèmes à connaître :
 
 ● Le mot de passe n'est pas haché. Veillez à hacher le mot de passe.
-● Un utilisateur peut s'inscrire plusieurs fois avec la même adresse
-électronique. Assurez-vous que le code vérifie qu’une adresse
-électronique est unique.
-📃 Ressources
+
+● Un utilisateur peut s'inscrire plusieurs fois avec la même adresse électronique. Assurez-vous que le code vérifie qu’une adresse électronique est unique.
+
+### 📃 Ressources
+
 ● Ce que sont les verbes de requêtes d'API.
 Étape 3 : Démarrer le middleware
 40 % d’avance
