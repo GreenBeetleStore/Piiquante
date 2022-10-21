@@ -24,17 +24,27 @@
 
    · **ajv 8.11.0** <a href="https://ajv.js.org/">Ajv JSON schema validator.</a>
    
+   <a href="https://ajv.js.org/"><img src = "./imgReadme/ajv_password-validator.png"/></a>
+   
    · **bcrypt 5.1.0** <a href="https://www.npmjs.com/package/bcrypt">Une bibliothèque pour vous aider à hacher les mots de passe.</a>
+   
+   <a href="https://www.npmjs.com/package/bcrypt"><img src = "./imgReadme/BCrypt.png"/></a>
    
    · **body-parser 1.20.1** <a href="https://www.npmjs.com/package/body-parser">Analyse le corps (charge utile) des infos envoyées via des requêtes au serveur Web.</a>
    
    · **crypto-js 4.1.1** <a href="https://www.npmjs.com/package/crypto-js">Utilisé pour le cryptage des e-mails.</a>
    
+   <a href="https://https://www.npmjs.com/package/crypto-js"><img src = "./imgReadme/CryptoJS.png"/></a>
+   
    · **dotenv 16.0.3** <a href="https://www.npmjs.com/package/dotenv">Gère les variables d'environnement.</a>
+   
+   <a href="https://https://www.npmjs.com/package/dotenv"><img src = "./imgReadme/Dotenv.png"/></a>
    
    · **escape-html 1.0.3** <a href="https://www.npmjs.com/package/escape-html">Chaîne d'échappement à utiliser en HTML.</a>
    
    · **express 4.18.2** <a href="https://www.npmjs.com/package/express">Pour gérer notre serveur backend; Framework Web rapide, sans opinion et minimaliste.</a>
+   
+   <a href="https://expressjs.com/"><img src = "./imgReadme/express-js.png"/></a>
    
    · **express-session 1.17.3** <a href="https://www.npmjs.com/package/express-session">Middleware de session simple pour Express.</a>
    
@@ -42,21 +52,33 @@
    
    · **helmet 6.0.0** <a href="https://helmetjs.github.io/">Helmet vous aide à sécuriser vos applications Express.js en définissant divers en-têtes HTTP.</a>
    
+   <a href="https://helmetjs.github.io/"><img src = "./imgReadme/HELMET.png"/></a>
+   
    · **html 1.0.0** <a href="https://www.npmjs.com/package/node-html/v/1.0.0-beta.20">Prototypage et construction de pages Web ou d'applications en aussi peu de lignes que possible.</a>
    
    · **jsonwebtoken 8.5.1** <a href="https://jwt.io/">Is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.</a>
    
+   <a href="https://jwt.io/"><img src = "./imgReadme/JsonWebToken.png"/></a>
+   
    · **mongoose 6.6.5** <a href="https://mongoosejs.com/">Bibliothèque Node.js pour écrire des requêtes sur une base de données MongooDB.</a>
+   
+   <a href="https://mongoosejs.com/"><img src = "./imgReadme/mongodb.png"/></a>
    
    · **mongoose-unique-validator 3.1.0** <a href="https://www.npmjs.com/package/mongoose-unique-validator">Est un plugin qui ajoute une validation de pré-enregistrement pour des champs uniques dans un schéma Mongoose.</a>
    
+   <a href="https://www.npmjs.com/package/mongoose-unique-validator"><img src = "./imgReadme/mongoose-unique-validator.png"/></a>
+   
    · **multer 1.4.5-lts.1** <a href="https://www.npmjs.com/package/multer/v/1.4.5-lts.1">Il s'agit d'un middleware node.js pour la gestion des données multipart/form, qui est principalement utilisé pour le téléchargement de fichiers.</a>
+   
+   <a href="https://www.npmjs.com/package/multer/v/1.4.5-lts.1"><img src = "./imgReadme/Multer.png"/></a>
    
    · **password-validator 5.3.0** <a href="https://www.npmjs.com/package/password-validator">Valide le mot de passe selon des spécifications flexibles et intuitives.</a>
  
   ### devDependencies: 
   
   · **morgan 1.10.0** <a href="https://www.npmjs.com/package/morgan">Intergiciel de journalisation des requêtes HTTP pour node.js.</a>
+  
+  <a href="https://www.npmjs.com/package/morgan"><img src = "./imgReadme/Morgan-npm.png"/></a>
   
 
 
@@ -455,7 +477,7 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 <br>
 <br>
 
-## Outils
+## Outils tests et logs
 
 <a href="https://www.postman.com/"><img src = "./imgReadme/postman.png"/></a>
 <br>
@@ -463,8 +485,7 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 <a href="https://nodemon.io/"><img src = "./imgReadme/nodemonio-ar21.png"/></a><br>
 <br>
 
-<a href="https://expressjs.com/"><img src = "./imgReadme/express-js.png"/></a>
-<br>
+
 
 <a href="https://www.mongodb.com/"><img src = "./imgReadme/mongodb.png"/></a>
 
