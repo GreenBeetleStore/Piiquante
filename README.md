@@ -163,8 +163,6 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 <img src = "./imgReadme/UX06.png"/>
 
-<img src = "./imgReadme/Merci.png"/>
-
 <br>
 <br>
 <br>
@@ -525,3 +523,4 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 <br>
 <br>
 <br>
+<img src = "./imgReadme/Merci.png"/>
