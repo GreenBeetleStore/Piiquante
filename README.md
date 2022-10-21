@@ -11,9 +11,51 @@
 
 · Date de réalisation: octobre 2022.
 
+<img src = "./imgReadme/Page_HTML.png"/>
+
 ## Technologies
 
-· Le côté front-end de ce projet a été généré avec <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
+### · Le côté front-end de ce projet a été généré avec <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
+
+### · Les dépendances suivantes ont été utilisées dans la partie back-end :
+
+   · **ajv 8.11.0** <a href="https://ajv.js.org/">Ajv JSON schema validator.</a>
+   
+   · **bcrypt 5.1.0** <a href="https://www.npmjs.com/package/bcrypt">Une bibliothèque pour vous aider à hacher les mots de passe.</a>
+   
+   · **body-parser 1.20.1** <a href="https://www.npmjs.com/package/body-parser">Analyse le corps (charge utile) des infos envoyées via des requêtes au serveur Web.</a>
+   
+   · **crypto-js 4.1.1** <a href="https://www.npmjs.com/package/crypto-js">Utilisé pour le cryptage des e-mails.</a>
+   
+   · **dotenv 16.0.3** <a href="https://www.npmjs.com/package/dotenv">Gère les variables d'environnement.</a>
+   
+   · **escape-html 1.0.3** <a href="https://www.npmjs.com/package/escape-html">Chaîne d'échappement à utiliser en HTML.</a>
+   
+   · **express 4.18.2** <a href="https://www.npmjs.com/package/express">Pour gérer notre serveur backend; Framework Web rapide, sans opinion et minimaliste.</a>
+   
+   · **express-session 1.17.3** <a href="https://www.npmjs.com/package/express-session">Middleware de session simple pour Express.</a>
+   
+   · **he 1.2.0** <a href="https://www.npmjs.com/package/he/v/1.2.0">Un encodeur/décodeur d'entité HTML robuste écrit en JavaScript.</a>
+   
+   · **helmet 6.0.0** <a href="https://helmetjs.github.io/">Helmet vous aide à sécuriser vos applications Express.js en définissant divers en-têtes HTTP.</a>
+   
+   · **html 1.0.0** <a href="https://www.npmjs.com/package/node-html/v/1.0.0-beta.20">Prototypage et construction de pages Web ou d'applications en aussi peu de lignes que possible.</a>
+   
+   · **jsonwebtoken 8.5.1** <a href="https://jwt.io/">Is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.</a>
+   
+   · **mongoose 6.6.5** <a href="https://mongoosejs.com/">Bibliothèque Node.js pour écrire des requêtes sur une base de données MongooDB.</a>
+   
+   · **mongoose-unique-validator 3.1.0** <a href="https://www.npmjs.com/package/mongoose-unique-validator">Est un plugin qui ajoute une validation de pré-enregistrement pour des champs uniques dans un schéma Mongoose.</a>
+   
+   · **multer 1.4.5-lts.1** <a href="https://www.npmjs.com/package/multer/v/1.4.5-lts.1">Il s'agit d'un middleware node.js pour la gestion des données multipart/form, qui est principalement utilisé pour le téléchargement de fichiers.</a>
+   
+   · **password-validator 5.3.0** <a href="https://www.npmjs.com/package/password-validator">Valide le mot de passe selon des spécifications flexibles et intuitives.</a>
+ 
+  ### devDependencies: 
+  
+  · **morgan 1.10.0** <a href="https://www.npmjs.com/package/morgan">Intergiciel de journalisation des requêtes HTTP pour node.js.</a>
+  
+
 
 <img src = "./imgReadme/Tecnologies.png"/>
 
@@ -27,16 +69,22 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 ## Auteurs
 
-Développement front-end : <a href="https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">luc.bourrat</a>
+### Développement front-end : <a href="https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">luc.bourrat</a>
 <img src = "./imgReadme/Inici_00.png"/>
 
 <a href="https://openclassrooms.com/fr/paths/556/projects/676/assignment"> P6 - OpenClassrooms</a>.
 
-Développement back-end : <a href="https://github.com/GreenBeetleStore/Piiquante"> Xavier Torta, the Green Beetle </a>
+### Développement back-end : <a href="https://github.com/GreenBeetleStore/Piiquante"> Xavier Torta, the Green Beetle </a>
 
 <img src = "./imgReadme/GreenBeetleLogo.png"/>
 
 <br>
+
+## Architecture
+
+### Schéma de l'architecture
+
+<img src = "./imgReadme/Inici_00.png"/>
 
 ## Cours
 
@@ -413,7 +461,7 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 
 <a href="https://www.mongodb.com/"><img src = "./imgReadme/mongodb.png"/></a>
 
-# HotTakes by Piiquante
+# L'App HotTakes by Piiquante
 
 <img src = "./imgReadme/Page02.png"/>
 
