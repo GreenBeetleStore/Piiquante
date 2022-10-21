@@ -127,6 +127,48 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 <img src = "./imgReadme/Architecture.png"/>
 
+<br>
+<br>
+<br>
+
+## Sécurité appliquée
+
+● Pour appliquer les bonnes pratiques de sécurité, nous prenons comme référence les règles et conseils <a href="https://owasp.org/">OWASP</a> et <a href="https://rgpd.com/">RGPD</a>.
+
+<img src = "./imgReadme/grup_sec00.png"/>
+
+<img src = "./imgReadme/Seguretat.png"/>
+
+<br>
+<br>
+<br>
+
+# L'App HotTakes by Piiquante
+
+<img src = "./imgReadme/Page02.png"/>
+
+<img src = "./imgReadme/Page08.png"/>
+   
+## UX - Expérience utilisateur
+
+<img src = "./imgReadme/UX01.png"/>
+
+<img src = "./imgReadme/UX02.png"/>
+        
+<img src = "./imgReadme/UX03.png"/>
+        
+<img src = "./imgReadme/UX04.png"/>
+
+<img src = "./imgReadme/UX05.png"/>
+
+<img src = "./imgReadme/UX06.png"/>
+
+<img src = "./imgReadme/Merci.png"/>
+
+<br>
+<br>
+<br>
+
 ## Cours
 
 ### Développement
@@ -462,14 +504,6 @@ Avant que l'utilisateur puisse apporter des modifications à la route sauce, le 
 
 ● Le contenu du dossier images ne doit pas être téléchargé sur GitHub.
 
-## Sécurité appliquée
-
-● Pour appliquer les bonnes pratiques de sécurité, nous prenons comme référence les règles et conseils <a href="https://owasp.org/">OWASP</a> et <a href="https://rgpd.com/">RGPD</a>.
-
-<img src = "./imgReadme/grup_sec00.png"/>
-
-<img src = "./imgReadme/Seguretat.png"/>
-
 ## Repository GitHub
 
 Retirez le code de l'application front-end du repository du projet et suivez les étapes suivantes :
@@ -490,30 +524,4 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 <br>
 <br>
 <br>
-<br>
-<br>
-
-
-# L'App HotTakes by Piiquante
-
-<img src = "./imgReadme/Page02.png"/>
-
-<img src = "./imgReadme/Page08.png"/>
-   
-## UX - Expérience utilisateur
-
-<img src = "./imgReadme/UX01.png"/>
-
-<img src = "./imgReadme/UX02.png"/>
-        
-<img src = "./imgReadme/UX03.png"/>
-        
-<img src = "./imgReadme/UX04.png"/>
-
-<img src = "./imgReadme/UX05.png"/>
-
-<img src = "./imgReadme/UX06.png"/>
-
-<img src = "./imgReadme/Merci.png"/>
-
 <br>
