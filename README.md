@@ -58,7 +58,7 @@
    
    · **html 1.0.0** <a href="https://www.npmjs.com/package/node-html/v/1.0.0-beta.20">Prototypage et construction de pages Web ou d'applications en aussi peu de lignes que possible.</a>
    
-   · **jsonwebtoken 8.5.1** <a href="https://jwt.io/">Is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.</a>
+   · **jsonwebtoken 8.5.1** <a href="https://jwt.io/">Est une norme ouverte (RFC 7519) qui définit un moyen compact et autonome pour transmettre en toute sécurité des informations entre les parties en tant qu'objet JSON.</a>
    
    <a href="https://jwt.io/"><img src = "./imgReadme/JsonWebToken.png"/></a>
    
