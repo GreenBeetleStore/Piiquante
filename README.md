@@ -82,7 +82,21 @@
   
   <a href="https://www.npmjs.com/package/morgan"><img src = "./imgReadme/Morgan-npm.png"/></a>
   
+  ## Outils complémentaires
+  
+  · **Postman** Permet et facilite la création et l'utilisation d'API.
 
+<a href="https://www.postman.com/"><img src = "./imgReadme/postman.png"/></a>
+
+· **Nodemon** Surveille le système de fichiers et redémarre automatiquement le processus.
+
+<a href="https://nodemon.io/"><img src = "./imgReadme/nodemonio-ar21.png"/></a><br>
+
+· **MongoDB** Il s'agit d'une base de données NoSQL orientée document pour stocker des volumes massifs de données telles que des collections et des documents.
+
+<a href="https://www.mongodb.com/"><img src = "./imgReadme/mongodb.png"/></a>
+  
+<br>
 
 <img src = "./imgReadme/Tecnologies.png"/>
 
@@ -479,17 +493,6 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 <br>
 <br>
 
-## Outils tests et logs
-
-<a href="https://www.postman.com/"><img src = "./imgReadme/postman.png"/></a>
-<br>
-
-<a href="https://nodemon.io/"><img src = "./imgReadme/nodemonio-ar21.png"/></a><br>
-<br>
-
-
-
-<a href="https://www.mongodb.com/"><img src = "./imgReadme/mongodb.png"/></a>
 
 # L'App HotTakes by Piiquante
 
