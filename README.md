@@ -1,4 +1,7 @@
 # Piiquante . HotTakes .
+
+<img src = "./imgReadme/Hot-Takes.png"/>
+
 # P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.
 
 <img src = "./imgReadme/Portada-Piiquante-charcoal-84670_1920.png"/>
@@ -422,6 +425,10 @@ Avant que l'utilisateur puisse apporter des modifications à la route sauce, le 
 ● Le contenu du dossier images ne doit pas être téléchargé sur GitHub.
 
 ## Sécurité appliquée
+
+● Pour appliquer les bonnes pratiques de sécurité, nous prenons comme référence les règles et conseils <a href="https://owasp.org/">OWASP</a> et <a href="https://rgpd.com/">RGPD</a>.
+
+<img src = "./imgReadme/grup_sec00.png"/>
 
 <img src = "./imgReadme/Seguretat.png"/>
 
