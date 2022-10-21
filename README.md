@@ -486,8 +486,8 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 
 <img src = "./imgReadme/UX05.png"/>
 
-<img src = "./imgReadme/Page040.png"/>
+<img src = "./imgReadme/UX06.png"/>
 
-<img src = "./imgReadme/Page_HTML.png"/>
+<img src = "./imgReadme/Merci.png"/>
 
 <br>
