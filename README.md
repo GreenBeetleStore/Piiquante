@@ -17,6 +17,31 @@
 
 · Le côté front-end de ce projet a été généré avec <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
 
+· Les dépendances suivantes ont été utilisées dans la partie back-end :
+
+   · **ajv 8.11.0 ** <a href="https://ajv.js.org/">Ajv JSON schema validator.</a>
+   
+   · **bcrypt 5.1.0 ** <a href="https://www.npmjs.com/package/bcrypt">Une bibliothèque pour vous aider à hacher les mots de passe.</a>
+   
+   ·**body-parser": "^1.20.1",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.3",
+    "escape-html": "^1.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "he": "^1.2.0",
+    "helmet": "^6.0.0",
+    "html": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.5",
+    "mongoose-unique-validator": "^3.1.0",
+    "multer": "^1.4.5-lts.1",
+    "password-validator": "^5.3.0"
+ 
+  "devDependencies": 
+    "morgan": "^1.10.0"
+
+
 <img src = "./imgReadme/Tecnologies.png"/>
 
 ## Open Source
