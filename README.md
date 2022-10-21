@@ -84,7 +84,7 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 ### Schéma de l'architecture
 
-<img src = "./imgReadme/Inici_00.png"/>
+<img src = "./imgReadme/Architecture.png"/>
 
 ## Cours
 
