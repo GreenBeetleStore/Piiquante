@@ -19,28 +19,43 @@
 
 · Les dépendances suivantes ont été utilisées dans la partie back-end :
 
-   · **ajv 8.11.0 ** <a href="https://ajv.js.org/">Ajv JSON schema validator.</a>
+   · **ajv 8.11.0** <a href="https://ajv.js.org/">Ajv JSON schema validator.</a>
    
-   · **bcrypt 5.1.0 ** <a href="https://www.npmjs.com/package/bcrypt">Une bibliothèque pour vous aider à hacher les mots de passe.</a>
+   · **bcrypt 5.1.0** <a href="https://www.npmjs.com/package/bcrypt">Une bibliothèque pour vous aider à hacher les mots de passe.</a>
    
-   ·**body-parser": "^1.20.1",
-    "crypto-js": "^4.1.1",
-    "dotenv": "^16.0.3",
-    "escape-html": "^1.0.3",
-    "express": "^4.18.2",
-    "express-session": "^1.17.3",
-    "he": "^1.2.0",
-    "helmet": "^6.0.0",
-    "html": "^1.0.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.6.5",
-    "mongoose-unique-validator": "^3.1.0",
-    "multer": "^1.4.5-lts.1",
-    "password-validator": "^5.3.0"
+   · **body-parser 1.20.1** <a href="https://www.npmjs.com/package/body-parser">Analyse le corps (charge utile) des infos envoyées via des requêtes au serveur Web.</a>
+   
+   · **crypto-js 4.1.1** <a href="https://www.npmjs.com/package/crypto-js">Utilisé pour le cryptage des e-mails.</a>
+   
+   · **dotenv 16.0.3** <a href="https://www.npmjs.com/package/dotenv">Gère les variables d'environnement.</a>
+   
+   · **escape-html 1.0.3** <a href="https://www.npmjs.com/package/escape-html">Chaîne d'échappement à utiliser en HTML.</a>
+   
+   · **express 4.18.2** <a href="https://www.npmjs.com/package/express">Pour gérer notre serveur backend; Framework Web rapide, sans opinion et minimaliste.</a>
+   
+   · **express-session 1.17.3** <a href="https://www.npmjs.com/package/express-session">Middleware de session simple pour Express.</a>
+   
+   · **he 1.2.0** <a href="https://www.npmjs.com/package/he/v/1.2.0">Un encodeur/décodeur d'entité HTML robuste écrit en JavaScript.</a>
+   
+   · **helmet 6.0.0** <a href="https://helmetjs.github.io/">Helmet vous aide à sécuriser vos applications Express.js en définissant divers en-têtes HTTP.</a>
+   
+   · **html 1.0.0** <a href="https://www.npmjs.com/package/node-html/v/1.0.0-beta.20">Prototypage et construction de pages Web ou d'applications en aussi peu de lignes que possible.</a>
+   
+   · **jsonwebtoken 8.5.1** <a href="https://jwt.io/">Is an open standard (RFC 7519) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object.</a>
+   
+   · **mongoose 6.6.5** <a href="https://mongoosejs.com/">Bibliothèque Node.js pour écrire des requêtes sur une base de données MongooDB.</a>
+   
+   · **mongoose-unique-validator 3.1.0** <a href="https://www.npmjs.com/package/mongoose-unique-validator">Est un plugin qui ajoute une validation de pré-enregistrement pour des champs uniques dans un schéma Mongoose.</a>
+   
+   · **multer 1.4.5-lts.1** <a href="https://www.npmjs.com/package/multer/v/1.4.5-lts.1">Il s'agit d'un middleware node.js pour la gestion des données multipart/form, qui est principalement utilisé pour le téléchargement de fichiers.</a>
+   
+   · **password-validator 5.3.0** <a href="https://www.npmjs.com/package/password-validator">Valide le mot de passe selon des spécifications flexibles et intuitives.</a>
  
-  "devDependencies": 
-    "morgan": "^1.10.0"
-
+  ### devDependencies: 
+  
+  · **morgan 1.10.0** <a href="https://www.npmjs.com/package/morgan">Intergiciel de journalisation des requêtes HTTP pour node.js.</a>
+  
+  ## Technologies
 
 <img src = "./imgReadme/Tecnologies.png"/>
 
