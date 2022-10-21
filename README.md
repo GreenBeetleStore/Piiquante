@@ -17,7 +17,7 @@
 
 · Le côté front-end de ce projet a été généré avec <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
 
-· Les dépendances suivantes ont été utilisées dans la partie back-end :
+### · Les dépendances suivantes ont été utilisées dans la partie back-end :
 
    · **ajv 8.11.0** <a href="https://ajv.js.org/">Ajv JSON schema validator.</a>
    
