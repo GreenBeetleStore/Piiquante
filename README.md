@@ -15,7 +15,7 @@
 
 ## Technologies
 
-· Le côté front-end de ce projet a été généré avec <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
+### · Le côté front-end de ce projet a été généré avec <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
 
 ### · Les dépendances suivantes ont été utilisées dans la partie back-end :
 
