@@ -80,6 +80,12 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 <br>
 
+## Architecture
+
+### Schéma de l'architecture
+
+<img src = "./imgReadme/Inici_00.png"/>
+
 ## Cours
 
 ### Développement
@@ -455,7 +461,7 @@ Si vous utilisez VSCode, utilisez l'extension LiveShare pour faire fonctionner l
 
 <a href="https://www.mongodb.com/"><img src = "./imgReadme/mongodb.png"/></a>
 
-# HotTakes by Piiquante
+# L'App HotTakes by Piiquante
 
 <img src = "./imgReadme/Page02.png"/>
 
