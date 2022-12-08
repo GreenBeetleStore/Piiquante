@@ -8,9 +8,13 @@
 
 ## Presentation
 
-· Vous trouverez ci-dessous la présentation de l'exposition du projet.
+· Vous trouverez <a href="https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing">ici, la Presentation HotTakes</a> de l'exposition du projet.
 
-<a href="https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing">Presentation HotTakes</a>
+### Mise en service 
+
+· $ cd backend / <b>nodemon server</b>        =  Listening on port 3000 - Connexion à MongoDB réussie !
+
+· $ cd frontend / <b>npm run start</b>        =  ** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
 
 · Date de réalisation: octobre 2022.
 
