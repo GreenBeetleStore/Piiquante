@@ -20,7 +20,7 @@
 
 <img src = "./imgReadme/Page_HTML.png"/>
 
-## Technologies  
+## Technologies
 
 ### · Le côté front-end de ce projet a été généré avec <a href="https://github.com/angular/angular-cli">Angular CLI</a> version 13.2.4.
 
