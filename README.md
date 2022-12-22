@@ -12,6 +12,8 @@
 
 ### Mise en service 
 
+Vous pouvez accéder à la <a href="https://greenbeetlestore.github.io/Picante/">page d'entrée 👈 ici</a>. Vous devrez suivre les étapes de mise en service ci-dessous, et créer un compte fictif pour utiliser l'application.
+
 · Cloner le dépôt, puis :
 
 · $ cd backend / <b>nodemon server</b>        =  Listening on port 3000 - Connexion à MongoDB réussie !
