@@ -8,7 +8,7 @@
 
 ## Presentation
 
-· Vous trouverez <a href="https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing">ici, la Presentation HotTakes</a> de l'exposition du projet.
+· Vous trouverez <a href="https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing">ici, 👉 la Presentation HotTakes</a> de l'exposition du projet.
 
 ### Mise en service 
 
