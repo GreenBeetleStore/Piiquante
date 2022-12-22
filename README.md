@@ -20,7 +20,7 @@ Vous pouvez accéder à la <a href="https://greenbeetlestore.github.io/Picante/"
 
 · $ cd frontend / <b>npm run start</b>        =  ** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
 
-· Date de réalisation: octobre 2022.
+· Date de réalisation: octobre 2022. Les images qui apparaissent dans ce projet fictif peuvent avoir des droits d'auteur. Ici, en particulier, ils ne sont utilisés que dans un caractère académique et sans aucun profit.
 
 <img src = "./imgReadme/Page_HTML.png"/>
 
