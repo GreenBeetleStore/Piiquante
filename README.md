@@ -2,13 +2,13 @@
 
 <img src = "./imgReadme/Hot-Takes.png"/>
 
-# P6 · Construisez une API sécurisée pour une application d'avis gastronomiques.
+# <a href="https://openclassrooms.com/fr/paths/556/projects/676/assignment">P6 · Construisez une API sécurisée pour une application d'avis gastronomiques</a>.
 
 <img src = "./imgReadme/Portada-Piiquante-charcoal-84670_1920.png"/>
 
 ## Presentation
 
-· Vous trouverez <a href="https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing">ici, la Presentation HotTakes</a> de l'exposition du projet.
+· Vous trouverez <a href="https://docs.google.com/presentation/d/16_BSz3CeqxICZL_s0Rq516tE5Au1yhio-hUlBsWmHd0/edit?usp=sharing">ici, 👉 la Presentation HotTakes</a> de l'exposition du projet.
 
 ### Mise en service 
 
