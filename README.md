@@ -118,7 +118,7 @@ Vous pouvez collaborer, visiter, cloner ou l'utiliser pour votre propre apprenti
 
 ## Auteurs
 
-### Développement front-end : <a href="https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">luc.bourrat</a>
+### Développement front-end initial reçu pour suivre la mission : <a href="https://github.com/OpenClassrooms-Student-Center/Web-Developer-P6">luc.bourrat</a>
 <img src = "./imgReadme/Inici_00.png"/>
 
 <a href="https://openclassrooms.com/fr/paths/556/projects/676/assignment"> P6 - OpenClassrooms</a>.
